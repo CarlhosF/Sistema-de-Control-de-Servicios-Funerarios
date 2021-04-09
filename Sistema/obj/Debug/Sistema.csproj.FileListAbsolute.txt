@@ -1,0 +1,36 @@
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\bin\Debug\Sistema.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\bin\Debug\Sistema.pdb
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.csprojAssemblyReference.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.GUI.Interfaz.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.Properties.Resources.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\Sistema\obj\Debug\Sistema.pdb
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sistema.dll
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sistema.pdb
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csprojResolveAssemblyReference.cache
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.GUI.Interfaz.resources
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.Properties.Resources.resources
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csproj.GenerateResource.Cache
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.dll
+C:\Users\HP\OneDrive\Documentos\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sistema.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sistema.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.GUI.Interfaz.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.Properties.Resources.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sucursales_Modulo.exe
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\CacheManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\MySql.Data.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sucursales_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sucursales_Modulo.exe.config
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\DataManager.dll.config
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\CacheManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug\Sistema.csproj.CopyComplete

@@ -1,0 +1,33 @@
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\General.dll
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\General.pdb
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.RolesEdicion.resources
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.RolesGestion.resources
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.Properties.Resources.resources
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csproj.GenerateResource.Cache
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.dll
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.pdb
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\CacheManager.dll
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\DataManager.dll
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\MySql.Data.dll
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\CacheManager.pdb
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\bin\Debug\DataManager.pdb
+C:\Users\HP\source\repos\A VISUAL 2015\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.PermisosEdicion.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\General.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\General.pdb
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\CacheManager.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\DataManager.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\MySql.Data.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\CacheManager.pdb
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\DataManager.pdb
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\bin\Debug\DataManager.dll.config
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csprojAssemblyReference.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.PermisosEdicion.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.RolesEdicion.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.GUI.RolesGestion.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.Properties.Resources.resources
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.csproj.CopyComplete
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.dll
+C:\Users\HP\Documents\Sistema de Control de Servicios Funerarios (2)\Sistema de Control de Servicios Funerarios\General\obj\Debug\General.pdb
