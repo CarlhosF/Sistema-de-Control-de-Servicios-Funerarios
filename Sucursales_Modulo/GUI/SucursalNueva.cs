@@ -82,5 +82,10 @@ namespace Sucursales_Modulo.GUI
         {
             Close();
         }
+
+        private void lb_Direccion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

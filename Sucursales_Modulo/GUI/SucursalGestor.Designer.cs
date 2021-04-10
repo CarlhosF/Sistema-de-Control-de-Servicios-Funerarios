@@ -129,7 +129,7 @@ namespace Sucursales_Modulo.GUI
             // txb_Filtro
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             this.txb_Filtro.TextChanged += new System.EventHandler(this.txb_Filtro_TextChanged);
@@ -148,12 +148,13 @@ namespace Sucursales_Modulo.GUI
             // 
             // btn_Actualizar
             // 
-            this.btn_Actualizar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btn_Actualizar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Actualizar.Image")));
+            this.btn_Actualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Actualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_Actualizar.Name = "btn_Actualizar";
-            this.btn_Actualizar.Size = new System.Drawing.Size(63, 22);
+            this.btn_Actualizar.Size = new System.Drawing.Size(79, 22);
             this.btn_Actualizar.Text = "Actualizar";
+            this.btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
             // 
             // dt_sucursales

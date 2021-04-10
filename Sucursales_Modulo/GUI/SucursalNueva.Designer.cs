@@ -29,6 +29,7 @@ namespace Sucursales_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SucursalNueva));
             this.lb_Direccion = new System.Windows.Forms.Label();
             this.lb_Telefono = new System.Windows.Forms.Label();
             this.lb_Encargado = new System.Windows.Forms.Label();
@@ -43,15 +44,18 @@ namespace Sucursales_Modulo.GUI
             // lb_Direccion
             // 
             this.lb_Direccion.AutoSize = true;
+            this.lb_Direccion.Image = ((System.Drawing.Image)(resources.GetObject("lb_Direccion.Image")));
             this.lb_Direccion.Location = new System.Drawing.Point(27, 39);
             this.lb_Direccion.Name = "lb_Direccion";
             this.lb_Direccion.Size = new System.Drawing.Size(52, 13);
             this.lb_Direccion.TabIndex = 0;
             this.lb_Direccion.Text = "Direccion";
+            this.lb_Direccion.Click += new System.EventHandler(this.lb_Direccion_Click);
             // 
             // lb_Telefono
             // 
             this.lb_Telefono.AutoSize = true;
+            this.lb_Telefono.Image = ((System.Drawing.Image)(resources.GetObject("lb_Telefono.Image")));
             this.lb_Telefono.Location = new System.Drawing.Point(27, 73);
             this.lb_Telefono.Name = "lb_Telefono";
             this.lb_Telefono.Size = new System.Drawing.Size(49, 13);
@@ -99,7 +103,7 @@ namespace Sucursales_Modulo.GUI
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(86, 42);
             this.btn_Guardar.TabIndex = 6;
-            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.Text = "Agregar";
             this.btn_Guardar.UseVisualStyleBackColor = true;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 

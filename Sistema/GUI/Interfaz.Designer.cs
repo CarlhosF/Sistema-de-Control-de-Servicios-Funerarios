@@ -149,7 +149,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 62);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Personal";
+            this.button1.Text = "Empleado";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = true;
             // 
