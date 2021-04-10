@@ -38,6 +38,7 @@ namespace Exequie.CLS
                 {
                      Sistema.GUI.Interfaz f = new Sistema.GUI.Interfaz();
                     f.ShowDialog();
+                    Environment.Exit(0);
                 }
             }
         }

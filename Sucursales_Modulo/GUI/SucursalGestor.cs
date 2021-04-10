@@ -13,10 +13,12 @@ namespace Sucursales_Modulo.GUI
     public partial class SucursalGestor : Form
     {
         BindingSource _DATOS = new BindingSource();
+        
         private void Cargar()
         {
             _DATOS.DataSource = CacheManager.CLS.SucursalCache.Listar_Sucursales();
             dt_sucursales.DataSource = _DATOS.DataSource;
+            this.UseWaitCursor = false;
             FiltrarLocalmente();
         }
         private void FiltrarLocalmente()
@@ -31,7 +33,7 @@ namespace Sucursales_Modulo.GUI
             }
             dt_sucursales.AutoGenerateColumns = false;
             dt_sucursales.DataSource = _DATOS;
-            lb_Registros.Text = dt_sucursales.Rows.Count.ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
+            lb_Registros.Text = (dt_sucursales.Rows.Count-1).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
 
         }
         public SucursalGestor()

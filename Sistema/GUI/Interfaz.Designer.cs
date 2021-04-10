@@ -38,7 +38,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pn_contenedor = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -153,24 +153,25 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // pn_contenedor
             // 
-            this.panel2.Location = new System.Drawing.Point(127, 34);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(753, 404);
-            this.panel2.TabIndex = 1;
+            this.pn_contenedor.Location = new System.Drawing.Point(86, 12);
+            this.pn_contenedor.Name = "pn_contenedor";
+            this.pn_contenedor.Size = new System.Drawing.Size(823, 416);
+            this.pn_contenedor.TabIndex = 1;
             // 
             // Interfaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 472);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pn_contenedor);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Interfaz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SISTEMA PARA FUNERARIA";
+            this.Load += new System.EventHandler(this.Interfaz_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -187,6 +188,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pn_contenedor;
     }
 }
