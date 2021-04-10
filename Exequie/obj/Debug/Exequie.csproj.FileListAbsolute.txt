@@ -88,6 +88,5 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\obj\Debug
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\obj\Debug\Exequie.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\obj\Debug\Exequie.exe
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\obj\Debug\Exequie.pdb
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Sucursales_Modulo.exe
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Sucursales_Modulo.pdb
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Sucursales_Modulo.exe.config
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Sucursales_Modulo.dll

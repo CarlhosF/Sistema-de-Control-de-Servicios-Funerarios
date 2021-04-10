@@ -1,5 +1,3 @@
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.exe.config
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.exe
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\CacheManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\DataManager.dll
@@ -13,7 +11,8 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.GenerateResource.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.CopyComplete
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.exe
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.Sucursal_Editor.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.SucursalNueva.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.dll
