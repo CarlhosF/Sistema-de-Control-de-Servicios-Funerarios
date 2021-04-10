@@ -35,7 +35,52 @@ namespace Sucursales_Modulo.GUI
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
+            Sucursales_Modulo.CLS.Sucursales sucursal = new CLS.Sucursales();
+            sucursal.Direccion = txb_direccion.Text;
+            sucursal.Telefono = txb_telefono.Text;
+            
+            Int32 selectedRowCount = dt_empleado.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
+            if (selectedRowCount > 0)
+            {
+                
+                sucursal.Encargado = (int)dt_empleado.SelectedRows[0].Cells[0].Value;
+
+                if (txb_direccion.Text != null && txb_telefono != null)
+                {
+                    try
+                    {
+                        if (sucursal.Guardar())
+                        {
+                            MessageBox.Show("Registro guardado exitosamente");
+                        }
+                        else
+                        {
+                            MessageBox.Show("NO se pudo realizar la insercion a la tabla");
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error, NO se pudo realizar la insercion a la tabla");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Rellena la informacion de la sucursal");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Selecciona un encargado para la sucursal");
+            }
+
+
+            
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

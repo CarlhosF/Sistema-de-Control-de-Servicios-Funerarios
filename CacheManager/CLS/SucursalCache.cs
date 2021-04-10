@@ -15,7 +15,7 @@ namespace CacheManager.CLS
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
             String Consulta = @"SELECT a.idsucursales as 'ID', a.direccion, a.telefono, concat(b.nombres,b.apellidos) as'Encargado'
-            FROM sucursales a, empleados b, sucursales_encargados c where c.idEncargado = b.idempleados and c.idSucrusal=a.idsucursales;";
+            FROM sucursales a, empleados b, sucursales_encargados c where c.idEncargado = b.idempleados and c.idSucursal=a.idsucursales;";
             try
             {
                 Resultados = Consultor.Consultar(Consulta);

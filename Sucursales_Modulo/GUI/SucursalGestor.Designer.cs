@@ -40,9 +40,9 @@ namespace Sucursales_Modulo.GUI
             this.btn_Agregar = new System.Windows.Forms.ToolStripButton();
             this.txb_Filtro = new System.Windows.Forms.ToolStripTextBox();
             this.lb_Filtro = new System.Windows.Forms.ToolStripLabel();
-            this.dt_sucursales = new System.Windows.Forms.DataGridView();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Actualizar = new System.Windows.Forms.ToolStripButton();
+            this.dt_sucursales = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_sucursales)).BeginInit();
@@ -95,6 +95,7 @@ namespace Sucursales_Modulo.GUI
             this.btn_Eliminar.Size = new System.Drawing.Size(70, 22);
             this.btn_Eliminar.Tag = "Eliminar";
             this.btn_Eliminar.Text = "Eliminar";
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -140,19 +141,6 @@ namespace Sucursales_Modulo.GUI
             this.lb_Filtro.Size = new System.Drawing.Size(37, 22);
             this.lb_Filtro.Text = "Filtrar";
             // 
-            // dt_sucursales
-            // 
-            this.dt_sucursales.AllowUserToOrderColumns = true;
-            this.dt_sucursales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dt_sucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_sucursales.Location = new System.Drawing.Point(4, 24);
-            this.dt_sucursales.MultiSelect = false;
-            this.dt_sucursales.Name = "dt_sucursales";
-            this.dt_sucursales.Size = new System.Drawing.Size(601, 363);
-            this.dt_sucursales.TabIndex = 3;
-            this.dt_sucursales.UseWaitCursor = true;
-            this.dt_sucursales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -167,6 +155,19 @@ namespace Sucursales_Modulo.GUI
             this.btn_Actualizar.Size = new System.Drawing.Size(63, 22);
             this.btn_Actualizar.Text = "Actualizar";
             this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
+            // 
+            // dt_sucursales
+            // 
+            this.dt_sucursales.AllowUserToOrderColumns = true;
+            this.dt_sucursales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_sucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_sucursales.Location = new System.Drawing.Point(4, 24);
+            this.dt_sucursales.MultiSelect = false;
+            this.dt_sucursales.Name = "dt_sucursales";
+            this.dt_sucursales.Size = new System.Drawing.Size(601, 363);
+            this.dt_sucursales.TabIndex = 3;
+            this.dt_sucursales.UseWaitCursor = true;
+            this.dt_sucursales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // SucursalGestor
             // 

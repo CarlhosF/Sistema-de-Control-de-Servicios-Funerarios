@@ -62,9 +62,10 @@ namespace Sucursales_Modulo.CLS
         public Boolean Guardar()
         {
             Boolean Resultado = false;
-            int ultimoIngreso = CacheManager.CLS.SucursalCache.Ultima_Ingreso();
-            String Sentencia = @"INSERT INTO sucursales(direccion,teledono) VALUES(' " + this._Direccion+ " ',' " + this._Telefono + " ');"+
-                @"Insert into sucursales_encargado(idSucursal,idEncargado) values(" + ultimoIngreso + " '," + this._Encargado + " ')";
+            int ultimoIngreso = CacheManager.CLS.SucursalCache.Ultima_Ingreso()+1;
+            String Sentencia = @"INSERT INTO sucursales(direccion,telefono) VALUES(' " + this._Direccion+ " ',' " + this._Telefono + " ');"+
+                @"Insert into sucursales_encargados(idSucursal,idEncargado) values( (select idsucursales  from sucursales order by idsucursales desc limit 1) ," + this._Encargado +" );";
+            Console.WriteLine(Sentencia);
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();
@@ -109,10 +110,10 @@ namespace Sucursales_Modulo.CLS
             }
             return Resultado;
         }
-        public Boolean Eliminar()
+        public Boolean Eliminar(int id)
         {
             Boolean Resultado = false;
-            String Sentencia = @"DELETE FROM sucursales WHERE idsucursales = " + this._idsucursales + ";";
+            String Sentencia = @"DELETE FROM sucursales WHERE idsucursales = " + id+ ";";
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();

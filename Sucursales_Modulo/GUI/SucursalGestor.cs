@@ -90,5 +90,13 @@ namespace Sucursales_Modulo.GUI
             GUI.SucursalNueva f = new SucursalNueva();
             f.Show();
         }
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
+            CLS.Sucursales s = new CLS.Sucursales();
+            s.Eliminar(id);
+            Cargar();
+        }
     }
 }

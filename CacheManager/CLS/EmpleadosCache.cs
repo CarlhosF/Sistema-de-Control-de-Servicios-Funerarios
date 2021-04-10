@@ -16,7 +16,10 @@ namespace CacheManager.CLS
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"select concat(nombres, apellidos) as 'nombre', direccion from empleados;";
+            String Consulta = @"SELECT idempleados as 'ID',concat(nombres, apellidos) as 'Nombre', direccion
+                              FROM empleados
+                             WHERE idempleados NOT IN (SELECT idEncargado
+                                                   FROM sucursales_encargados);";
             try
             {
                 Resultados = Consultor.Consultar(Consulta);
