@@ -1,6 +1,8 @@
-
-create database funerariabd;
-use funerariabd;
+-- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: funerariabd
+-- ------------------------------------------------------
+-- Server version	5.7.30-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -98,12 +100,12 @@ CREATE TABLE `contratos` (
   KEY `fk_beneficiario1_idx` (`Beneficiario1`),
   KEY `fk_beneficiario2_idx` (`Beneficiario2`),
   KEY `fk_contrato_idx` (`tipoDeContrato`),
-  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_cliente` FOREIGN KEY (`idclientes`) REFERENCES `clientes` (`idclientes`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_contrato` FOREIGN KEY (`tipoDeContrato`) REFERENCES `tipodecontrato` (`idTipoDeContrato`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_serv` FOREIGN KEY (`idservicios`) REFERENCES `servicios` (`idservicios`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `empleados` (`idempleados`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_cliente` FOREIGN KEY (`idclientes`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_contrato` FOREIGN KEY (`tipoDeContrato`) REFERENCES `tipodecontrato` (`idTipoDeContrato`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_serv` FOREIGN KEY (`idservicios`) REFERENCES `servicios` (`idservicios`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -129,7 +131,7 @@ CREATE TABLE `difuntos` (
   `Contrato` int(11) NOT NULL,
   PRIMARY KEY (`iddifuntos`),
   KEY `fk_contra_idx` (`Contrato`),
-  CONSTRAINT `fk_contra` FOREIGN KEY (`Contrato`) REFERENCES `servicios` (`idservicios`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_contra` FOREIGN KEY (`Contrato`) REFERENCES `servicios` (`idservicios`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -160,7 +162,7 @@ CREATE TABLE `empleados` (
   PRIMARY KEY (`idempleados`),
   KEY `fk_sucurs_idx` (`idsucursales`),
   CONSTRAINT `fk_sucurs` FOREIGN KEY (`idsucursales`) REFERENCES `sucursales` (`idsucursales`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +171,7 @@ CREATE TABLE `empleados` (
 
 LOCK TABLES `empleados` WRITE;
 /*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
-INSERT INTO `empleados` VALUES (1,'Carlhos Edgardo','Figueroa Tejada','28/10/199','76562543','La Hachadura, Ahuachapan',1);
+INSERT INTO `empleados` VALUES (1,'Carlhos Edgardo','Figueroa Tejada','28/10/199','76562543','La Hachadura, Ahuachapan',1),(2,'Jose ','Perez','3/7/1997','76564532','Sonsonate',1),(3,'Pedro','Aguilar','5/4/1998','76568954','Sonsonate',1);
 /*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -192,8 +194,8 @@ CREATE TABLE `movimientos` (
   KEY `fk_empleado_idx` (`idEmpleado`),
   KEY `fk_mov_idx` (`idContrato`),
   KEY `fk_cobrador_idx` (`idEmpleado`),
-  CONSTRAINT `fk_cobrador` FOREIGN KEY (`idEmpleado`) REFERENCES `empleados` (`idempleados`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_mov` FOREIGN KEY (`idContrato`) REFERENCES `contratos` (`idcontratos`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_cobrador` FOREIGN KEY (`idEmpleado`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_mov` FOREIGN KEY (`idContrato`) REFERENCES `contratos` (`idcontratos`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -270,7 +272,7 @@ CREATE TABLE `sucursales` (
   `direccion` varchar(150) NOT NULL,
   `telefono` varchar(45) NOT NULL,
   PRIMARY KEY (`idsucursales`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -279,7 +281,7 @@ CREATE TABLE `sucursales` (
 
 LOCK TABLES `sucursales` WRITE;
 /*!40000 ALTER TABLE `sucursales` DISABLE KEYS */;
-INSERT INTO `sucursales` VALUES (1,'Barrio Santa Cruz, Sexta calle poninte y cuarta avenida norte, Casa #12, Chalchuapa','24440565');
+INSERT INTO `sucursales` VALUES (1,'Barrio Santa Cruz, Sexta calle poninte y cuarta avenida norte, Casa #12, Chalchuapa','24440565'),(14,' aaa ',' 11 ');
 /*!40000 ALTER TABLE `sucursales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -291,15 +293,15 @@ DROP TABLE IF EXISTS `sucursales_encargados`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sucursales_encargados` (
-  `idSucursales/Encargados` int(11) NOT NULL,
-  `idSucrusal` int(11) NOT NULL,
+  `idSucursales/Encargados` int(11) NOT NULL AUTO_INCREMENT,
+  `idSucursal` int(11) NOT NULL,
   `idEncargado` int(11) NOT NULL,
   PRIMARY KEY (`idSucursales/Encargados`),
-  KEY `fk_sucursal_idx` (`idSucrusal`),
   KEY `fk_encargado_idx` (`idEncargado`),
-  CONSTRAINT `fk_encargado` FOREIGN KEY (`idEncargado`) REFERENCES `empleados` (`idempleados`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_sucursal` FOREIGN KEY (`idSucrusal`) REFERENCES `sucursales` (`idsucursales`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `fk:suc_idx` (`idSucursal`),
+  CONSTRAINT `fk_encargado` FOREIGN KEY (`idEncargado`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_suc` FOREIGN KEY (`idSucursal`) REFERENCES `sucursales` (`idsucursales`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -308,6 +310,7 @@ CREATE TABLE `sucursales_encargados` (
 
 LOCK TABLES `sucursales_encargados` WRITE;
 /*!40000 ALTER TABLE `sucursales_encargados` DISABLE KEYS */;
+INSERT INTO `sucursales_encargados` VALUES (1,1,2),(13,14,3);
 /*!40000 ALTER TABLE `sucursales_encargados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -351,8 +354,8 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`idusuarios`),
   UNIQUE KEY `idroles_UNIQUE` (`idroles`),
   KEY `fk_empleado_idx` (`idempleados`),
-  CONSTRAINT `fk_empleado` FOREIGN KEY (`idempleados`) REFERENCES `empleados` (`idempleados`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_rol` FOREIGN KEY (`idroles`) REFERENCES `roles` (`idroles`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_empleado` FOREIGN KEY (`idempleados`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_rol` FOREIGN KEY (`idroles`) REFERENCES `roles` (`idroles`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -375,4 +378,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-07 11:06:58
+-- Dump completed on 2021-04-10  9:22:22
