@@ -27,6 +27,24 @@ namespace CacheManager.CLS
             }
             return Resultados;
         }
+        public static DataTable Traer_Sucursal(int id)
+        {
+            DataTable Resultados = new DataTable();
+            DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
+            String Consulta = @"SELECT a.idsucursales as 'ID', a.direccion, a.telefono, concat(b.nombres,b.apellidos) as'Encargado'
+                                FROM sucursales a, empleados b, sucursales_encargados c 
+                                where a.idsucursales="+id+" and c.idSucursal="+id+" and b.idempleados=c.idEncargado;";
+            try
+            {
+                Resultados = Consultor.Consultar(Consulta);
+            }
+            catch
+            {
+                Resultados = new DataTable();
+
+            }
+            return Resultados;
+        }
 
         public static int Ultima_Ingreso() 
         {

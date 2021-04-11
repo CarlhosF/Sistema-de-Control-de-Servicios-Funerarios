@@ -61,9 +61,9 @@
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.Location = new System.Drawing.Point(3, 405);
+            this.button8.Location = new System.Drawing.Point(3, 415);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(79, 62);
+            this.button8.Size = new System.Drawing.Size(79, 52);
             this.button8.TabIndex = 7;
             this.button8.Text = "Informacion";
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -73,7 +73,7 @@
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.Location = new System.Drawing.Point(3, 347);
+            this.button7.Location = new System.Drawing.Point(3, 360);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(79, 62);
             this.button7.TabIndex = 6;
@@ -85,7 +85,7 @@
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(3, 292);
+            this.button6.Location = new System.Drawing.Point(3, 302);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(79, 62);
             this.button6.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(3, 234);
+            this.button5.Location = new System.Drawing.Point(3, 244);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(79, 62);
             this.button5.TabIndex = 4;
@@ -109,7 +109,7 @@
             // 
             this.btn_Sucursales.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sucursales.Image")));
             this.btn_Sucursales.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Sucursales.Location = new System.Drawing.Point(3, 176);
+            this.btn_Sucursales.Location = new System.Drawing.Point(3, 186);
             this.btn_Sucursales.Name = "btn_Sucursales";
             this.btn_Sucursales.Size = new System.Drawing.Size(79, 62);
             this.btn_Sucursales.TabIndex = 3;
@@ -122,7 +122,7 @@
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(3, 118);
+            this.button3.Location = new System.Drawing.Point(3, 127);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(79, 62);
             this.button3.TabIndex = 2;
@@ -136,9 +136,9 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.Location = new System.Drawing.Point(3, 59);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 62);
+            this.button2.Size = new System.Drawing.Size(79, 71);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Servicios";
+            this.button2.Text = "Politicas de Negocio";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -164,13 +164,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 472);
+            this.ClientSize = new System.Drawing.Size(921, 466);
             this.Controls.Add(this.pn_contenedor);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Interfaz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SISTEMA PARA FUNERARIA";
+            this.Text = "FUNERARIA EL CONSOLADOR";
             this.Load += new System.EventHandler(this.Interfaz_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

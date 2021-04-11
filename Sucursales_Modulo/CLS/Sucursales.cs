@@ -90,6 +90,31 @@ namespace Sucursales_Modulo.CLS
         {
             Boolean Resultado = false;
             String Sentencia = @"UPDATE sucursales SET direccion=' " + this._Direccion + " ' , telefono=' " + this._Telefono + " ' " +
+                               "WHERE idsucursales = " + this._idsucursales + ";" +
+                               "update sucursales_encargados set idEncargado="+this._Encargado+ " where idSucursal="+this._idsucursales+";";
+            Console.WriteLine(Sentencia);
+            try
+            {
+                DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();
+                if (Operacion.Actualizar(Sentencia) > 0)
+                {
+                    Resultado = true;
+                }
+                else
+                {
+                    Resultado = false;
+                }
+            }
+            catch
+            {
+                Resultado = false;
+            }
+            return Resultado;
+        }
+        public Boolean Editar_sin_Encargado()
+        {
+            Boolean Resultado = false;
+            String Sentencia = @"UPDATE sucursales SET direccion=' " + this._Direccion + " ' , telefono=' " + this._Telefono + " ' " +
                 "WHERE idsucursales = " + this._idsucursales + ";";
             Console.WriteLine(Sentencia);
             try
