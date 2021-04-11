@@ -38,14 +38,17 @@ namespace Sucursales_Modulo.GUI
             this.dt_empleado = new System.Windows.Forms.DataGridView();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dt_empleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_Direccion
             // 
             this.lb_Direccion.AutoSize = true;
-            this.lb_Direccion.Image = ((System.Drawing.Image)(resources.GetObject("lb_Direccion.Image")));
-            this.lb_Direccion.Location = new System.Drawing.Point(27, 39);
+            this.lb_Direccion.Location = new System.Drawing.Point(105, 39);
             this.lb_Direccion.Name = "lb_Direccion";
             this.lb_Direccion.Size = new System.Drawing.Size(52, 13);
             this.lb_Direccion.TabIndex = 0;
@@ -55,8 +58,7 @@ namespace Sucursales_Modulo.GUI
             // lb_Telefono
             // 
             this.lb_Telefono.AutoSize = true;
-            this.lb_Telefono.Image = ((System.Drawing.Image)(resources.GetObject("lb_Telefono.Image")));
-            this.lb_Telefono.Location = new System.Drawing.Point(27, 73);
+            this.lb_Telefono.Location = new System.Drawing.Point(105, 77);
             this.lb_Telefono.Name = "lb_Telefono";
             this.lb_Telefono.Size = new System.Drawing.Size(49, 13);
             this.lb_Telefono.TabIndex = 1;
@@ -73,14 +75,14 @@ namespace Sucursales_Modulo.GUI
             // 
             // txb_direccion
             // 
-            this.txb_direccion.Location = new System.Drawing.Point(109, 36);
+            this.txb_direccion.Location = new System.Drawing.Point(179, 36);
             this.txb_direccion.Name = "txb_direccion";
             this.txb_direccion.Size = new System.Drawing.Size(261, 20);
             this.txb_direccion.TabIndex = 3;
             // 
             // txb_telefono
             // 
-            this.txb_telefono.Location = new System.Drawing.Point(109, 70);
+            this.txb_telefono.Location = new System.Drawing.Point(179, 70);
             this.txb_telefono.Name = "txb_telefono";
             this.txb_telefono.Size = new System.Drawing.Size(261, 20);
             this.txb_telefono.TabIndex = 4;
@@ -117,11 +119,31 @@ namespace Sucursales_Modulo.GUI
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(57, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(57, 62);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // SucursalNueva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 500);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.dt_empleado);
@@ -135,6 +157,8 @@ namespace Sucursales_Modulo.GUI
             this.Text = "SucursalNueva";
             this.Load += new System.EventHandler(this.SucursalNueva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dt_empleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +174,7 @@ namespace Sucursales_Modulo.GUI
         private System.Windows.Forms.DataGridView dt_empleado;
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
