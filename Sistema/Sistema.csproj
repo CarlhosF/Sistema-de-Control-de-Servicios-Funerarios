@@ -68,6 +68,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Empleados_Modulo\Empleados_Modulo.csproj">
+      <Project>{88b3fbb4-03ee-47de-beb3-1124e805c0a7}</Project>
+      <Name>Empleados_Modulo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sucursales_Modulo\Sucursales_Modulo.csproj">
       <Project>{cf0bc076-a6b0-4357-b7c4-0effd04ce939}</Project>
       <Name>Sucursales_Modulo</Name>

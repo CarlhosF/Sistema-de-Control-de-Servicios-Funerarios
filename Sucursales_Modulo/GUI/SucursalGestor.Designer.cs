@@ -54,7 +54,7 @@ namespace Sucursales_Modulo.GUI
             this.lb_Registros});
             this.statusStrip1.Location = new System.Drawing.Point(0, 393);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(606, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(831, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.UseWaitCursor = true;
@@ -80,7 +80,7 @@ namespace Sucursales_Modulo.GUI
             this.btn_Actualizar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(606, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(831, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.UseWaitCursor = true;
@@ -162,10 +162,10 @@ namespace Sucursales_Modulo.GUI
             this.dt_sucursales.AllowUserToOrderColumns = true;
             this.dt_sucursales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_sucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_sucursales.Location = new System.Drawing.Point(4, 24);
+            this.dt_sucursales.Location = new System.Drawing.Point(4, 28);
             this.dt_sucursales.MultiSelect = false;
             this.dt_sucursales.Name = "dt_sucursales";
-            this.dt_sucursales.Size = new System.Drawing.Size(601, 363);
+            this.dt_sucursales.Size = new System.Drawing.Size(725, 359);
             this.dt_sucursales.TabIndex = 3;
             this.dt_sucursales.UseWaitCursor = true;
             this.dt_sucursales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -174,7 +174,7 @@ namespace Sucursales_Modulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 415);
+            this.ClientSize = new System.Drawing.Size(831, 415);
             this.Controls.Add(this.dt_sucursales);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
