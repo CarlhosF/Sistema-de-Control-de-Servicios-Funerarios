@@ -51,5 +51,18 @@ namespace Sistema.GUI
 
             f.Show();
         }
+
+        private void btn_Clientes_Click(object sender, EventArgs e)
+        {
+            pn_contenedor.Controls.Clear();
+            Clientes_Modulo.GUI.ClientesGestor f = new Clientes_Modulo.GUI.ClientesGestor();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            pn_contenedor.Controls.Add(f);
+            pn_contenedor.Tag = f;
+
+            f.Show();
+        }
     }
 }

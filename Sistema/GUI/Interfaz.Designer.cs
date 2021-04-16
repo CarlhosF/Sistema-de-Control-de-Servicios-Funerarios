@@ -35,7 +35,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btn_Sucursales = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Clientes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Personal = new System.Windows.Forms.Button();
             this.pn_contenedor = new System.Windows.Forms.Panel();
@@ -53,7 +53,7 @@
             this.pn_botones.Controls.Add(this.button6);
             this.pn_botones.Controls.Add(this.button5);
             this.pn_botones.Controls.Add(this.btn_Sucursales);
-            this.pn_botones.Controls.Add(this.button3);
+            this.pn_botones.Controls.Add(this.btn_Clientes);
             this.pn_botones.Controls.Add(this.button2);
             this.pn_botones.Controls.Add(this.btn_Personal);
             this.pn_botones.Location = new System.Drawing.Point(-2, 0);
@@ -122,17 +122,18 @@
             this.btn_Sucursales.UseVisualStyleBackColor = true;
             this.btn_Sucursales.Click += new System.EventHandler(this.btn_Sucursales_Click);
             // 
-            // button3
+            // btn_Clientes
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(3, 148);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 62);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Clientes";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clientes.Image")));
+            this.btn_Clientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Clientes.Location = new System.Drawing.Point(3, 148);
+            this.btn_Clientes.Name = "btn_Clientes";
+            this.btn_Clientes.Size = new System.Drawing.Size(79, 62);
+            this.btn_Clientes.TabIndex = 2;
+            this.btn_Clientes.Text = "Clientes";
+            this.btn_Clientes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_Clientes.UseVisualStyleBackColor = true;
+            this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
             // 
             // button2
             // 
@@ -210,7 +211,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btn_Sucursales;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Clientes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_Personal;
         private System.Windows.Forms.Panel pn_contenedor;

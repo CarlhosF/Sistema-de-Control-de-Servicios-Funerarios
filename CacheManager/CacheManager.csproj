@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLS\Cache.cs" />
+    <Compile Include="CLS\ClientesCache.cs" />
     <Compile Include="CLS\EmpleadosCache.cs" />
     <Compile Include="CLS\SucursalCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -35,3 +35,5 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\obj\Debug
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Sucursales_Modulo.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Empleados_Modulo.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Empleados_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Clientes_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sistema\bin\Debug\Clientes_Modulo.pdb

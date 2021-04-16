@@ -92,3 +92,5 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Sucursales_Modulo.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Empleados_Modulo.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Empleados_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Clientes_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Exequie\bin\Debug\Clientes_Modulo.pdb
