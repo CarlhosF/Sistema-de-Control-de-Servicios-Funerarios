@@ -93,9 +93,12 @@ namespace Sucursales_Modulo.GUI
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
-            CLS.Sucursales s = new CLS.Sucursales();
-            s.Eliminar(id);
+            if (dt_sucursales.SelectedRows.Count > 0) 
+            {
+                int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
+                CLS.Sucursales s = new CLS.Sucursales();
+                s.Eliminar(id);
+            }
             Cargar();
         }
     }

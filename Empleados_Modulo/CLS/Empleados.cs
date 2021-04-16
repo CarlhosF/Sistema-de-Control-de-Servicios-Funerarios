@@ -12,11 +12,22 @@ namespace Empleados_Modulo.CLS
         int _idEmpleado;
         string _Nombre;
         string _Apellido;
-        DateTime dt = new DateTime(0, 0, 0);
+        DateTime _dt = new DateTime().ToUniversalTime();
         string _telefono;
         string _direccion;
+        string _DUI;
         int _sucursal;
-
+        public DateTime dt 
+        {
+            get 
+            {
+                return _dt;
+            }
+            set 
+            {
+                _dt = value;
+            }
+        }
        public int idEmpleado 
         {
             get 
@@ -50,6 +61,17 @@ namespace Empleados_Modulo.CLS
             set 
             {
                 _Nombre = value;
+            }
+        }
+        public string DUI
+        {
+            get
+            {
+                return _DUI;
+            }
+            set
+            {
+                _DUI = value;
             }
         }
         public string Apellido 
@@ -91,7 +113,7 @@ namespace Empleados_Modulo.CLS
         {
             Boolean Resultado = false;
             int ultimoIngreso = CacheManager.CLS.SucursalCache.Ultima_Ingreso() + 1;
-            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,idsucursales) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("d") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._sucursal + " ');";
+            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,DUI,idsucursales) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("d") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._DUI + " ',' " + this._sucursal + " ');";
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();
@@ -140,7 +162,7 @@ namespace Empleados_Modulo.CLS
         public Boolean Eliminar(int id)
         {
             Boolean Resultado = false;
-            String Sentencia = @"DELETE FROM Empleados WHERE idsucursales = " + id + ";";
+            String Sentencia = @"DELETE FROM Empleados WHERE idEmpleados = " + id + ";";
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();
