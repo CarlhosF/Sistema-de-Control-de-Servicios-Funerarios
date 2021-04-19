@@ -68,7 +68,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Downloads\Sistema-de-Control-de-Servicios-Funerarios\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\Clientes_Modulo.csproj">
+    <ProjectReference Include="..\Clientes_Modulo\Clientes_Modulo.csproj">
       <Project>{f1964825-b499-4877-bb04-dcd474d71c7f}</Project>
       <Name>Clientes_Modulo</Name>
     </ProjectReference>

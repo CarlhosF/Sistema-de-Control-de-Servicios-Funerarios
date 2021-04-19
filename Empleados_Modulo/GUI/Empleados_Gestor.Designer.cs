@@ -45,10 +45,38 @@ namespace Empleados_Modulo.GUI
             this.lb_Filtrar_Empleado = new System.Windows.Forms.ToolStripLabel();
             this.Usuarios = new System.Windows.Forms.TabPage();
             this.Roles = new System.Windows.Forms.TabPage();
+            this.dt_usuarios = new System.Windows.Forms.DataGridView();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.btn_Eliminar_Usuario = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Editar_Usuario = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Agregar_usuario = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Actualizar_Usuario = new System.Windows.Forms.ToolStripButton();
+            this.txb_Filtrar_Usuario = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.dt_roles = new System.Windows.Forms.DataGridView();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.bnt_eliminar_rol = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_editar_rol = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_agregar_rol = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_actualizar_rol = new System.Windows.Forms.ToolStripButton();
+            this.txb_filtrar_rol = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.Control_modulo.SuspendLayout();
             this.Empleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Empleados)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.Usuarios.SuspendLayout();
+            this.Roles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_usuarios)).BeginInit();
+            this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_roles)).BeginInit();
+            this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Control_modulo
@@ -172,6 +200,8 @@ namespace Empleados_Modulo.GUI
             // 
             // Usuarios
             // 
+            this.Usuarios.Controls.Add(this.dt_usuarios);
+            this.Usuarios.Controls.Add(this.toolStrip2);
             this.Usuarios.Location = new System.Drawing.Point(4, 22);
             this.Usuarios.Name = "Usuarios";
             this.Usuarios.Padding = new System.Windows.Forms.Padding(3);
@@ -182,12 +212,196 @@ namespace Empleados_Modulo.GUI
             // 
             // Roles
             // 
+            this.Roles.Controls.Add(this.dt_roles);
+            this.Roles.Controls.Add(this.toolStrip3);
             this.Roles.Location = new System.Drawing.Point(4, 22);
             this.Roles.Name = "Roles";
             this.Roles.Size = new System.Drawing.Size(812, 449);
             this.Roles.TabIndex = 2;
             this.Roles.Text = "Roles";
             this.Roles.UseVisualStyleBackColor = true;
+            // 
+            // dt_usuarios
+            // 
+            this.dt_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_usuarios.Location = new System.Drawing.Point(4, 36);
+            this.dt_usuarios.MultiSelect = false;
+            this.dt_usuarios.Name = "dt_usuarios";
+            this.dt_usuarios.ReadOnly = true;
+            this.dt_usuarios.Size = new System.Drawing.Size(805, 410);
+            this.dt_usuarios.TabIndex = 3;
+            this.dt_usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_usuarios_CellContentClick);
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_Eliminar_Usuario,
+            this.toolStripSeparator4,
+            this.btn_Editar_Usuario,
+            this.toolStripSeparator5,
+            this.btn_Agregar_usuario,
+            this.toolStripSeparator6,
+            this.btn_Actualizar_Usuario,
+            this.txb_Filtrar_Usuario,
+            this.toolStripLabel1});
+            this.toolStrip2.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(806, 25);
+            this.toolStrip2.TabIndex = 2;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // btn_Eliminar_Usuario
+            // 
+            this.btn_Eliminar_Usuario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eliminar_Usuario.Image")));
+            this.btn_Eliminar_Usuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Eliminar_Usuario.Name = "btn_Eliminar_Usuario";
+            this.btn_Eliminar_Usuario.Size = new System.Drawing.Size(70, 22);
+            this.btn_Eliminar_Usuario.Text = "Eliminar";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_Editar_Usuario
+            // 
+            this.btn_Editar_Usuario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Editar_Usuario.Image")));
+            this.btn_Editar_Usuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Editar_Usuario.Name = "btn_Editar_Usuario";
+            this.btn_Editar_Usuario.Size = new System.Drawing.Size(57, 22);
+            this.btn_Editar_Usuario.Text = "Editar";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_Agregar_usuario
+            // 
+            this.btn_Agregar_usuario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Agregar_usuario.Image")));
+            this.btn_Agregar_usuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Agregar_usuario.Name = "btn_Agregar_usuario";
+            this.btn_Agregar_usuario.Size = new System.Drawing.Size(69, 22);
+            this.btn_Agregar_usuario.Text = "Agregar";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_Actualizar_Usuario
+            // 
+            this.btn_Actualizar_Usuario.Image = ((System.Drawing.Image)(resources.GetObject("btn_Actualizar_Usuario.Image")));
+            this.btn_Actualizar_Usuario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Actualizar_Usuario.Name = "btn_Actualizar_Usuario";
+            this.btn_Actualizar_Usuario.Size = new System.Drawing.Size(79, 22);
+            this.btn_Actualizar_Usuario.Text = "Actualizar";
+            // 
+            // txb_Filtrar_Usuario
+            // 
+            this.txb_Filtrar_Usuario.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.txb_Filtrar_Usuario.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txb_Filtrar_Usuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Filtrar_Usuario.Name = "txb_Filtrar_Usuario";
+            this.txb_Filtrar_Usuario.Size = new System.Drawing.Size(100, 25);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(40, 22);
+            this.toolStripLabel1.Text = "Filtrar:";
+            // 
+            // dt_roles
+            // 
+            this.dt_roles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_roles.Location = new System.Drawing.Point(4, 37);
+            this.dt_roles.MultiSelect = false;
+            this.dt_roles.Name = "dt_roles";
+            this.dt_roles.ReadOnly = true;
+            this.dt_roles.Size = new System.Drawing.Size(805, 410);
+            this.dt_roles.TabIndex = 5;
+            this.dt_roles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_roles_CellContentClick);
+            // 
+            // toolStrip3
+            // 
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bnt_eliminar_rol,
+            this.toolStripSeparator7,
+            this.btn_editar_rol,
+            this.toolStripSeparator8,
+            this.btn_agregar_rol,
+            this.toolStripSeparator9,
+            this.btn_actualizar_rol,
+            this.txb_filtrar_rol,
+            this.toolStripLabel2});
+            this.toolStrip3.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip3.Name = "toolStrip3";
+            this.toolStrip3.Size = new System.Drawing.Size(812, 25);
+            this.toolStrip3.TabIndex = 4;
+            this.toolStrip3.Text = "toolStrip3";
+            // 
+            // bnt_eliminar_rol
+            // 
+            this.bnt_eliminar_rol.Image = ((System.Drawing.Image)(resources.GetObject("bnt_eliminar_rol.Image")));
+            this.bnt_eliminar_rol.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bnt_eliminar_rol.Name = "bnt_eliminar_rol";
+            this.bnt_eliminar_rol.Size = new System.Drawing.Size(70, 22);
+            this.bnt_eliminar_rol.Text = "Eliminar";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_editar_rol
+            // 
+            this.btn_editar_rol.Image = ((System.Drawing.Image)(resources.GetObject("btn_editar_rol.Image")));
+            this.btn_editar_rol.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_editar_rol.Name = "btn_editar_rol";
+            this.btn_editar_rol.Size = new System.Drawing.Size(57, 22);
+            this.btn_editar_rol.Text = "Editar";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_agregar_rol
+            // 
+            this.btn_agregar_rol.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar_rol.Image")));
+            this.btn_agregar_rol.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_agregar_rol.Name = "btn_agregar_rol";
+            this.btn_agregar_rol.Size = new System.Drawing.Size(69, 22);
+            this.btn_agregar_rol.Text = "Agregar";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_actualizar_rol
+            // 
+            this.btn_actualizar_rol.Image = ((System.Drawing.Image)(resources.GetObject("btn_actualizar_rol.Image")));
+            this.btn_actualizar_rol.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_actualizar_rol.Name = "btn_actualizar_rol";
+            this.btn_actualizar_rol.Size = new System.Drawing.Size(79, 22);
+            this.btn_actualizar_rol.Text = "Actualizar";
+            // 
+            // txb_filtrar_rol
+            // 
+            this.txb_filtrar_rol.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.txb_filtrar_rol.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txb_filtrar_rol.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_filtrar_rol.Name = "txb_filtrar_rol";
+            this.txb_filtrar_rol.Size = new System.Drawing.Size(100, 25);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(40, 22);
+            this.toolStripLabel2.Text = "Filtrar:";
             // 
             // Empleados_Gestor
             // 
@@ -205,6 +419,16 @@ namespace Empleados_Modulo.GUI
             ((System.ComponentModel.ISupportInitialize)(this.dt_Empleados)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.Usuarios.ResumeLayout(false);
+            this.Usuarios.PerformLayout();
+            this.Roles.ResumeLayout(false);
+            this.Roles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_usuarios)).EndInit();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_roles)).EndInit();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -226,5 +450,27 @@ namespace Empleados_Modulo.GUI
         private System.Windows.Forms.ToolStripTextBox tb_Filtrar_Empleado;
         private System.Windows.Forms.ToolStripLabel lb_Filtrar_Empleado;
         private System.Windows.Forms.DataGridView dt_Empleados;
+        private System.Windows.Forms.DataGridView dt_usuarios;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton btn_Eliminar_Usuario;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton btn_Editar_Usuario;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton btn_Agregar_usuario;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton btn_Actualizar_Usuario;
+        private System.Windows.Forms.ToolStripTextBox txb_Filtrar_Usuario;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.DataGridView dt_roles;
+        private System.Windows.Forms.ToolStrip toolStrip3;
+        private System.Windows.Forms.ToolStripButton bnt_eliminar_rol;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripButton btn_editar_rol;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripButton btn_agregar_rol;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton btn_actualizar_rol;
+        private System.Windows.Forms.ToolStripTextBox txb_filtrar_rol;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
     }
 }

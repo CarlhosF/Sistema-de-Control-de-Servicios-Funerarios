@@ -12,6 +12,8 @@ namespace Empleados_Modulo.GUI
 {
     public partial class Empleados_Gestor : Form
     {
+        BindingSource _Usuario = new BindingSource();
+        BindingSource _Roles = new BindingSource();
         BindingSource _DATOS = new BindingSource();
         public Empleados_Gestor()
         {
@@ -27,7 +29,7 @@ namespace Empleados_Modulo.GUI
         {
 
         }
-        private void FiltrarLocalmente()
+        private void FiltrarEmpleadoLocalmente()
         {
             if (tb_Filtrar_Empleado.TextLength > 0)
             {
@@ -45,8 +47,12 @@ namespace Empleados_Modulo.GUI
         private void Cargar()
         {
             _DATOS.DataSource = CacheManager.CLS.EmpleadosCache.Listar_Empleados();
+            _Usuario.DataSource = CacheManager.CLS.UsuariosCache.Listar_Usuarios();
+            _Roles.DataSource = CacheManager.CLS.RolesCache.Listar_Roles();
             dt_Empleados.DataSource = _DATOS.DataSource;
-            FiltrarLocalmente();
+            dt_usuarios.DataSource = _Usuario.DataSource;
+            dt_roles.DataSource = _Roles.DataSource;
+            FiltrarEmpleadoLocalmente();
         }
 
         private void btn_Agragar_Empleado_Click(object sender, EventArgs e)
@@ -58,7 +64,7 @@ namespace Empleados_Modulo.GUI
 
         private void tb_Filtrar_Empleado_TextChanged(object sender, EventArgs e)
         {
-            FiltrarLocalmente();
+            FiltrarEmpleadoLocalmente();
         }
 
         private void btn_Eliminar_Empleado_Click(object sender, EventArgs e)
@@ -88,6 +94,16 @@ namespace Empleados_Modulo.GUI
         }
 
         private void btn_Actualizar_Empleado_Click(object sender, EventArgs e)
+        {
+            Cargar();
+        }
+
+        private void dt_usuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dt_roles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Cargar();
         }
