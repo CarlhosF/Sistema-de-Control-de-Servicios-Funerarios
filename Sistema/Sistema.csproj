@@ -72,9 +72,9 @@
       <Project>{f1964825-b499-4877-bb04-dcd474d71c7f}</Project>
       <Name>Clientes_Modulo</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Empleados_Modulo\Personal_Modulo.csproj">
+    <ProjectReference Include="..\Empleados_Modulo\Empleados_Modulo.csproj">
       <Project>{88b3fbb4-03ee-47de-beb3-1124e805c0a7}</Project>
-      <Name>Personal_Modulo</Name>
+      <Name>Empleados_Modulo</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sucursales_Modulo\Sucursales_Modulo.csproj">
       <Project>{cf0bc076-a6b0-4357-b7c4-0effd04ce939}</Project>

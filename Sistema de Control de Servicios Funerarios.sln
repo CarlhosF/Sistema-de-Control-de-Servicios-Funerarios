@@ -11,13 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesionManager", "SesionMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManager", "CacheManager\CacheManager.csproj", "{35B3B17A-2D1D-442D-B570-61C0F02A945D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Informes", "Informes\Informes.csproj", "{3E3FADEE-F82F-4FD6-BC18-8B0DCBF90459}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema", "Sistema\Sistema.csproj", "{BCE5BA62-D9AC-4703-9457-654EC4C6D73F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sucursales_Modulo", "Sucursales_Modulo\Sucursales_Modulo.csproj", "{CF0BC076-A6B0-4357-B7C4-0EFFD04CE939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal_Modulo", "Empleados_Modulo\Personal_Modulo.csproj", "{88B3FBB4-03EE-47DE-BEB3-1124E805C0A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empleados_Modulo", "Empleados_Modulo\Empleados_Modulo.csproj", "{88B3FBB4-03EE-47DE-BEB3-1124E805C0A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes_Modulo", "Clientes_Modulo\Clientes_Modulo.csproj", "{F1964825-B499-4877-BB04-DCD474D71C7F}"
 EndProject
@@ -43,10 +41,6 @@ Global
 		{35B3B17A-2D1D-442D-B570-61C0F02A945D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35B3B17A-2D1D-442D-B570-61C0F02A945D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35B3B17A-2D1D-442D-B570-61C0F02A945D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E3FADEE-F82F-4FD6-BC18-8B0DCBF90459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E3FADEE-F82F-4FD6-BC18-8B0DCBF90459}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E3FADEE-F82F-4FD6-BC18-8B0DCBF90459}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E3FADEE-F82F-4FD6-BC18-8B0DCBF90459}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCE5BA62-D9AC-4703-9457-654EC4C6D73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BCE5BA62-D9AC-4703-9457-654EC4C6D73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE5BA62-D9AC-4703-9457-654EC4C6D73F}.Release|Any CPU.ActiveCfg = Release|Any CPU

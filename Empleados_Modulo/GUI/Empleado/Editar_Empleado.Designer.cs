@@ -47,12 +47,17 @@ namespace Empleados_Modulo.GUI.Empleado
             this.lb_nombre_empleado = new System.Windows.Forms.Label();
             this.lb_ID = new System.Windows.Forms.Label();
             this.txb_ID_Empleado = new System.Windows.Forms.TextBox();
+            this.dt_puesto = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.date_Contratacion = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Sucursal_Empleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_puesto)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(524, 488);
+            this.btn_Cancelar.Location = new System.Drawing.Point(768, 498);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 39);
             this.btn_Cancelar.TabIndex = 31;
@@ -89,7 +94,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // dt_Sucursal_Empleado
             // 
             this.dt_Sucursal_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(127, 304);
+            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(3, 304);
             this.dt_Sucursal_Empleado.Name = "dt_Sucursal_Empleado";
             this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(386, 183);
             this.dt_Sucursal_Empleado.TabIndex = 27;
@@ -97,7 +102,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // lb_sucursal_Empleado
             // 
             this.lb_sucursal_Empleado.AutoSize = true;
-            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(51, 304);
+            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(9, 288);
             this.lb_sucursal_Empleado.Name = "lb_sucursal_Empleado";
             this.lb_sucursal_Empleado.Size = new System.Drawing.Size(51, 13);
             this.lb_sucursal_Empleado.TabIndex = 26;
@@ -138,19 +143,21 @@ namespace Empleados_Modulo.GUI.Empleado
             // lb_fNacimiento_Empleado
             // 
             this.lb_fNacimiento_Empleado.AutoSize = true;
-            this.lb_fNacimiento_Empleado.Location = new System.Drawing.Point(51, 248);
+            this.lb_fNacimiento_Empleado.Location = new System.Drawing.Point(302, 210);
             this.lb_fNacimiento_Empleado.Name = "lb_fNacimiento_Empleado";
             this.lb_fNacimiento_Empleado.Size = new System.Drawing.Size(111, 13);
             this.lb_fNacimiento_Empleado.TabIndex = 21;
             this.lb_fNacimiento_Empleado.Text = "Fecha de Nacimineto:";
+            this.lb_fNacimiento_Empleado.Click += new System.EventHandler(this.lb_fNacimiento_Empleado_Click);
             // 
             // date_FNacimineto_Empleado
             // 
             this.date_FNacimineto_Empleado.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_FNacimineto_Empleado.Location = new System.Drawing.Point(168, 248);
+            this.date_FNacimineto_Empleado.Location = new System.Drawing.Point(419, 210);
             this.date_FNacimineto_Empleado.Name = "date_FNacimineto_Empleado";
             this.date_FNacimineto_Empleado.Size = new System.Drawing.Size(200, 20);
             this.date_FNacimineto_Empleado.TabIndex = 20;
+            this.date_FNacimineto_Empleado.ValueChanged += new System.EventHandler(this.date_FNacimineto_Empleado_ValueChanged);
             // 
             // txb_Apellido_Empleado
             // 
@@ -201,11 +208,49 @@ namespace Empleados_Modulo.GUI.Empleado
             this.txb_ID_Empleado.Size = new System.Drawing.Size(159, 20);
             this.txb_ID_Empleado.TabIndex = 33;
             // 
+            // dt_puesto
+            // 
+            this.dt_puesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_puesto.Location = new System.Drawing.Point(419, 304);
+            this.dt_puesto.Name = "dt_puesto";
+            this.dt_puesto.Size = new System.Drawing.Size(386, 183);
+            this.dt_puesto.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(425, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "puesto";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(255, 265);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Fecha de Contratacion";
+            // 
+            // date_Contratacion
+            // 
+            this.date_Contratacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date_Contratacion.Location = new System.Drawing.Point(372, 265);
+            this.date_Contratacion.Name = "date_Contratacion";
+            this.date_Contratacion.Size = new System.Drawing.Size(200, 20);
+            this.date_Contratacion.TabIndex = 36;
+            // 
             // Editar_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 539);
+            this.ClientSize = new System.Drawing.Size(855, 539);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.date_Contratacion);
+            this.Controls.Add(this.dt_puesto);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txb_ID_Empleado);
             this.Controls.Add(this.lb_ID);
             this.Controls.Add(this.btn_Cancelar);
@@ -229,6 +274,7 @@ namespace Empleados_Modulo.GUI.Empleado
             this.Text = "Editar_Empleado";
             this.Load += new System.EventHandler(this.Editar_Empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dt_Sucursal_Empleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_puesto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +300,9 @@ namespace Empleados_Modulo.GUI.Empleado
         private System.Windows.Forms.Label lb_nombre_empleado;
         private System.Windows.Forms.Label lb_ID;
         private System.Windows.Forms.TextBox txb_ID_Empleado;
+        private System.Windows.Forms.DataGridView dt_puesto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker date_Contratacion;
     }
 }

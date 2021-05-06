@@ -47,11 +47,10 @@ namespace Empleados_Modulo.GUI
         private void Cargar()
         {
             _DATOS.DataSource = CacheManager.CLS.EmpleadosCache.Listar_Empleados();
-            _Usuario.DataSource = CacheManager.CLS.UsuariosCache.Listar_Usuarios();
+            _Usuario.DataSource = CacheManager.CLS.PuestoCache.Listar_Puestos();
             _Roles.DataSource = CacheManager.CLS.RolesCache.Listar_Roles();
             dt_Empleados.DataSource = _DATOS.DataSource;
-            dt_usuarios.DataSource = _Usuario.DataSource;
-            dt_roles.DataSource = _Roles.DataSource;
+            dt_Puestos.DataSource = _Usuario.DataSource;
             FiltrarEmpleadoLocalmente();
         }
 
@@ -105,6 +104,43 @@ namespace Empleados_Modulo.GUI
 
         private void dt_roles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Cargar();
+        }
+
+        private void btn_Agregar_puesto_Click(object sender, EventArgs e)
+        {
+            GUI.Puesto.PuestoNuevo f = new Puesto.PuestoNuevo();
+            f.Show();
+        }
+
+        private void btn_Actualizar_puesto_Click(object sender, EventArgs e)
+        {
+            Cargar();
+        }
+
+        private void btn_Eliminar_puesto_Click(object sender, EventArgs e)
+        {
+            if (dt_Puestos.SelectedRows.Count > 0)
+            {
+                CLS.Puesto p = new CLS.Puesto();
+                int id = 0;
+                id = (int)dt_Puestos.SelectedRows[0].Cells[0].Value;
+                p.Eliminar(id);
+            }
+            Cargar();
+        }
+
+        private void btn_Editar_puesto_Click(object sender, EventArgs e)
+        {
+            if (dt_Puestos.SelectedRows.Count > 0)
+            {
+
+                int id = -1;
+                id = (int)dt_Puestos.SelectedRows[0].Cells[0].Value;
+                GUI.Puesto.PuestoEditor f = new Puesto.PuestoEditor(id);
+                f.Show();
+            }
+
             Cargar();
         }
     }

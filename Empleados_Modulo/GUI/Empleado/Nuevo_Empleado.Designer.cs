@@ -45,7 +45,12 @@ namespace Empleados_Modulo.GUI.Empleado
             this.txb_DUI_Empleado = new System.Windows.Forms.TextBox();
             this.btn_Agregar_Empleado = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dt_puesto = new System.Windows.Forms.DataGridView();
+            this.lb_FechaCntrat = new System.Windows.Forms.Label();
+            this.dateContratacion = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Sucursal_Empleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_puesto)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_nombre_empleado
@@ -83,7 +88,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // date_FNacimineto_Empleado
             // 
             this.date_FNacimineto_Empleado.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_FNacimineto_Empleado.Location = new System.Drawing.Point(136, 186);
+            this.date_FNacimineto_Empleado.Location = new System.Drawing.Point(394, 135);
             this.date_FNacimineto_Empleado.Name = "date_FNacimineto_Empleado";
             this.date_FNacimineto_Empleado.Size = new System.Drawing.Size(200, 20);
             this.date_FNacimineto_Empleado.TabIndex = 4;
@@ -91,7 +96,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // lb_fNacimiento_Empleado
             // 
             this.lb_fNacimiento_Empleado.AutoSize = true;
-            this.lb_fNacimiento_Empleado.Location = new System.Drawing.Point(19, 186);
+            this.lb_fNacimiento_Empleado.Location = new System.Drawing.Point(277, 135);
             this.lb_fNacimiento_Empleado.Name = "lb_fNacimiento_Empleado";
             this.lb_fNacimiento_Empleado.Size = new System.Drawing.Size(111, 13);
             this.lb_fNacimiento_Empleado.TabIndex = 5;
@@ -132,7 +137,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // lb_sucursal_Empleado
             // 
             this.lb_sucursal_Empleado.AutoSize = true;
-            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(12, 233);
+            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(16, 222);
             this.lb_sucursal_Empleado.Name = "lb_sucursal_Empleado";
             this.lb_sucursal_Empleado.Size = new System.Drawing.Size(51, 13);
             this.lb_sucursal_Empleado.TabIndex = 10;
@@ -141,15 +146,15 @@ namespace Empleados_Modulo.GUI.Empleado
             // dt_Sucursal_Empleado
             // 
             this.dt_Sucursal_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(88, 233);
+            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(19, 238);
             this.dt_Sucursal_Empleado.Name = "dt_Sucursal_Empleado";
-            this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(386, 183);
+            this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(332, 240);
             this.dt_Sucursal_Empleado.TabIndex = 11;
             // 
             // lb_DUI_Empleado
             // 
             this.lb_DUI_Empleado.AutoSize = true;
-            this.lb_DUI_Empleado.Location = new System.Drawing.Point(19, 136);
+            this.lb_DUI_Empleado.Location = new System.Drawing.Point(19, 142);
             this.lb_DUI_Empleado.Name = "lb_DUI_Empleado";
             this.lb_DUI_Empleado.Size = new System.Drawing.Size(29, 13);
             this.lb_DUI_Empleado.TabIndex = 12;
@@ -157,14 +162,14 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             // txb_DUI_Empleado
             // 
-            this.txb_DUI_Empleado.Location = new System.Drawing.Point(88, 129);
+            this.txb_DUI_Empleado.Location = new System.Drawing.Point(88, 135);
             this.txb_DUI_Empleado.Name = "txb_DUI_Empleado";
             this.txb_DUI_Empleado.Size = new System.Drawing.Size(141, 20);
             this.txb_DUI_Empleado.TabIndex = 13;
             // 
             // btn_Agregar_Empleado
             // 
-            this.btn_Agregar_Empleado.Location = new System.Drawing.Point(19, 462);
+            this.btn_Agregar_Empleado.Location = new System.Drawing.Point(15, 509);
             this.btn_Agregar_Empleado.Name = "btn_Agregar_Empleado";
             this.btn_Agregar_Empleado.Size = new System.Drawing.Size(69, 39);
             this.btn_Agregar_Empleado.TabIndex = 14;
@@ -174,7 +179,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(416, 462);
+            this.btn_Cancelar.Location = new System.Drawing.Point(409, 509);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 39);
             this.btn_Cancelar.TabIndex = 15;
@@ -182,11 +187,52 @@ namespace Empleados_Modulo.GUI.Empleado
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(391, 218);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "puesto:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // dt_puesto
+            // 
+            this.dt_puesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_puesto.Location = new System.Drawing.Point(394, 234);
+            this.dt_puesto.MultiSelect = false;
+            this.dt_puesto.Name = "dt_puesto";
+            this.dt_puesto.ReadOnly = true;
+            this.dt_puesto.Size = new System.Drawing.Size(273, 246);
+            this.dt_puesto.TabIndex = 17;
+            // 
+            // lb_FechaCntrat
+            // 
+            this.lb_FechaCntrat.AutoSize = true;
+            this.lb_FechaCntrat.Location = new System.Drawing.Point(42, 188);
+            this.lb_FechaCntrat.Name = "lb_FechaCntrat";
+            this.lb_FechaCntrat.Size = new System.Drawing.Size(118, 13);
+            this.lb_FechaCntrat.TabIndex = 18;
+            this.lb_FechaCntrat.Text = "Fecha de Contratacion:";
+            // 
+            // dateContratacion
+            // 
+            this.dateContratacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateContratacion.Location = new System.Drawing.Point(166, 188);
+            this.dateContratacion.Name = "dateContratacion";
+            this.dateContratacion.Size = new System.Drawing.Size(163, 20);
+            this.dateContratacion.TabIndex = 19;
+            // 
             // Nuevo_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 514);
+            this.ClientSize = new System.Drawing.Size(681, 560);
+            this.Controls.Add(this.dateContratacion);
+            this.Controls.Add(this.lb_FechaCntrat);
+            this.Controls.Add(this.dt_puesto);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Agregar_Empleado);
             this.Controls.Add(this.txb_DUI_Empleado);
@@ -208,6 +254,7 @@ namespace Empleados_Modulo.GUI.Empleado
             this.Text = "Nuevo_Empleado";
             this.Load += new System.EventHandler(this.Nuevo_Empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dt_Sucursal_Empleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_puesto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +278,9 @@ namespace Empleados_Modulo.GUI.Empleado
         private System.Windows.Forms.TextBox txb_DUI_Empleado;
         private System.Windows.Forms.Button btn_Agregar_Empleado;
         private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dt_puesto;
+        private System.Windows.Forms.Label lb_FechaCntrat;
+        private System.Windows.Forms.DateTimePicker dateContratacion;
     }
 }

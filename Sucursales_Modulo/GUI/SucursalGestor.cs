@@ -96,8 +96,10 @@ namespace Sucursales_Modulo.GUI
             if (dt_sucursales.SelectedRows.Count > 0) 
             {
                 int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
-                CLS.Sucursales s = new CLS.Sucursales();
-                s.Eliminar(id);
+                
+                    CLS.Sucursales s = new CLS.Sucursales();
+                    s.Eliminar(id);
+                
             }
             Cargar();
         }

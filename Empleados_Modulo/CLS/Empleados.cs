@@ -17,6 +17,9 @@ namespace Empleados_Modulo.CLS
         string _direccion;
         string _DUI;
         int _sucursal;
+        string _fechaNacimiento;
+        DateTime _fechaContratacion = new DateTime().ToUniversalTime();
+        int _puesto;
         public DateTime dt 
         {
             get 
@@ -28,7 +31,18 @@ namespace Empleados_Modulo.CLS
                 _dt = value;
             }
         }
-       public int idEmpleado 
+        public DateTime fechaContratacion
+        {
+            get
+            {
+                return _fechaContratacion;
+            }
+            set
+            {
+                _fechaContratacion = value;
+            }
+        }
+        public int idEmpleado 
         {
             get 
             {
@@ -39,6 +53,18 @@ namespace Empleados_Modulo.CLS
                 _idEmpleado = value;
             }
         
+        }
+        public int puesto
+        {
+            get
+            {
+                return _puesto;
+            }
+            set
+            {
+                _puesto = value;
+            }
+
         }
         public int sucursal
         {
@@ -113,7 +139,9 @@ namespace Empleados_Modulo.CLS
         {
             Boolean Resultado = false;
             int ultimoIngreso = CacheManager.CLS.SucursalCache.Ultima_Ingreso() + 1;
-            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,DUI,idsucursales) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("d") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._DUI + " ',' " + this._sucursal + " ');";
+            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,DUI,idsucursales,fechacontratacion,puesto) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("d") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._DUI + " ', " + this._sucursal + " ,' " + this.fechaContratacion.ToString("d") + " ', " + this.puesto + " );";
+            Console.Write(Sentencia);
+
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();
@@ -137,8 +165,7 @@ namespace Empleados_Modulo.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE Empleados SET nombres=' " + this._Nombre + " ' , apellidos=' " + this._Apellido + " ' " +
-                               "WHERE idEmpleado = " + this._idEmpleado + ";";
+            String Sentencia = @"UPDATE Empleados SET nombres=' " + this._Nombre + " ' , apellidos=' " + this._Apellido + " ', fechanacimiento=' " + this.dt.ToString("d") + " ', telefono=' " + this._telefono + " ', direccion=' " + this._direccion + " ', DUI=' " + this._DUI + " ', idsucursales= " + this._sucursal + ", fechacontratacion=' " + this.fechaContratacion.ToString("d") + " ', puesto= " + this._puesto + "  WHERE idEmpleados = " + this._idEmpleado + ";";
             Console.WriteLine(Sentencia);
             try
             {
