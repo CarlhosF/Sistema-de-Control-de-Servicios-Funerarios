@@ -100,7 +100,6 @@
             this.txbClave.PasswordChar = '●';
             this.txbClave.Size = new System.Drawing.Size(172, 27);
             this.txbClave.TabIndex = 1;
-            
             this.txbClave.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbClave_KeyDown);
             // 
             // pictureBox1
@@ -141,6 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(534, 311);
+            this.ControlBox = false;
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

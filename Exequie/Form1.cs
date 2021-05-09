@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Exequie
 {
-    public partial class Form1 : Form
+    public partial class Informacion : Form
     {
-        public Form1()
+        public Informacion()
         {
             InitializeComponent();
+        }
+
+        private void Informacion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

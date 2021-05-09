@@ -45,6 +45,7 @@
     <Compile Include="CLS\EmpleadosCache.cs" />
     <Compile Include="CLS\PuestoCache.cs" />
     <Compile Include="CLS\RolesCache.cs" />
+    <Compile Include="CLS\ServicioCache.cs" />
     <Compile Include="CLS\SucursalCache.cs" />
     <Compile Include="CLS\UsuariosCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

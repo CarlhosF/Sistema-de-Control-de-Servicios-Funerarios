@@ -94,15 +94,15 @@ namespace Empleados_Modulo.GUI.Empleado
             // dt_Sucursal_Empleado
             // 
             this.dt_Sucursal_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(3, 304);
+            this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(649, 31);
             this.dt_Sucursal_Empleado.Name = "dt_Sucursal_Empleado";
-            this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(386, 183);
+            this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(484, 443);
             this.dt_Sucursal_Empleado.TabIndex = 27;
             // 
             // lb_sucursal_Empleado
             // 
             this.lb_sucursal_Empleado.AutoSize = true;
-            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(9, 288);
+            this.lb_sucursal_Empleado.Location = new System.Drawing.Point(659, 9);
             this.lb_sucursal_Empleado.Name = "lb_sucursal_Empleado";
             this.lb_sucursal_Empleado.Size = new System.Drawing.Size(51, 13);
             this.lb_sucursal_Empleado.TabIndex = 26;
@@ -211,15 +211,15 @@ namespace Empleados_Modulo.GUI.Empleado
             // dt_puesto
             // 
             this.dt_puesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_puesto.Location = new System.Drawing.Point(419, 304);
+            this.dt_puesto.Location = new System.Drawing.Point(12, 291);
             this.dt_puesto.Name = "dt_puesto";
-            this.dt_puesto.Size = new System.Drawing.Size(386, 183);
+            this.dt_puesto.Size = new System.Drawing.Size(607, 183);
             this.dt_puesto.TabIndex = 35;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(425, 288);
+            this.label1.Location = new System.Drawing.Point(18, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 34;
@@ -246,7 +246,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 539);
+            this.ClientSize = new System.Drawing.Size(1145, 539);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.date_Contratacion);
             this.Controls.Add(this.dt_puesto);

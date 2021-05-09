@@ -130,6 +130,7 @@ namespace Sucursales_Modulo.GUI
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             this.txb_Filtro.TextChanged += new System.EventHandler(this.txb_Filtro_TextChanged);
@@ -162,10 +163,11 @@ namespace Sucursales_Modulo.GUI
             this.dt_sucursales.AllowUserToOrderColumns = true;
             this.dt_sucursales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_sucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_sucursales.Location = new System.Drawing.Point(4, 28);
+            this.dt_sucursales.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_sucursales.Location = new System.Drawing.Point(0, 25);
             this.dt_sucursales.MultiSelect = false;
             this.dt_sucursales.Name = "dt_sucursales";
-            this.dt_sucursales.Size = new System.Drawing.Size(725, 359);
+            this.dt_sucursales.Size = new System.Drawing.Size(831, 368);
             this.dt_sucursales.TabIndex = 3;
             this.dt_sucursales.UseWaitCursor = true;
             this.dt_sucursales.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);

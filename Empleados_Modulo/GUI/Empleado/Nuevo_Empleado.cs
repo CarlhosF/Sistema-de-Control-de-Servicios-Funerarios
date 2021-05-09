@@ -22,6 +22,7 @@ namespace Empleados_Modulo.GUI.Empleado
         {
             dt_puesto.DataSource = CacheManager.CLS.PuestoCache.Listar_Puestos();
             dt_Sucursal_Empleado.DataSource = CacheManager.CLS.SucursalCache.Listar_Sucursales();
+            dt_puesto.Columns[0].Visible = false;
            
         }
 
@@ -37,34 +38,39 @@ namespace Empleados_Modulo.GUI.Empleado
             empleado.fechaContratacion = dateContratacion.Value;
             Int32 selectedRowCountSucursal = dt_Sucursal_Empleado.Rows.GetRowCount(DataGridViewElementStates.Selected);
             Int32 selectedRowCountPuesto = dt_puesto.Rows.GetRowCount(DataGridViewElementStates.Selected);
-          
-            
-                empleado.puesto= (int)dt_puesto.SelectedRows[0].Cells[0].Value;
+            if (selectedRowCountSucursal > 0 && selectedRowCountPuesto > 0)
+            {
+                empleado.puesto = (int)dt_puesto.SelectedRows[0].Cells[0].Value;
                 empleado.sucursal = (int)dt_Sucursal_Empleado.SelectedRows[0].Cells[0].Value;
 
-                    if (txb_Nombre_Empleado.Text != null && txb_Apellido_Empleado != null && txb_direccion_Empleado != null && txb_telefono_Empleado != null)
+                if (txb_Nombre_Empleado.Text != null && txb_Apellido_Empleado != null && txb_direccion_Empleado != null && txb_telefono_Empleado != null)
+                {
+                    try
                     {
-                        try
+                        if (empleado.Guardar())
                         {
-                            if (empleado.Guardar())
-                            {
-                                MessageBox.Show("Registro guardado exitosamente");
-                            }
-                            else
-                            {
-                                MessageBox.Show("NO se pudo realizar la insercion a la tabla");
-                            }
+                            MessageBox.Show("Registro guardado exitosamente");
                         }
-                        catch
+                        else
                         {
-                            MessageBox.Show("Error, NO se pudo realizar la insercion a la tabla");
+                            MessageBox.Show("NO se pudo realizar la insercion a la tabla");
                         }
                     }
-                    else
+                    catch
                     {
-                        MessageBox.Show("Rellena la informacion del empleado");
+                        MessageBox.Show("Error, NO se pudo realizar la insercion a la tabla");
                     }
-            
+                }
+                else
+                {
+                    MessageBox.Show("Rellena la informacion del empleado");
+                }
+
+            }
+            else 
+            {
+                MessageBox.Show("Selecciona sucursal y puesto para el empleado");
+            }
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)

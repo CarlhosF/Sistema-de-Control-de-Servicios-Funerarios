@@ -104,8 +104,8 @@ namespace SesionManager.CLS
                 {
                     _Usuario = DatosSesion.Rows[0]["idusuarios"].ToString();
                     _IDUsuario = DatosSesion.Rows[0]["Usuario"].ToString();
-                    _Rol = DatosSesion.Rows[0]["Empleado"].ToString();
-                    _Empleado = DatosSesion.Rows[0]["rol"].ToString();
+                    _Rol = DatosSesion.Rows[0]["rol"].ToString();
+                    _Empleado = DatosSesion.Rows[0]["Empleado"].ToString();
                     //autorizar
                     Autorizado = true;
                     Console.Write("Autorizado");

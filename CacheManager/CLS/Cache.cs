@@ -56,16 +56,15 @@ namespace CacheManager.CLS
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
             String Consulta = @"SELECT a.idusuarios, a.Usuario, 
         CONCAT(b.Nombres, ' ', b.Apellidos) Empleado,
-		c.nombre as 'rol' FROM usuarios a, empleados b, roles c
+		a.rol as 'rol' FROM usuarios a, empleados b
         WHERE a.Usuario = '" + pUsuario+ @"'
         AND a.clave = '" + pClave + @"'
-        AND a.idempleados = b.idempleados
-        AND a.idroles = c.idroles; ";
+        AND a.idempleados = b.idempleados ";
             
             try
             {
                 Resultados = Consultor.Consultar(Consulta);
-                Console.Write("COnsulta hecha");
+                Console.Write("Consulta hecha");
             }
             catch
             {

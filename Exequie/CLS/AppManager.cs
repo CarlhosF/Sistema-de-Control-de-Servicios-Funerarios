@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sistema.GUI;
+
 namespace Exequie.CLS
 {
     class AppManager: ApplicationContext
@@ -36,7 +36,7 @@ namespace Exequie.CLS
             {
                 if (LoginScreen())
                 {
-                     Sistema.GUI.Interfaz f = new Sistema.GUI.Interfaz();
+                    GUI.Interfaz f = new GUI.Interfaz();
                     f.ShowDialog();
                     Environment.Exit(0);
                 }

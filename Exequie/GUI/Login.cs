@@ -68,13 +68,13 @@ namespace Exequie.GUI
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            //
+            
             Validar();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void txbUsuario_KeyDown(object sender, KeyEventArgs e)

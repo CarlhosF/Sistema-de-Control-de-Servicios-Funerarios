@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E7DB230-4F6A-42E2-B8A9-2E93F91D3A4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Servicios_Modulos</RootNamespace>
+    <AssemblyName>Servicios_Modulos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLS\Contrato.cs" />
+    <Compile Include="CLS\Servicio.cs" />
+    <Compile Include="GUI\Servicio\Editar_Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Servicio\Editar_Servicio.Designer.cs">
+      <DependentUpon>Editar_Servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Servicio\Nuevo_Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Servicio\Nuevo_Servicio.Designer.cs">
+      <DependentUpon>Nuevo_Servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Contratos\Editar_Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Contratos\Editar_Contrato.Designer.cs">
+      <DependentUpon>Editar_Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Contratos\Nuevo_Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Contratos\Nuevo_Contrato.Designer.cs">
+      <DependentUpon>Nuevo_Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Servicios_Gestor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Servicios_Gestor.Designer.cs">
+      <DependentUpon>Servicios_Gestor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\Contratos\Editar_Contrato.resx">
+      <DependentUpon>Editar_Contrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Contratos\Nuevo_Contrato.resx">
+      <DependentUpon>Nuevo_Contrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Servicio\Editar_Servicio.resx">
+      <DependentUpon>Editar_Servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Servicio\Nuevo_Servicio.resx">
+      <DependentUpon>Nuevo_Servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Servicios_Gestor.resx">
+      <DependentUpon>Servicios_Gestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CacheManager\CacheManager.csproj">
+      <Project>{35b3b17a-2d1d-442d-b570-61c0f02a945d}</Project>
+      <Name>CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataManager\DataManager.csproj">
+      <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>
+      <Name>DataManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

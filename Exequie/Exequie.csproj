@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Interfaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Interfaz.Designer.cs">
+      <DependentUpon>Interfaz.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Interfaz.resx">
+      <DependentUpon>Interfaz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -107,17 +116,33 @@
     <Content Include="cruz.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Clientes_Modulo\Clientes_Modulo.csproj">
+      <Project>{f1964825-b499-4877-bb04-dcd474d71c7f}</Project>
+      <Name>Clientes_Modulo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataManager\DataManager.csproj">
       <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>
       <Name>DataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Empleados_Modulo\Empleados_Modulo.csproj">
+      <Project>{88b3fbb4-03ee-47de-beb3-1124e805c0a7}</Project>
+      <Name>Empleados_Modulo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios_Modulos\Servicios_Modulos.csproj">
+      <Project>{3e7db230-4f6a-42e2-b8a9-2e93f91d3a4e}</Project>
+      <Name>Servicios_Modulos</Name>
     </ProjectReference>
     <ProjectReference Include="..\SesionManager\SesionManager.csproj">
       <Project>{b5c2f8f3-5ed0-4aee-8410-6d33ea75e10d}</Project>
       <Name>SesionManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sistema\Sistema.csproj">
-      <Project>{bce5ba62-d9ac-4703-9457-654ec4c6d73f}</Project>
-      <Name>Sistema</Name>
+    <ProjectReference Include="..\Sucursales_Modulo\Sucursales_Modulo.csproj">
+      <Project>{cf0bc076-a6b0-4357-b7c4-0effd04ce939}</Project>
+      <Name>Sucursales_Modulo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsuariosModulo\UsuariosModulo.csproj">
+      <Project>{ed44fb61-9570-4c84-87f1-5b975d135b2b}</Project>
+      <Name>UsuariosModulo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

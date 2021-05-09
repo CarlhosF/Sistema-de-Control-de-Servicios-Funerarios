@@ -68,10 +68,11 @@ namespace Empleados_Modulo.GUI
             // 
             this.Control_modulo.Controls.Add(this.Empleados);
             this.Control_modulo.Controls.Add(this.Puestos);
-            this.Control_modulo.Location = new System.Drawing.Point(4, 0);
+            this.Control_modulo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Control_modulo.Location = new System.Drawing.Point(0, 0);
             this.Control_modulo.Name = "Control_modulo";
             this.Control_modulo.SelectedIndex = 0;
-            this.Control_modulo.Size = new System.Drawing.Size(820, 475);
+            this.Control_modulo.Size = new System.Drawing.Size(821, 508);
             this.Control_modulo.TabIndex = 0;
             // 
             // Empleados
@@ -81,7 +82,7 @@ namespace Empleados_Modulo.GUI
             this.Empleados.Location = new System.Drawing.Point(4, 22);
             this.Empleados.Name = "Empleados";
             this.Empleados.Padding = new System.Windows.Forms.Padding(3);
-            this.Empleados.Size = new System.Drawing.Size(812, 449);
+            this.Empleados.Size = new System.Drawing.Size(813, 482);
             this.Empleados.TabIndex = 0;
             this.Empleados.Text = "Empleados";
             this.Empleados.UseVisualStyleBackColor = true;
@@ -90,11 +91,12 @@ namespace Empleados_Modulo.GUI
             // dt_Empleados
             // 
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Empleados.Location = new System.Drawing.Point(4, 36);
+            this.dt_Empleados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_Empleados.Location = new System.Drawing.Point(3, 28);
             this.dt_Empleados.MultiSelect = false;
             this.dt_Empleados.Name = "dt_Empleados";
             this.dt_Empleados.ReadOnly = true;
-            this.dt_Empleados.Size = new System.Drawing.Size(805, 410);
+            this.dt_Empleados.Size = new System.Drawing.Size(807, 451);
             this.dt_Empleados.TabIndex = 1;
             // 
             // toolStrip1
@@ -111,7 +113,7 @@ namespace Empleados_Modulo.GUI
             this.lb_Filtrar_Empleado});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(806, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(807, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -189,7 +191,7 @@ namespace Empleados_Modulo.GUI
             this.Puestos.Location = new System.Drawing.Point(4, 22);
             this.Puestos.Name = "Puestos";
             this.Puestos.Padding = new System.Windows.Forms.Padding(3);
-            this.Puestos.Size = new System.Drawing.Size(812, 449);
+            this.Puestos.Size = new System.Drawing.Size(813, 482);
             this.Puestos.TabIndex = 1;
             this.Puestos.Text = "Puestos de Trabajo";
             this.Puestos.UseVisualStyleBackColor = true;
@@ -197,11 +199,12 @@ namespace Empleados_Modulo.GUI
             // dt_Puestos
             // 
             this.dt_Puestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Puestos.Location = new System.Drawing.Point(4, 36);
+            this.dt_Puestos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_Puestos.Location = new System.Drawing.Point(3, 28);
             this.dt_Puestos.MultiSelect = false;
             this.dt_Puestos.Name = "dt_Puestos";
             this.dt_Puestos.ReadOnly = true;
-            this.dt_Puestos.Size = new System.Drawing.Size(805, 410);
+            this.dt_Puestos.Size = new System.Drawing.Size(807, 451);
             this.dt_Puestos.TabIndex = 3;
             this.dt_Puestos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_usuarios_CellContentClick);
             // 
@@ -219,7 +222,7 @@ namespace Empleados_Modulo.GUI
             this.toolStripLabel1});
             this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(806, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(807, 25);
             this.toolStrip2.TabIndex = 2;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -278,6 +281,7 @@ namespace Empleados_Modulo.GUI
             // 
             this.txb_Filtrar_puesto.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtrar_puesto.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txb_Filtrar_puesto.Enabled = false;
             this.txb_Filtrar_puesto.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtrar_puesto.Name = "txb_Filtrar_puesto";
             this.txb_Filtrar_puesto.Size = new System.Drawing.Size(100, 25);

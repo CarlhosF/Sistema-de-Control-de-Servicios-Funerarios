@@ -1,0 +1,8 @@
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\bin\Debug\Informacion_Modulo.dll
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\bin\Debug\Informacion_Modulo.pdb
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.GUI.Informacion.resources
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.csproj.GenerateResource.Cache
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.dll
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.pdb
+C:\Users\HP\Documents\Visual Studio 2015\sistema de control de servicios de funerarios 2.0\Sistema-de-Control-de-Servicios-Funerarios\Informacion_Modulo\obj\Debug\Informacion_Modulo.Properties.Resources.resources

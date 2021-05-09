@@ -20,12 +20,19 @@ namespace Exequie.GUI
         private void Splash_Load(object sender, EventArgs e)
         {
             Cronometro.Start();
+            timer1.Start();
         }
 
         private void Cronometro_Tick(object sender, EventArgs e)
         {
-            Cronometro.Stop();
+            
+            
             Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.progressBar1.Increment(1);
         }
     }
 }
