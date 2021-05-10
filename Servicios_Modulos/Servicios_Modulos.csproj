@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CLS\Contrato.cs" />
     <Compile Include="CLS\Servicio.cs" />
+    <Compile Include="CLS\TipoContrato.cs" />
     <Compile Include="GUI\Servicio\Editar_Servicio.cs">
       <SubType>Form</SubType>
     </Compile>
