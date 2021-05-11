@@ -31,17 +31,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txbNombre = new System.Windows.Forms.TextBox();
+            this.txbDescripcion = new System.Windows.Forms.TextBox();
+            this.txbValorContado = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txbValorCuota = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txbPrima = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(71, 26);
+            this.label1.Location = new System.Drawing.Point(19, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
@@ -50,75 +54,111 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 91);
+            this.label2.Location = new System.Drawing.Point(19, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Direccion:";
+            this.label2.Text = "Descripcion:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 26);
+            this.label3.Location = new System.Drawing.Point(397, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Telefono:";
+            this.label3.Text = "Valor al Contado:";
             // 
-            // textBox1
+            // txbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 3;
+            this.txbNombre.Location = new System.Drawing.Point(100, 15);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(255, 20);
+            this.txbNombre.TabIndex = 3;
             // 
-            // textBox2
+            // txbDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(255, 20);
-            this.textBox2.TabIndex = 4;
+            this.txbDescripcion.Location = new System.Drawing.Point(100, 74);
+            this.txbDescripcion.Name = "txbDescripcion";
+            this.txbDescripcion.Size = new System.Drawing.Size(255, 20);
+            this.txbDescripcion.TabIndex = 4;
             // 
-            // textBox3
+            // txbValorContado
             // 
-            this.textBox3.Location = new System.Drawing.Point(460, 23);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 20);
-            this.textBox3.TabIndex = 5;
+            this.txbValorContado.Location = new System.Drawing.Point(495, 15);
+            this.txbValorContado.Name = "txbValorContado";
+            this.txbValorContado.Size = new System.Drawing.Size(176, 20);
+            this.txbValorContado.TabIndex = 5;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(475, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(495, 197);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(589, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(609, 197);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // txbValorCuota
+            // 
+            this.txbValorCuota.Location = new System.Drawing.Point(495, 74);
+            this.txbValorCuota.Name = "txbValorCuota";
+            this.txbValorCuota.Size = new System.Drawing.Size(176, 20);
+            this.txbValorCuota.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(397, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Valor con Cuotas:";
+            // 
+            // txbPrima
+            // 
+            this.txbPrima.Location = new System.Drawing.Point(495, 130);
+            this.txbPrima.Name = "txbPrima";
+            this.txbPrima.Size = new System.Drawing.Size(176, 20);
+            this.txbPrima.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(397, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Prima:";
             // 
             // Nuevo_Contrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 146);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(725, 248);
+            this.Controls.Add(this.txbPrima);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txbValorCuota);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txbValorContado);
+            this.Controls.Add(this.txbDescripcion);
+            this.Controls.Add(this.txbNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Nuevo_Contrato";
-            this.Text = "Nuevo_Contrato";
+            this.Text = "Servicio Nuevo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,10 +169,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txbNombre;
+        private System.Windows.Forms.TextBox txbDescripcion;
+        private System.Windows.Forms.TextBox txbValorContado;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txbValorCuota;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txbPrima;
+        private System.Windows.Forms.Label label5;
     }
 }
