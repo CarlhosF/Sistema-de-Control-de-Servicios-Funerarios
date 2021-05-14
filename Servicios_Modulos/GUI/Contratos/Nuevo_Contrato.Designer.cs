@@ -30,16 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txb_Nombre = new System.Windows.Forms.TextBox();
+            this.txb_Descripcion = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.txb_factor = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 36);
+            this.label1.Location = new System.Drawing.Point(56, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
@@ -54,20 +56,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Descripcion:";
             // 
-            // textBox1
+            // txb_Nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 3;
+            this.txb_Nombre.Location = new System.Drawing.Point(109, 12);
+            this.txb_Nombre.Name = "txb_Nombre";
+            this.txb_Nombre.Size = new System.Drawing.Size(194, 20);
+            this.txb_Nombre.TabIndex = 3;
             // 
-            // textBox3
+            // txb_Descripcion
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 106);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 100);
-            this.textBox3.TabIndex = 5;
+            this.txb_Descripcion.Location = new System.Drawing.Point(109, 106);
+            this.txb_Descripcion.Multiline = true;
+            this.txb_Descripcion.Name = "txb_Descripcion";
+            this.txb_Descripcion.Size = new System.Drawing.Size(194, 100);
+            this.txb_Descripcion.TabIndex = 5;
             // 
             // btnAceptar
             // 
@@ -77,6 +79,7 @@
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -86,16 +89,35 @@
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // txb_factor
+            // 
+            this.txb_factor.Location = new System.Drawing.Point(109, 57);
+            this.txb_factor.Name = "txb_factor";
+            this.txb_factor.Size = new System.Drawing.Size(194, 20);
+            this.txb_factor.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(56, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Factor:";
             // 
             // Nuevo_Servicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 243);
+            this.Controls.Add(this.txb_factor);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txb_Descripcion);
+            this.Controls.Add(this.txb_Nombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Nuevo_Servicio";
@@ -109,9 +131,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txb_Nombre;
+        private System.Windows.Forms.TextBox txb_Descripcion;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txb_factor;
+        private System.Windows.Forms.Label label2;
     }
 }

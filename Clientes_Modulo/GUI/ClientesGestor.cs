@@ -45,11 +45,17 @@ namespace Clientes_Modulo.GUI
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
-            int id = (int)dt_clientes.SelectedRows[0].Cells[0].Value;
-            CLS.Clientes c = new CLS.Clientes();
-            c.Eliminar(id);
-            Cargar();
+            if (dt_clientes.SelectedRows.Count > 0)
+            {
+                int id = (int)dt_clientes.SelectedRows[0].Cells[0].Value;
+                CLS.Clientes c = new CLS.Clientes();
+                c.Eliminar(id);
+                Cargar();
+            }
+            else 
+            {
+                MessageBox.Show("Seleccione el Cliente a eliminar");      
+            }
         }
 
         private void ClientesGestor_Load(object sender, EventArgs e)

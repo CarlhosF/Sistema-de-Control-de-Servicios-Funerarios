@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-
 namespace CacheManager.CLS
 {
-    public static class ServicioCache
+    public class TipoDeContrato
     {
-        public static DataTable Listar_Servicios()
+
+        public static DataTable Listar_TipoDeContrato()
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"SELECT a.idservicios as 'ID', a.nombre, a.valorcontado as 'Precio al Contado', a.valorcuota as 'Precio por Cuotas', a.descripcion, a.prima
-            FROM servicios a;";
+            String Consulta = @"SELECT * from tipodecontrato;";
             try
             {
                 Resultados = Consultor.Consultar(Consulta);
@@ -26,12 +25,11 @@ namespace CacheManager.CLS
             }
             return Resultados;
         }
-        public static DataTable Traer_Servicio(int id)
+        public static DataTable Traer_TIpoDeConTrato(int id)
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"SELECT a.idservicios as 'ID', a.nombre, a.valorcontado as 'Precio al Contado', a.valorcuota as 'Precio por Cuotas', a.descripcion, a.prima
-            FROM servicios a; Where idservicios="+id;
+            String Consulta = @"SELECT * from tipodecontrato where idtipodecontrato=" + id;
             try
             {
                 Resultados = Consultor.Consultar(Consulta);
@@ -43,8 +41,6 @@ namespace CacheManager.CLS
             }
             return Resultados;
         }
-
-    
 
     }
 }

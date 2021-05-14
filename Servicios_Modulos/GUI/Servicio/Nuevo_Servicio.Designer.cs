@@ -98,6 +98,7 @@
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
@@ -107,6 +108,7 @@
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txbValorCuota
             // 
@@ -159,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Nuevo_Contrato";
             this.Text = "Servicio Nuevo";
+            this.Load += new System.EventHandler(this.Nuevo_Contrato_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

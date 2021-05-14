@@ -16,5 +16,31 @@ namespace Servicios_Modulos.GUI.Servicios
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            CLS.TipoContrato tc = new CLS.TipoContrato();
+            tc.Nombre = txb_Nombre.Text;
+            tc.Descripcion = txb_Descripcion.Text;
+            tc.factor = float.Parse(txb_factor.Text);
+
+            try
+            {
+                if (tc.Guardar())
+                {
+                    MessageBox.Show("Registro Guardado exitosamente");
+                    this.Close();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error al ingersar, intente rellenar los campos debidamente");
+            }
+        }
     }
 }

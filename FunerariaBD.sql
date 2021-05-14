@@ -61,7 +61,7 @@ CREATE TABLE `clientes` (
   `telefono` varchar(45) NOT NULL,
   `oficio` varchar(45) NOT NULL,
   PRIMARY KEY (`idclientes`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,6 +70,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (1,' Antonio ',' Lara ',' 123456-8-9 ',' San Antonio,Sonsonate ',' 14/5/1997 ',' 77634311 ',' Asaltante de la 53-E '),(2,' Fernando ',' Escobar ',' 34567812-9 ',' La Hachadura ',' 2/6/1989 ',' 77559023 ',' Politico Corrupto ');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -175,7 +176,7 @@ CREATE TABLE `empleados` (
 
 LOCK TABLES `empleados` WRITE;
 /*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
-INSERT INTO `empleados` VALUES (9,' Carlhos ',' Figueroa ',' 28/10/1999 ',' 75254523 ',' La Hachadura, Ahuachapan ',' 123456789-1 ',1,' 22/2/2021 ',1),(10,' Jose  ',' Perez  ',' 12/3/1995 ',' 75467834 ',' Chalchuapa ',' 231456798-3 ',1,' 12/4/2011 ',2),(15,'  Pedro  ','  Infante  ',' 6/5/1996 ','  457696677  ','  La Hachadura  ','  24567990-0  ',3,' 6/5/2021 ',1),(16,' Jose ',' Cañas ',' 6/5/1999 ',' 75678934 ',' La Hachadura ',' 235678-7 ',3,' 6/5/2021 ',2);
+INSERT INTO `empleados` VALUES (9,'  Carlhos  ','  Figueroa  ',' 28/10/1999 ','  75254523  ','  La Hachadura, Ahuachapan  ','  123456789-1  ',3,' 22/2/2021 ',4),(10,'  Jose   ',' Lopez ',' 12/3/1995 ','  75467834  ','  Chalchuapa  ','  231456798-3  ',1,' 12/4/2011 ',1),(15,'  Pedro  ','  Infante  ',' 6/5/1996 ','  457696677  ','  La Hachadura  ','  24567990-0  ',3,' 6/5/2021 ',1),(16,' Jose ',' Cañas ',' 6/5/1999 ',' 75678934 ',' La Hachadura ',' 235678-7 ',3,' 6/5/2021 ',2);
 /*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -247,12 +248,12 @@ DROP TABLE IF EXISTS `servicios`;
 CREATE TABLE `servicios` (
   `idservicios` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) NOT NULL,
-  `valorcontado` varchar(45) NOT NULL,
-  `valorcuota` varchar(45) NOT NULL,
+  `valorcontado` decimal(9,2) NOT NULL,
+  `valorcuota` decimal(9,2) NOT NULL,
   `descripcion` varchar(45) NOT NULL,
-  `prima` varchar(45) NOT NULL,
+  `prima` decimal(9,2) NOT NULL,
   PRIMARY KEY (`idservicios`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -261,6 +262,7 @@ CREATE TABLE `servicios` (
 
 LOCK TABLES `servicios` WRITE;
 /*!40000 ALTER TABLE `servicios` DISABLE KEYS */;
+INSERT INTO `servicios` VALUES (1,' Servicio de Prueba ',350.00,400.00,' Descripcion de prueba para testeo ',5.00);
 /*!40000 ALTER TABLE `servicios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,8 +331,9 @@ CREATE TABLE `tipodecontrato` (
   `idTipoDeContrato` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) NOT NULL,
   `Descripcion` varchar(45) NOT NULL,
+  `factor` decimal(9,5) NOT NULL,
   PRIMARY KEY (`idTipoDeContrato`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -339,6 +342,7 @@ CREATE TABLE `tipodecontrato` (
 
 LOCK TABLES `tipodecontrato` WRITE;
 /*!40000 ALTER TABLE `tipodecontrato` DISABLE KEYS */;
+INSERT INTO `tipodecontrato` VALUES (2,'Contrato individual Comun','d',1.00000);
 /*!40000 ALTER TABLE `tipodecontrato` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -358,7 +362,7 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`idusuarios`),
   KEY `fk_empleado_idx` (`idempleados`),
   CONSTRAINT `fk_empleado` FOREIGN KEY (`idempleados`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -367,7 +371,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (8,'CARLHOSF','1234',' Administrador',9),(17,'PP','PP',' Vendedor',15),(18,'JOSE99','123456',' Vendedor',10);
+INSERT INTO `usuarios` VALUES (8,'CARLHOSF','1234',' Administrador',9);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -380,4 +384,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-09 12:30:30
+-- Dump completed on 2021-05-14  9:31:14

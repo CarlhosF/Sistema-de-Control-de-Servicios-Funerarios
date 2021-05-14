@@ -68,12 +68,16 @@ namespace Empleados_Modulo.GUI
 
         private void btn_Eliminar_Empleado_Click(object sender, EventArgs e)
         {
-            if (dt_Empleados.SelectedRows.Count > 0) 
+            if (dt_Empleados.SelectedRows.Count > 0)
             {
                 CLS.Empleados empleado = new CLS.Empleados();
                 int id = 0;
                 id = (int)dt_Empleados.SelectedRows[0].Cells[0].Value;
                 empleado.Eliminar(id);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el Empleado a eliminar");
             }
             Cargar();
         }
@@ -88,7 +92,11 @@ namespace Empleados_Modulo.GUI
                 GUI.Empleado.Editar_Empleado f = new Empleado.Editar_Empleado(id);
                 f.Show(); ;
             }
-            
+            else
+            {
+                MessageBox.Show("Seleccione el Puesto a eliminar");
+            }
+
             Cargar();
         }
 

@@ -1,6 +1,5 @@
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\bin\Debug\Clientes_Modulo.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\bin\Debug\Clientes_Modulo.pdb
-C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csprojResolveAssemblyReference.cache
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.GUI.ClientesGestor.resources
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.Properties.Resources.resources
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csproj.GenerateResource.Cache
@@ -49,3 +48,7 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\o
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.pdb
+C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\bin\Debug\DataManager.dll.config
+C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csprojAssemblyReference.cache
+C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Clientes_Modulo\obj\Debug\Clientes_Modulo.csproj.CopyComplete

@@ -13,23 +13,23 @@ namespace Servicios_Modulos.CLS
     {
         int _idservicios;
         String _nombre;
-        String _valorcontado;
-        String _valorcuota;
+        float _valorcontado;
+        float _valorcuota;
         String _descripcion;
-        String _prima;
+        float _prima;
 
         public int Idservicios { get => _idservicios; set => _idservicios = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
-        public string Valorcontado { get => _valorcontado; set => _valorcontado = value; }
-        public string Valorcuota { get => _valorcuota; set => _valorcuota = value; }
+        public float Valorcontado { get => _valorcontado; set => _valorcontado = value; }
+        public float Valorcuota { get => _valorcuota; set => _valorcuota = value; }
         public string Descripcion { get => _descripcion; set => _descripcion = value; }
-        public string Prima { get => _prima; set => _prima = value; }
+        public float Prima { get => _prima; set => _prima = value; }
 
         public Boolean Guardar()
         {
             Boolean Resultado = false;
             String Sentencia = @"INSERT INTO servicios(nombre,valorcontado,valorcuota,descripcion,prima) 
-            VALUES(' " + this._nombre + " ',' " + this._valorcontado + " ',' " + this._valorcuota + " ',' " + this._descripcion + " ',' " + this._prima + " '); ";
+            VALUES(' " + this._nombre + " '," + this._valorcontado + ", " + this._valorcuota + " ,' " + this._descripcion + " '," + this._prima + " ); ";
             Console.WriteLine(Sentencia);
             try
             {
@@ -55,8 +55,8 @@ namespace Servicios_Modulos.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE servicios SET nombre=' " + this._nombre + " ' , valorcontado=' " + this._valorcontado + " ' , valorcuota=' " + this._valorcuota + " ' , descripcion=' " + this._descripcion + " ' , prima=' " + this._prima + " ' " +
-                               "WHERE idservicios = " + this._idservicios + ";";
+            String Sentencia = @"UPDATE servicios SET nombre=' " + this._nombre + " ' , valorcontado=" + this._valorcontado + ", valorcuota=" + this._valorcuota +", descripcion=' " + this._descripcion + " ' , prima=" + this._prima +"" +
+                               "WHERE idservicios = "+ this._idservicios +";";
             Console.WriteLine(Sentencia);
             try
             {

@@ -31,38 +31,34 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Servicios_Gestor));
             this.btn_EliminarContrato = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dt_Servicios = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btn_EliminarServicio = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_EditarServicio = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_AgregarServicio = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_ActualizarServicio = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dt_TipoDeContrato = new System.Windows.Forms.DataGridView();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.btn_EliminarTipoContr = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_EditarContrato = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_AgregarContrato = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_ActualizarContrato = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.toolStripContainer2 = new System.Windows.Forms.ToolStripContainer();
             this.toolStripContainer3 = new System.Windows.Forms.ToolStripContainer();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel5 = new System.Windows.Forms.ToolStripButton();
-            this.btn_EditarContrato = new System.Windows.Forms.ToolStripButton();
-            this.btn_AgregarContrato = new System.Windows.Forms.ToolStripButton();
-            this.btn_ActualizarContrato = new System.Windows.Forms.ToolStripButton();
-            this.btn_EliminarServicio = new System.Windows.Forms.ToolStripButton();
-            this.btn_EditarServicio = new System.Windows.Forms.ToolStripButton();
-            this.btn_AgregarServicio = new System.Windows.Forms.ToolStripButton();
-            this.btn_ActualizarServicio = new System.Windows.Forms.ToolStripButton();
             this.btn_EliminarContrato.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_Servicios)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_TipoDeContrato)).BeginInit();
             this.toolStrip2.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.toolStripContainer2.SuspendLayout();
@@ -82,9 +78,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.dt_Servicios);
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -94,30 +88,17 @@
             this.tabPage1.Text = "Tipos de Servicios";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dt_Servicios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(726, 305);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(631, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(590, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Filtrar:";
+            this.dt_Servicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_Servicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Servicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_Servicios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_Servicios.Location = new System.Drawing.Point(3, 28);
+            this.dt_Servicios.Name = "dt_Servicios";
+            this.dt_Servicios.Size = new System.Drawing.Size(726, 305);
+            this.dt_Servicios.TabIndex = 3;
+            this.dt_Servicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_Servicios_CellContentClick);
             // 
             // toolStrip1
             // 
@@ -135,11 +116,55 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btn_EliminarServicio
+            // 
+            this.btn_EliminarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarServicio.Image")));
+            this.btn_EliminarServicio.Name = "btn_EliminarServicio";
+            this.btn_EliminarServicio.Size = new System.Drawing.Size(70, 22);
+            this.btn_EliminarServicio.Text = "Eliminar";
+            this.btn_EliminarServicio.Click += new System.EventHandler(this.btn_EliminarServicio_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_EditarServicio
+            // 
+            this.btn_EditarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_EditarServicio.Image")));
+            this.btn_EditarServicio.Name = "btn_EditarServicio";
+            this.btn_EditarServicio.Size = new System.Drawing.Size(57, 22);
+            this.btn_EditarServicio.Text = "Editar";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_AgregarServicio
+            // 
+            this.btn_AgregarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarServicio.Image")));
+            this.btn_AgregarServicio.Name = "btn_AgregarServicio";
+            this.btn_AgregarServicio.Size = new System.Drawing.Size(69, 22);
+            this.btn_AgregarServicio.Text = "Agregar";
+            this.btn_AgregarServicio.Click += new System.EventHandler(this.btnAgregarS_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_ActualizarServicio
+            // 
+            this.btn_ActualizarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_ActualizarServicio.Image")));
+            this.btn_ActualizarServicio.Name = "btn_ActualizarServicio";
+            this.btn_ActualizarServicio.Size = new System.Drawing.Size(79, 22);
+            this.btn_ActualizarServicio.Text = "Actualizar";
+            this.btn_ActualizarServicio.Click += new System.EventHandler(this.btn_ActualizarServicio_Click);
+            // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.dt_TipoDeContrato);
             this.tabPage2.Controls.Add(this.toolStrip2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -149,35 +174,21 @@
             this.tabPage2.Text = "Tipos de Contratos";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dt_TipoDeContrato
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 28);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(726, 305);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(621, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(580, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Filtrar:";
+            this.dt_TipoDeContrato.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_TipoDeContrato.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_TipoDeContrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_TipoDeContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dt_TipoDeContrato.Location = new System.Drawing.Point(3, 28);
+            this.dt_TipoDeContrato.Name = "dt_TipoDeContrato";
+            this.dt_TipoDeContrato.Size = new System.Drawing.Size(726, 305);
+            this.dt_TipoDeContrato.TabIndex = 3;
             // 
             // toolStrip2
             // 
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel5,
+            this.btn_EliminarTipoContr,
             this.toolStripSeparator4,
             this.btn_EditarContrato,
             this.toolStripSeparator5,
@@ -189,6 +200,52 @@
             this.toolStrip2.Size = new System.Drawing.Size(726, 25);
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
+            // 
+            // btn_EliminarTipoContr
+            // 
+            this.btn_EliminarTipoContr.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTipoContr.Image")));
+            this.btn_EliminarTipoContr.Name = "btn_EliminarTipoContr";
+            this.btn_EliminarTipoContr.Size = new System.Drawing.Size(70, 22);
+            this.btn_EliminarTipoContr.Text = "Eliminar";
+            this.btn_EliminarTipoContr.Click += new System.EventHandler(this.btn_EliminarTipoContr_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_EditarContrato
+            // 
+            this.btn_EditarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_EditarContrato.Image")));
+            this.btn_EditarContrato.Name = "btn_EditarContrato";
+            this.btn_EditarContrato.Size = new System.Drawing.Size(57, 22);
+            this.btn_EditarContrato.Text = "Editar";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_AgregarContrato
+            // 
+            this.btn_AgregarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarContrato.Image")));
+            this.btn_AgregarContrato.Name = "btn_AgregarContrato";
+            this.btn_AgregarContrato.Size = new System.Drawing.Size(69, 22);
+            this.btn_AgregarContrato.Text = "Agregar";
+            this.btn_AgregarContrato.Click += new System.EventHandler(this.btn_AgregarContrato_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_ActualizarContrato
+            // 
+            this.btn_ActualizarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_ActualizarContrato.Image")));
+            this.btn_ActualizarContrato.Name = "btn_ActualizarContrato";
+            this.btn_ActualizarContrato.Size = new System.Drawing.Size(79, 22);
+            this.btn_ActualizarContrato.Text = "Actualizar";
+            this.btn_ActualizarContrato.Click += new System.EventHandler(this.btn_ActualizarContrato_Click);
             // 
             // toolStripContainer1
             // 
@@ -229,93 +286,6 @@
             this.toolStripContainer3.TabIndex = 0;
             this.toolStripContainer3.Text = "toolStripContainer3";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripLabel5
-            // 
-            this.toolStripLabel5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel5.Image")));
-            this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(70, 22);
-            this.toolStripLabel5.Text = "Eliminar";
-            // 
-            // btn_EditarContrato
-            // 
-            this.btn_EditarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_EditarContrato.Image")));
-            this.btn_EditarContrato.Name = "btn_EditarContrato";
-            this.btn_EditarContrato.Size = new System.Drawing.Size(57, 22);
-            this.btn_EditarContrato.Text = "Editar";
-            // 
-            // btn_AgregarContrato
-            // 
-            this.btn_AgregarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarContrato.Image")));
-            this.btn_AgregarContrato.Name = "btn_AgregarContrato";
-            this.btn_AgregarContrato.Size = new System.Drawing.Size(69, 22);
-            this.btn_AgregarContrato.Text = "Agregar";
-            // 
-            // btn_ActualizarContrato
-            // 
-            this.btn_ActualizarContrato.Image = ((System.Drawing.Image)(resources.GetObject("btn_ActualizarContrato.Image")));
-            this.btn_ActualizarContrato.Name = "btn_ActualizarContrato";
-            this.btn_ActualizarContrato.Size = new System.Drawing.Size(79, 22);
-            this.btn_ActualizarContrato.Text = "Actualizar";
-            // 
-            // btn_EliminarServicio
-            // 
-            this.btn_EliminarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_EliminarServicio.Image")));
-            this.btn_EliminarServicio.Name = "btn_EliminarServicio";
-            this.btn_EliminarServicio.Size = new System.Drawing.Size(70, 22);
-            this.btn_EliminarServicio.Text = "Eliminar";
-            // 
-            // btn_EditarServicio
-            // 
-            this.btn_EditarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_EditarServicio.Image")));
-            this.btn_EditarServicio.Name = "btn_EditarServicio";
-            this.btn_EditarServicio.Size = new System.Drawing.Size(57, 22);
-            this.btn_EditarServicio.Text = "Editar";
-            // 
-            // btn_AgregarServicio
-            // 
-            this.btn_AgregarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarServicio.Image")));
-            this.btn_AgregarServicio.Name = "btn_AgregarServicio";
-            this.btn_AgregarServicio.Size = new System.Drawing.Size(69, 22);
-            this.btn_AgregarServicio.Text = "Agregar";
-            this.btn_AgregarServicio.Click += new System.EventHandler(this.btnAgregarS_Click);
-            // 
-            // btn_ActualizarServicio
-            // 
-            this.btn_ActualizarServicio.Image = ((System.Drawing.Image)(resources.GetObject("btn_ActualizarServicio.Image")));
-            this.btn_ActualizarServicio.Name = "btn_ActualizarServicio";
-            this.btn_ActualizarServicio.Size = new System.Drawing.Size(79, 22);
-            this.btn_ActualizarServicio.Text = "Actualizar";
-            // 
             // Servicios_Gestor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,12 +302,12 @@
             this.btn_EliminarContrato.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_Servicios)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_TipoDeContrato)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
@@ -354,31 +324,27 @@
 
         private System.Windows.Forms.TabControl btn_EliminarContrato;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripContainer toolStripContainer3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dt_Servicios;
+        private System.Windows.Forms.DataGridView dt_TipoDeContrato;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton btn_EliminarServicio;
         private System.Windows.Forms.ToolStripButton btn_EditarServicio;
         private System.Windows.Forms.ToolStripButton btn_AgregarServicio;
         private System.Windows.Forms.ToolStripButton btn_ActualizarServicio;
-        private System.Windows.Forms.ToolStripButton toolStripLabel5;
+        private System.Windows.Forms.ToolStripButton btn_EliminarTipoContr;
         private System.Windows.Forms.ToolStripButton btn_EditarContrato;
         private System.Windows.Forms.ToolStripButton btn_AgregarContrato;
         private System.Windows.Forms.ToolStripButton btn_ActualizarContrato;
+        private System.Windows.Forms.ToolStripButton btn_EliminarServicio;
     }
 }
