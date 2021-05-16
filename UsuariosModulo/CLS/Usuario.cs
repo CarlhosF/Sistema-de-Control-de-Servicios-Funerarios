@@ -43,7 +43,7 @@ namespace UsuariosModulo.CLS
         {
             Boolean Resultado = false;
             String Sentencia = @"INSERT INTO usuarios(usuario,clave,rol,idempleados) 
-            VALUES('" + this.usuario + "','" + this.clave + "',' " + this.idrol + " ',' " + this.idempleado + " '); ";
+            VALUES('"+this.usuario +"','"+this.clave +"','"+ this.idrol +"','"+ this.idempleado +"'); ";
             Console.WriteLine(Sentencia);
             try
             {
@@ -68,8 +68,8 @@ namespace UsuariosModulo.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE usuarios SET usuario=' " + this.usuario + " ' , rol=' " + this.idrol + " ' , idempleados= " + this.idempleado + "  "+
-                               "WHERE idusuarios = " + this._idusuario + ";";
+            String Sentencia = @"UPDATE usuarios SET  usuario='" + this.usuario + "',clave='" + this.clave + "', rol='" + this.idrol + "', idempleados= "+this.idempleado+"  "+
+                               "WHERE idusuarios = "+ this._idusuario + ";";
             Console.WriteLine(Sentencia);
             try
             {

@@ -44,7 +44,7 @@ namespace Exequie.GUI
             this.pn_botones = new System.Windows.Forms.Panel();
             this.lb_session_nombre = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lb_session_rol = new System.Windows.Forms.ToolStripStatusLabel();
             this.pn_botones.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -212,20 +212,20 @@ namespace Exequie.GUI
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lb_session_nombre,
-            this.toolStripStatusLabel1});
+            this.lb_session_rol});
             this.statusStrip1.Location = new System.Drawing.Point(0, 690);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1213, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // lb_session_rol
             // 
-            this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(27, 17);
-            this.toolStripStatusLabel1.Text = "Rol:";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            this.lb_session_rol.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.lb_session_rol.Name = "lb_session_rol";
+            this.lb_session_rol.Size = new System.Drawing.Size(27, 17);
+            this.lb_session_rol.Text = "Rol:";
+            this.lb_session_rol.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // Interfaz
             // 
@@ -263,6 +263,6 @@ namespace Exequie.GUI
         private System.Windows.Forms.Panel pn_botones;
         private System.Windows.Forms.ToolStripStatusLabel lb_session_nombre;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel lb_session_rol;
     }
 }

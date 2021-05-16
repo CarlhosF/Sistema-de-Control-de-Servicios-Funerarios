@@ -12,15 +12,19 @@ namespace UsuariosModulo.GUI
 {
     public partial class SeleccionarEmpleado : Form
     {
+        int id;
         string c="";
         string u = "";
         int rol;
-        public SeleccionarEmpleado(string clv,string usu,int r)
+        Boolean orig;
+        public SeleccionarEmpleado(int i,string clv,string usu,int r, Boolean o)
         {
             InitializeComponent();
             c = clv;
             u = usu;
             rol = r;
+            orig = o;
+            id = i;
         }
 
         private void SeleccionarEmpleado_Load(object sender, EventArgs e)
@@ -30,10 +34,25 @@ namespace UsuariosModulo.GUI
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(dt_Empleados.SelectedRows[0].Cells[0].Value.ToString());
-            GUI.UsuarioNuevo f = new UsuarioNuevo(id,c,u,rol);
-            f.Show();
-            this.Close();
+            if (dt_Empleados.SelectedRows.Count > 0) 
+            {
+                int ide = int.Parse(dt_Empleados.SelectedRows[0].Cells[0].Value.ToString());
+                if (orig) 
+                {
+                    GUI.UsuarioNuevo f = new UsuarioNuevo(ide, c, u, rol);
+                    f.Show();
+                    this.Close();
+                }
+                else
+                {
+                    GUI.UsuarioEditar f = new UsuarioEditar(id,ide, c, u, rol);
+                    f.Show();
+                    this.Close();
+                }
+            }else
+            {
+                MessageBox.Show("Seleccione el Empleado");
+            }
         }
     }
 }

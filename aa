@@ -1,0 +1,119 @@
+[33mcommit 9d613985ea1e272dc6977de55c811e2fb43f1b47[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Fri May 14 09:32:32 2021 -0600
+
+    avance en servicios y modulo, lo suficiente para iniciar contratos modulo
+
+[33mcommit 2c2edda9fc7f128fc95eca0729de5a8b4897cc90[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Mon May 10 18:44:10 2021 -0600
+
+    se corrigio la vista Editar_Contrato y Nuevo_Contrato
+
+[33mcommit e6218c64a310590008967819ecb618c405a8de8c[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Mon May 10 18:23:14 2021 -0600
+
+    se corrigio la vista Editar_Servicio
+
+[33mcommit a00fb856322e1cc38a7afcf61d981f3b2c41c825[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Mon May 10 18:18:05 2021 -0600
+
+    se corrigio la vista Nuevo_Servicio
+
+[33mcommit 358189886139c7fd68aacc7c48f066e534827e2a[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Mon May 10 16:35:25 2021 -0600
+
+    se agrego la clase servicio a CLS en Servicios_Modulos
+
+[33mcommit e5dfb621ee0f70d14372118a497c17af2a4e93ff[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Mon May 10 16:27:41 2021 -0600
+
+    se le cambio contrato por tipo de contrato en servicios modulo
+
+[33mcommit bfa3a869a085d707a8b184f308b4a824803ecb0f[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Sun May 9 12:33:25 2021 -0600
+
+    Acttualizacion de la BD, del Modulo Usuarios y Modulo Servicios, Ambos sim completar
+
+[33mcommit 8200bbc4c71f7d39298c7c2e00e28078a4bc9734[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Wed May 5 20:50:13 2021 -0600
+
+    Modulo de empleados finalizado en funcionabilidad (Falta mucha estetica en todo)
+
+[33mcommit bd1ac4368b6efabcee8f62fb1c55385baa2ef695[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Mon Apr 19 00:02:07 2021 -0600
+
+    Se añadio el cliente modulo al mismo directorio y se avanzo con el manejo de usuarios en el personal modulo
+
+[33mcommit 5c161919e5912584c9c6cf639ed92d9de4d47a37[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Fri Apr 16 16:24:52 2021 -0600
+
+    Se agrego el modulo de clientes y se encuentra funcional
+
+[33mcommit 57d605ad66350534c405d4778df2603ac5080044[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Fri Apr 16 14:23:42 2021 -0600
+
+    mejora en el modulo personal, mas operaciones en la seccion empleados
+
+[33mcommit 1b75b009a99808510b256bde80903069872a55c9[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Thu Apr 15 11:59:44 2021 -0600
+
+    Mejora a la interfaz principal y se inicio el modulo de Personal/Empleados
+
+[33mcommit c0daa4beb82ba96d2485862769085d264f8629f0[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Sun Apr 11 17:16:59 2021 -0600
+
+    Se mejoro el editar del modulo sucursales y algunos textos de la interfaz principal
+
+[33mcommit 2068b29026cf96aff201f3fd7905c52173f5809e[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Sun Apr 11 10:12:35 2021 -0600
+
+    con iconos agregados
+
+[33mcommit 24be49a788e2a0dc44410fede87b9ed3dba8a446[m
+Author: gerardoJoseVilledaErazo <gerardovilleda@gmail.com>
+Date:   Sat Apr 10 15:53:01 2021 -0600
+
+    iconos actualizados
+
+[33mcommit e1b404289b84fee6b6259ef46aae028c5d4bf19a[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Sat Apr 10 15:20:04 2021 -0600
+
+    Se convirtio Sucursales_modulo a una libreria de clases
+
+[33mcommit 56b7b7c5e2be11cb82676f49bf0384302ff8117b[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Sat Apr 10 09:23:11 2021 -0600
+
+    Se actualizo la BD
+
+[33mcommit fe749fada2277b138ded3de641e115e01ba37728[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Sat Apr 10 02:32:32 2021 -0600
+
+    El modulo de Sucursales esta operacional(aunque le faltan detalles) y se añadio la BD que era(la que estaba no era)
+
+[33mcommit b07c30c1b5fe8bbdf4323c8c71eaeffb0c6577c1[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Fri Apr 9 18:22:39 2021 -0600
+
+    Se arreglo el bug de quedarse abierto Exequie, el bug del datagreedview, ahora se inicia el modulo centrado y se incluyo BD
+
+[33mcommit f3effa12c4a77f56381791f231644e7cd8d0f9cb[m
+Author: Carlhos Figueroa <carlhosfigueroa67@gmail.com>
+Date:   Fri Apr 9 15:49:03 2021 -0600
+
+    Version salvada del desorden del antiguo repositorio

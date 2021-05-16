@@ -56,7 +56,7 @@ namespace UsuariosModulo.GUI
 
         private void btn_TraerEmpleado_Click(object sender, EventArgs e)
         {
-            GUI.SeleccionarEmpleado f = new SeleccionarEmpleado(txb_clave.Text,txb_usuario.Text,lst_Rol.SelectedIndex);
+            GUI.SeleccionarEmpleado f = new SeleccionarEmpleado(0,txb_clave.Text,txb_usuario.Text,lst_Rol.SelectedIndex,true);
             f.Show();
             this.Close();
         }
@@ -64,13 +64,14 @@ namespace UsuariosModulo.GUI
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             CLS.Usuario usuario = new CLS.Usuario();
-            usuario.idrol = lst_Rol.SelectedItem.ToString().Replace(" ", String.Empty); 
+            usuario.idrol = lst_Rol.SelectedItem.ToString().Replace(" ",""); 
             usuario.usuario = txb_usuario.Text.Replace(" ","");
             usuario.clave = txb_clave.Text.Replace(" ", "");
             usuario.idempleado = int.Parse(txb_IdEmpleado.Text);
             usuario.usuario.Replace(" ", "");
             usuario.clave.Replace(" ", "");
-            
+            usuario.idrol.Replace(" ","");
+
 
             try
             {

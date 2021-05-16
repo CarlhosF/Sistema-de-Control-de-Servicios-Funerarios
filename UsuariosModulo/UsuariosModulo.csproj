@@ -55,6 +55,12 @@
     <Compile Include="GUI\SeleccionarEmpleado.Designer.cs">
       <DependentUpon>SeleccionarEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UsuarioEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UsuarioEditar.Designer.cs">
+      <DependentUpon>UsuarioEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UsuarioNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\SeleccionarEmpleado.resx">
       <DependentUpon>SeleccionarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UsuarioEditar.resx">
+      <DependentUpon>UsuarioEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UsuarioNuevo.resx">
       <DependentUpon>UsuarioNuevo.cs</DependentUpon>

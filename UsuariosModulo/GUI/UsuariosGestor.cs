@@ -60,12 +60,31 @@ namespace UsuariosModulo.GUI
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-            if (dt_usuarios.SelectedRows.Count>0) 
+            if (dt_usuarios.SelectedRows.Count > 0)
             {
                 int id = (int)dt_usuarios.SelectedRows[0].Cells[0].Value;
                 CLS.Usuario c = new CLS.Usuario();
                 c.Eliminar(id);
                 Cargar();
+            }
+            else 
+            {
+                MessageBox.Show("Seleccione un usuario");
+            }
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dt_usuarios.SelectedRows.Count > 0)
+            {
+                int id = (int)dt_usuarios.SelectedRows[0].Cells[0].Value;
+                GUI.UsuarioEditar f = new UsuarioEditar(id);
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un usuario");
             }
         }
     }
