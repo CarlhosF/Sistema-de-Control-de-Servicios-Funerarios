@@ -12,9 +12,7 @@ namespace Exequie.GUI
 {
     public partial class Login : Form
     {
-        //variables globales
-        //String _Usuario = "JMENJIVAR";
-        //String _Clave = "12345";
+        
 
         Boolean _Validado = false;
 
@@ -93,6 +91,11 @@ namespace Exequie.GUI
             {
                 btnEntrar.PerformClick();//como si hubiera dado clic al botón Entrar
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

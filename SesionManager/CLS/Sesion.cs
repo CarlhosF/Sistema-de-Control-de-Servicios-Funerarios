@@ -16,7 +16,7 @@ namespace SesionManager.CLS
         String _Rol;// ctrl +R+E Solo lectura borrar el set
         String _IDUsuario;// ctrl +R+E Solo lectura borrar el set
         String _Empleado;// ctrl +R+E Solo lectura borrar el set
-
+        int _id;
         public static Sesion Instancia
         {
             get
@@ -41,6 +41,18 @@ namespace SesionManager.CLS
             get
             {
                 return _Usuario;
+            }
+            /* solo para probar un concepto
+            set
+            {
+                _Usuario = value;
+            }*/
+        }
+        public int id
+        {
+            get
+            {
+                return _id;
             }
             /* solo para probar un concepto
             set
@@ -102,10 +114,11 @@ namespace SesionManager.CLS
                 DatosSesion = CacheManager.CLS.Cache.INICIAR_SESION(pUsuario, pClave);
                 if (DatosSesion.Rows.Count == 1)//validar que solo venga una fila
                 {
-                    _Usuario = DatosSesion.Rows[0]["idusuarios"].ToString();
-                    _IDUsuario = DatosSesion.Rows[0]["Usuario"].ToString();
+                    _Usuario = DatosSesion.Rows[0]["Usuario"].ToString();
+                    _IDUsuario = DatosSesion.Rows[0]["idusuarios"].ToString();
                     _Rol = DatosSesion.Rows[0]["rol"].ToString();
                     _Empleado = DatosSesion.Rows[0]["Empleado"].ToString();
+
                     //autorizar
                     Autorizado = true;
                     Console.Write("Autorizado");

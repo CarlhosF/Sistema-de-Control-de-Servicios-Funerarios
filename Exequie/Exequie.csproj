@@ -116,9 +116,17 @@
     <Content Include="cruz.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CacheManager\CacheManager.csproj">
+      <Project>{35b3b17a-2d1d-442d-b570-61c0f02a945d}</Project>
+      <Name>CacheManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Clientes_Modulo\Clientes_Modulo.csproj">
       <Project>{f1964825-b499-4877-bb04-dcd474d71c7f}</Project>
       <Name>Clientes_Modulo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contratos_Modulo\Contratos_Modulo.csproj">
+      <Project>{d8737ac7-65f0-41c3-ae70-620652586169}</Project>
+      <Name>Contratos_Modulo</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataManager\DataManager.csproj">
       <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>

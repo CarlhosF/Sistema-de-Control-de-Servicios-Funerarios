@@ -14,6 +14,7 @@ namespace Exequie.GUI
 {
     public partial class Interfaz : Form
     {
+        SesionManager.CLS.Sesion Sesion = SesionManager.CLS.Sesion.Instancia;
         public Interfaz()
         {
             InitializeComponent();
@@ -21,6 +22,10 @@ namespace Exequie.GUI
 
         private void Interfaz_Load(object sender, EventArgs e)
         {
+           
+            lb_session_rol.Text = Sesion.Rol;
+            lb_session_nombre.Text = Sesion.Empleado;
+
            
         }
       
@@ -96,7 +101,7 @@ namespace Exequie.GUI
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSercicios_Click(object sender, EventArgs e)
         {
             pn_contenedor.Controls.Clear();
             Servicios_Modulos.GUI.Servicios_Gestor f = new Servicios_Modulos.GUI.Servicios_Gestor();
@@ -113,6 +118,19 @@ namespace Exequie.GUI
         {
             pn_contenedor.Controls.Clear();
             Exequie.Informacion f = new Informacion();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            pn_contenedor.Controls.Add(f);
+            pn_contenedor.Tag = f;
+
+            f.Show();
+        }
+
+        private void btnContratos_Click(object sender, EventArgs e)
+        {
+            pn_contenedor.Controls.Clear();
+            Contratos_Modulo.GUI.ContratosGestor f = new Contratos_Modulo.GUI.ContratosGestor();
             f.TopLevel = false;
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;

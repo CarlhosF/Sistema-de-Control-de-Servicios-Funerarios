@@ -33,10 +33,10 @@ namespace Exequie.GUI
             this.pn_contenedor = new System.Windows.Forms.Panel();
             this.btn_CerrarSesion = new System.Windows.Forms.Button();
             this.btn_Usuarios = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnInformacion = new System.Windows.Forms.Button();
+            this.btnMovimientos = new System.Windows.Forms.Button();
+            this.btnDifuntos = new System.Windows.Forms.Button();
+            this.btnContratos = new System.Windows.Forms.Button();
             this.btn_Sucursales = new System.Windows.Forms.Button();
             this.btn_Clientes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@ namespace Exequie.GUI
             this.pn_contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_contenedor.Location = new System.Drawing.Point(93, 0);
             this.pn_contenedor.Name = "pn_contenedor";
-            this.pn_contenedor.Size = new System.Drawing.Size(1120, 690);
+            this.pn_contenedor.Size = new System.Drawing.Size(1120, 685);
             this.pn_contenedor.TabIndex = 4;
             // 
             // btn_CerrarSesion
@@ -83,54 +83,55 @@ namespace Exequie.GUI
             this.btn_Usuarios.UseVisualStyleBackColor = true;
             this.btn_Usuarios.Click += new System.EventHandler(this.btn_Usuarios_Click_1);
             // 
-            // button8
+            // btnInformacion
             // 
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.Location = new System.Drawing.Point(8, 553);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(79, 62);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Informacion";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnInformacion.Image = ((System.Drawing.Image)(resources.GetObject("btnInformacion.Image")));
+            this.btnInformacion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnInformacion.Location = new System.Drawing.Point(8, 553);
+            this.btnInformacion.Name = "btnInformacion";
+            this.btnInformacion.Size = new System.Drawing.Size(79, 62);
+            this.btnInformacion.TabIndex = 7;
+            this.btnInformacion.Text = "Informacion";
+            this.btnInformacion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnInformacion.UseVisualStyleBackColor = true;
+            this.btnInformacion.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button7
+            // btnMovimientos
             // 
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.Location = new System.Drawing.Point(7, 417);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(79, 62);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Movimientos";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnMovimientos.Image = ((System.Drawing.Image)(resources.GetObject("btnMovimientos.Image")));
+            this.btnMovimientos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMovimientos.Location = new System.Drawing.Point(7, 417);
+            this.btnMovimientos.Name = "btnMovimientos";
+            this.btnMovimientos.Size = new System.Drawing.Size(79, 62);
+            this.btnMovimientos.TabIndex = 6;
+            this.btnMovimientos.Text = "Movimientos";
+            this.btnMovimientos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMovimientos.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnDifuntos
             // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(8, 485);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(79, 62);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Difuntos";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnDifuntos.Image = ((System.Drawing.Image)(resources.GetObject("btnDifuntos.Image")));
+            this.btnDifuntos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDifuntos.Location = new System.Drawing.Point(8, 485);
+            this.btnDifuntos.Name = "btnDifuntos";
+            this.btnDifuntos.Size = new System.Drawing.Size(79, 62);
+            this.btnDifuntos.TabIndex = 5;
+            this.btnDifuntos.Text = "Difuntos";
+            this.btnDifuntos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDifuntos.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnContratos
             // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(7, 349);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(79, 62);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Contratos";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnContratos.Image = ((System.Drawing.Image)(resources.GetObject("btnContratos.Image")));
+            this.btnContratos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnContratos.Location = new System.Drawing.Point(7, 349);
+            this.btnContratos.Name = "btnContratos";
+            this.btnContratos.Size = new System.Drawing.Size(79, 62);
+            this.btnContratos.TabIndex = 4;
+            this.btnContratos.Text = "Contratos";
+            this.btnContratos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnContratos.UseVisualStyleBackColor = true;
+            this.btnContratos.Click += new System.EventHandler(this.btnContratos_Click);
             // 
             // btn_Sucursales
             // 
@@ -169,7 +170,7 @@ namespace Exequie.GUI
             this.button2.Text = "Politicas de Negocio";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btnSercicios_Click);
             // 
             // btn_Personal
             // 
@@ -188,10 +189,10 @@ namespace Exequie.GUI
             this.pn_botones.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pn_botones.Controls.Add(this.btn_CerrarSesion);
             this.pn_botones.Controls.Add(this.btn_Usuarios);
-            this.pn_botones.Controls.Add(this.button8);
-            this.pn_botones.Controls.Add(this.button7);
-            this.pn_botones.Controls.Add(this.button6);
-            this.pn_botones.Controls.Add(this.button5);
+            this.pn_botones.Controls.Add(this.btnInformacion);
+            this.pn_botones.Controls.Add(this.btnMovimientos);
+            this.pn_botones.Controls.Add(this.btnDifuntos);
+            this.pn_botones.Controls.Add(this.btnContratos);
             this.pn_botones.Controls.Add(this.btn_Sucursales);
             this.pn_botones.Controls.Add(this.btn_Clientes);
             this.pn_botones.Controls.Add(this.button2);
@@ -199,7 +200,7 @@ namespace Exequie.GUI
             this.pn_botones.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_botones.Location = new System.Drawing.Point(0, 0);
             this.pn_botones.Name = "pn_botones";
-            this.pn_botones.Size = new System.Drawing.Size(93, 690);
+            this.pn_botones.Size = new System.Drawing.Size(93, 685);
             this.pn_botones.TabIndex = 3;
             // 
             // lb_session_nombre
@@ -210,10 +211,11 @@ namespace Exequie.GUI
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lb_session_nombre,
             this.lb_session_rol});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 690);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 685);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1213, 22);
             this.statusStrip1.TabIndex = 5;
@@ -231,7 +233,7 @@ namespace Exequie.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 712);
+            this.ClientSize = new System.Drawing.Size(1213, 707);
             this.Controls.Add(this.pn_contenedor);
             this.Controls.Add(this.pn_botones);
             this.Controls.Add(this.statusStrip1);
@@ -252,10 +254,10 @@ namespace Exequie.GUI
         private System.Windows.Forms.Panel pn_contenedor;
         private System.Windows.Forms.Button btn_CerrarSesion;
         private System.Windows.Forms.Button btn_Usuarios;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnInformacion;
+        private System.Windows.Forms.Button btnMovimientos;
+        private System.Windows.Forms.Button btnDifuntos;
+        private System.Windows.Forms.Button btnContratos;
         private System.Windows.Forms.Button btn_Sucursales;
         private System.Windows.Forms.Button btn_Clientes;
         private System.Windows.Forms.Button button2;

@@ -57,11 +57,11 @@ CREATE TABLE `clientes` (
   `apellidos` varchar(45) NOT NULL,
   `dui` varchar(45) NOT NULL,
   `direccion` varchar(45) NOT NULL,
-  `fechanacimiento` varchar(45) NOT NULL,
+  `fechanacimiento` date NOT NULL,
   `telefono` varchar(45) NOT NULL,
   `oficio` varchar(45) NOT NULL,
   PRIMARY KEY (`idclientes`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (1,' Antonio ',' Lara ',' 123456-8-9 ',' San Antonio,Sonsonate ',' 14/5/1997 ',' 77634311 ',' Asaltante de la 53-E '),(2,' Fernando ',' Escobar ',' 34567812-9 ',' La Hachadura ',' 2/6/1989 ',' 77559023 ',' Politico Corrupto ');
+INSERT INTO `clientes` VALUES (5,' AAAAAA ',' BBBBBB ',' 44444 ',' CCCCCC ','1989-06-06',' 6666666 ',' DDDDDD '),(6,' Prueba ',' Prueba ',' 555555 ',' aaaaaa ','1997-05-19',' 66666 ',' bbbbb '),(7,' Prueba2 ',' Prueba2 ',' 777777 ',' aaaaaa ','1997-05-19',' 99999 ',' bbbbb ');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,31 +83,32 @@ DROP TABLE IF EXISTS `contratos`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `contratos` (
   `idcontratos` int(11) NOT NULL AUTO_INCREMENT,
-  `extendido` varchar(45) NOT NULL,
+  `extendido` varchar(100) NOT NULL,
   `tipoDeContrato` int(11) NOT NULL,
   `idservicios` int(11) NOT NULL,
-  `idformaspago` enum('Cuotas','Contado') NOT NULL,
+  `formaspago` enum('Cuotas','Contado') NOT NULL,
   `fecha` datetime NOT NULL,
-  `vendedor` int(11) NOT NULL,
-  `idclientes` int(11) NOT NULL,
-  `Estado` int(11) NOT NULL,
-  `Precio` int(11) NOT NULL,
-  `Beneficiario1` int(11) NOT NULL,
-  `Beneficiario2` int(11) NOT NULL,
+  `vendedor` int(11) DEFAULT NULL,
+  `contratista` int(11) DEFAULT NULL,
+  `Estado` enum('Activo','Cancelado','Entregado','Nulo','Moroso') NOT NULL,
+  `Saldo` decimal(8,2) NOT NULL,
+  `Beneficiario1` int(11) DEFAULT NULL,
+  `Beneficiario2` int(11) DEFAULT NULL,
+  `observaciones` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`idcontratos`),
   KEY `fk_serv_idx` (`idservicios`),
-  KEY `fk_vendedor_idx` (`vendedor`),
-  KEY `fk_cliente_idx` (`idclientes`),
-  KEY `fk_beneficiario1_idx` (`Beneficiario1`),
-  KEY `fk_beneficiario2_idx` (`Beneficiario2`),
   KEY `fk_contrato_idx` (`tipoDeContrato`),
-  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `beneficiarios` (`idbeneficiarios`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_cliente` FOREIGN KEY (`idclientes`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
+  KEY `fk_vendedor_idx` (`vendedor`),
+  KEY `fk_contratista_idx` (`contratista`),
+  KEY `fk_beneficiario_idx` (`Beneficiario1`),
+  KEY `fk_beneficiario2_idx` (`Beneficiario2`),
+  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_contratista` FOREIGN KEY (`contratista`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_contrato` FOREIGN KEY (`tipoDeContrato`) REFERENCES `tipodecontrato` (`idTipoDeContrato`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_serv` FOREIGN KEY (`idservicios`) REFERENCES `servicios` (`idservicios`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,6 +117,7 @@ CREATE TABLE `contratos` (
 
 LOCK TABLES `contratos` WRITE;
 /*!40000 ALTER TABLE `contratos` DISABLE KEYS */;
+INSERT INTO `contratos` VALUES (9,'ssss',3,1,'Contado','2021-05-19 00:00:00',13,5,'Activo',262.50,7,6,'rrrr');
 /*!40000 ALTER TABLE `contratos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,18 +158,18 @@ CREATE TABLE `empleados` (
   `idempleados` int(11) NOT NULL AUTO_INCREMENT,
   `nombres` varchar(45) NOT NULL,
   `apellidos` varchar(45) NOT NULL,
-  `fechanacimiento` varchar(45) NOT NULL,
+  `fechanacimiento` date NOT NULL,
   `telefono` varchar(45) NOT NULL,
   `direccion` varchar(45) NOT NULL,
   `DUI` varchar(15) DEFAULT NULL,
   `idsucursales` int(11) NOT NULL,
-  `FechaContratacion` varchar(45) NOT NULL,
+  `FechaContratacion` date NOT NULL,
   `puesto` int(11) NOT NULL,
   PRIMARY KEY (`idempleados`),
   UNIQUE KEY `idempleados_UNIQUE` (`idempleados`),
   KEY `fk_sucurs_idx` (`idsucursales`),
   CONSTRAINT `fk_sucurs` FOREIGN KEY (`idsucursales`) REFERENCES `sucursales` (`idsucursales`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -176,7 +178,7 @@ CREATE TABLE `empleados` (
 
 LOCK TABLES `empleados` WRITE;
 /*!40000 ALTER TABLE `empleados` DISABLE KEYS */;
-INSERT INTO `empleados` VALUES (9,'  Carlhos  ','  Figueroa  ',' 28/10/1999 ','  75254523  ','  La Hachadura, Ahuachapan  ','  123456789-1  ',3,' 22/2/2021 ',4),(10,'  Jose   ',' Lopez ',' 12/3/1995 ','  75467834  ','  Chalchuapa  ','  231456798-3  ',1,' 12/4/2011 ',1),(15,'  Pedro  ','  Infante  ',' 6/5/1996 ','  457696677  ','  La Hachadura  ','  24567990-0  ',3,' 6/5/2021 ',1),(16,' Jose ',' Cañas ',' 6/5/1999 ',' 75678934 ',' La Hachadura ',' 235678-7 ',3,' 6/5/2021 ',2);
+INSERT INTO `empleados` VALUES (17,'Carlhos Edgardo','Figueroa Tejada','1999-10-28','75652543','La Hachadura','12345678-9',3,'2021-05-19',4),(18,'Antonio ','Lara','1998-03-04','33','1ahi1','223333',3,'2021-03-05',2),(19,'Arturo','Perez','1997-06-06','44','2aya2','444466-9',1,'2021-03-05',2),(20,' AAA ',' BBBB ','1998-05-19',' 444444 ',' CCCC ',' 555555 ',3,'2021-05-19',3);
 /*!40000 ALTER TABLE `empleados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -277,6 +279,7 @@ CREATE TABLE `sucursales` (
   `idsucursales` int(11) NOT NULL AUTO_INCREMENT,
   `direccion` varchar(150) NOT NULL,
   `telefono` varchar(45) NOT NULL,
+  `nombre` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idsucursales`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -287,7 +290,7 @@ CREATE TABLE `sucursales` (
 
 LOCK TABLES `sucursales` WRITE;
 /*!40000 ALTER TABLE `sucursales` DISABLE KEYS */;
-INSERT INTO `sucursales` VALUES (1,'Barrio Santa Cruz, Sexta calle poninte y cuarta avenida norte, Casa #12, Chalchuapa','24440565'),(3,' La Hachadura ',' 24356745 ');
+INSERT INTO `sucursales` VALUES (1,'Barrio Santa Cruz, Sexta calle poninte y cuarta avenida norte, Casa #12, Chalchuapa','24440565','Chalchuapa'),(3,' La Hachadura ',' 24356745 ','La Hachadura');
 /*!40000 ALTER TABLE `sucursales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -300,14 +303,14 @@ DROP TABLE IF EXISTS `sucursales_encargados`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sucursales_encargados` (
   `idSucursales/Encargados` int(11) NOT NULL AUTO_INCREMENT,
-  `idSucursal` int(11) NOT NULL,
-  `idEncargado` int(11) NOT NULL,
+  `idSucursal` int(11) DEFAULT NULL,
+  `idEncargado` int(11) DEFAULT NULL,
   PRIMARY KEY (`idSucursales/Encargados`),
   KEY `fk_encargado_idx` (`idEncargado`),
   KEY `fk:suc_idx` (`idSucursal`),
   CONSTRAINT `fk_encargado` FOREIGN KEY (`idEncargado`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_suc` FOREIGN KEY (`idSucursal`) REFERENCES `sucursales` (`idsucursales`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -316,7 +319,7 @@ CREATE TABLE `sucursales_encargados` (
 
 LOCK TABLES `sucursales_encargados` WRITE;
 /*!40000 ALTER TABLE `sucursales_encargados` DISABLE KEYS */;
-INSERT INTO `sucursales_encargados` VALUES (18,1,10),(19,3,15);
+INSERT INTO `sucursales_encargados` VALUES (24,1,18),(25,3,19);
 /*!40000 ALTER TABLE `sucursales_encargados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -333,7 +336,7 @@ CREATE TABLE `tipodecontrato` (
   `Descripcion` varchar(45) NOT NULL,
   `factor` decimal(9,5) NOT NULL,
   PRIMARY KEY (`idTipoDeContrato`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -342,7 +345,7 @@ CREATE TABLE `tipodecontrato` (
 
 LOCK TABLES `tipodecontrato` WRITE;
 /*!40000 ALTER TABLE `tipodecontrato` DISABLE KEYS */;
-INSERT INTO `tipodecontrato` VALUES (2,'Contrato individual Comun','d',1.00000);
+INSERT INTO `tipodecontrato` VALUES (2,'Contrato individual Comun','d',1.00000),(3,'Individual Para Socio','sfsf',0.75000),(4,'Colectivo Comun','dad',3.00000);
 /*!40000 ALTER TABLE `tipodecontrato` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -357,12 +360,12 @@ CREATE TABLE `usuarios` (
   `idusuarios` int(11) NOT NULL AUTO_INCREMENT,
   `usuario` varchar(45) NOT NULL,
   `clave` varchar(45) NOT NULL,
-  `rol` enum(' Administrador',' Gerente',' Vendedor') NOT NULL,
+  `rol` enum('Administrador','Gerente','Vendedor') NOT NULL,
   `idempleados` int(11) NOT NULL,
   PRIMARY KEY (`idusuarios`),
   KEY `fk_empleado_idx` (`idempleados`),
   CONSTRAINT `fk_empleado` FOREIGN KEY (`idempleados`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -371,7 +374,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (8,'CARLHOSF','1234',' Administrador',9);
+INSERT INTO `usuarios` VALUES (13,'CARLHOSF','1234','Administrador',17);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -384,4 +387,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-14  9:31:14
+-- Dump completed on 2021-05-19 16:08:44

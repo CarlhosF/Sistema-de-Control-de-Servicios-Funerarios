@@ -52,6 +52,8 @@ namespace UsuariosModulo.GUI
             // 
             this.dt_usuarios.AllowUserToAddRows = false;
             this.dt_usuarios.AllowUserToDeleteRows = false;
+            this.dt_usuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_usuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_usuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_usuarios.Location = new System.Drawing.Point(0, 25);

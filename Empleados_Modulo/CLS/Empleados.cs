@@ -139,7 +139,7 @@ namespace Empleados_Modulo.CLS
         {
             Boolean Resultado = false;
             int ultimoIngreso = CacheManager.CLS.SucursalCache.Ultima_Ingreso() + 1;
-            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,DUI,idsucursales,fechacontratacion,puesto) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("d") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._DUI + " ', " + this._sucursal + " ,' " + this.fechaContratacion.ToString("d") + " ', " + this.puesto + " );";
+            String Sentencia = @"INSERT INTO Empleados(nombres,apellidos,fechanacimiento,telefono,direccion,DUI,idsucursales,fechacontratacion,puesto) VALUES(' " + this._Nombre + " ',' " + this._Apellido + " ',' " + this.dt.ToString("yyyy/MM/dd") + " ',' " + this._telefono + " ',' " + this._direccion + " ',' " + this._DUI + " ', " + this._sucursal + " ,' " + this.fechaContratacion.ToString("yyyy/MM/dd") + " ', " + this.puesto + " );";
             Console.Write(Sentencia);
 
             try
@@ -165,7 +165,7 @@ namespace Empleados_Modulo.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE Empleados SET nombres=' " + this._Nombre + " ' , apellidos=' " + this._Apellido + " ', fechanacimiento=' " + this.dt.ToString("d") + " ', telefono=' " + this._telefono + " ', direccion=' " + this._direccion + " ', DUI=' " + this._DUI + " ', idsucursales= " + this._sucursal + ", fechacontratacion=' " + this.fechaContratacion.ToString("d") + " ', puesto= " + this._puesto + "  WHERE idEmpleados = " + this._idEmpleado + ";";
+            String Sentencia = @"UPDATE Empleados SET nombres=' " + this._Nombre + " ' , apellidos=' " + this._Apellido + " ', fechanacimiento=' " + this.dt.ToString("yyyy/MM/dd") + " ', telefono=' " + this._telefono + " ', direccion=' " + this._direccion + " ', DUI=' " + this._DUI + " ', idsucursales= " + this._sucursal + ", fechacontratacion=' " + this.fechaContratacion.ToString("yyyy/MM/dd") + " ', puesto= " + this._puesto + "  WHERE idEmpleados = " + this._idEmpleado + ";";
             Console.WriteLine(Sentencia);
             try
             {

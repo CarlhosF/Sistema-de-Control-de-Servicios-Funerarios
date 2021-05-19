@@ -14,7 +14,7 @@ namespace Clientes_Modulo.CLS
         String _apellidos;
         String _dui;
         String _direccion;
-        String _fechanacimiento;
+        DateTime _fechanacimiento;
         String _telefono;
         String _oficio;
 
@@ -83,7 +83,7 @@ namespace Clientes_Modulo.CLS
             }
         }
 
-        public string Fechanacimiento
+        public DateTime Fechanacimiento
         {
             get
             {
@@ -126,7 +126,7 @@ namespace Clientes_Modulo.CLS
         {
             Boolean Resultado = false;
             String Sentencia = @"INSERT INTO clientes(nombres,apellidos,dui,direccion,fechanacimiento,telefono,oficio) 
-            VALUES(' " + this._nombres + " ',' " + this._apellidos + " ',' " + this._dui + " ',' " + this._direccion + " ',' " + this._fechanacimiento + " ',' " + this._telefono + " ',' " + this._oficio + " '); ";
+            VALUES(' " + this._nombres + " ',' " + this._apellidos + " ',' " + this._dui + " ',' " + this._direccion + " ',' " + this._fechanacimiento.ToString("yyyy/MM/dd") + " ',' " + this._telefono + " ',' " + this._oficio + " '); ";
             Console.WriteLine(Sentencia);
             try
             {
@@ -151,7 +151,7 @@ namespace Clientes_Modulo.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE clientes SET nombres=' " + this._nombres + " ' , apellidos=' " + this._apellidos + " ' , dui=' " + this._dui + " ' , direccion=' " + this._direccion + " ' , fechanacimiento=' " + this._fechanacimiento + " ' , telefono=' " + this._telefono + " ' , oficio=' " + this._oficio + " ' " +
+            String Sentencia = @"UPDATE clientes SET nombres=' " + this._nombres + " ' , apellidos=' " + this._apellidos + " ' , dui=' " + this._dui + " ' , direccion=' " + this._direccion + " ' , fechanacimiento=' " + this._fechanacimiento.ToString("yyyy/MM/dd") + " ' , telefono=' " + this._telefono + " ' , oficio=' " + this._oficio + " ' " +
                                "WHERE idclientes = " + this._idclientes + ";";
             Console.WriteLine(Sentencia);
             try

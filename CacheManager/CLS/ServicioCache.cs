@@ -31,7 +31,7 @@ namespace CacheManager.CLS
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
             String Consulta = @"SELECT a.idservicios as 'ID', a.nombre, a.valorcontado as 'Precio al Contado', a.valorcuota as 'Precio por Cuotas', a.descripcion, a.prima
-            FROM servicios a; Where idservicios="+id;
+            FROM servicios a Where idservicios="+id;
             try
             {
                 Resultados = Consultor.Consultar(Consulta);

@@ -38,7 +38,7 @@ namespace Clientes_Modulo.GUI
             clientes.Dui = txb_dui.Text;
 
             clientes.Direccion = txb_direccion.Text;
-            clientes.Fechanacimiento = dp_fechanacimiento.Value.ToString("d");
+            clientes.Fechanacimiento = dp_fechanacimiento.Value;
             clientes.Telefono = txb_telefono.Text;
             clientes.Oficio = txb_oficio.Text;
             

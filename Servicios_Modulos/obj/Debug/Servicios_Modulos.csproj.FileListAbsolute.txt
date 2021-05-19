@@ -23,7 +23,6 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\CacheManager.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.dll.config
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Editar_Servicio.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Nuevo_Servicio.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Contratos.Editar_Contrato.resources

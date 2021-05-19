@@ -42,7 +42,7 @@ namespace Empleados_Modulo.GUI
             dt_Empleados.AutoGenerateColumns = false;
             dt_Empleados.DataSource = _DATOS;
             dt_Empleados.Text = (dt_Empleados.Rows.Count - 1).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-            dt_Puestos.Columns[2].Width = 800;
+            //dt_Puestos.Columns[2].Width = 800;
         }
         private void Cargar()
         {
@@ -150,6 +150,11 @@ namespace Empleados_Modulo.GUI
             }
 
             Cargar();
+        }
+
+        private void tb_Filtrar_Empleado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

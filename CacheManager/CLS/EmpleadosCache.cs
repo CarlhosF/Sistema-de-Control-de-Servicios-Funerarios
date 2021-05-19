@@ -35,7 +35,7 @@ namespace CacheManager.CLS
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"SELECT a.idEmpleados,a.nombres, a.apellidos,a.fechanacimiento,a.direccion,a.telefono,a.fechacontratacion,b.direccion as 'Labora en: ',
+            String Consulta = @"SELECT a.idEmpleados,a.nombres, a.apellidos,a.fechanacimiento as 'Fecha de Nacimiento',a.direccion,a.DUI,a.telefono,a.fechacontratacion as 'Fecha de Contratacion',b.nombre as 'sucursal',
                                 c.nombre as 'Puesto: '
                                 from empleados a, sucursales b, puestos c
                                 where a.idsucursales=b.idsucursales and a.puesto = c.idpuestos;";

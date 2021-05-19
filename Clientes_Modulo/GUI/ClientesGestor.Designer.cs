@@ -120,6 +120,7 @@
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             this.txb_Filtro.TextChanged += new System.EventHandler(this.txb_Filtro_TextChanged);
@@ -151,6 +152,8 @@
             // 
             this.dt_clientes.AllowUserToAddRows = false;
             this.dt_clientes.AllowUserToDeleteRows = false;
+            this.dt_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_clientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_clientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_clientes.Location = new System.Drawing.Point(0, 25);

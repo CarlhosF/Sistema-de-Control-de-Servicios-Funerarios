@@ -35,3 +35,4 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.pdb
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.UsuarioEditar.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.UsuarioEditar.resources

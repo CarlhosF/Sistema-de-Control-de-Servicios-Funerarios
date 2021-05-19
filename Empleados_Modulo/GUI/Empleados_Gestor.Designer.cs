@@ -90,6 +90,8 @@ namespace Empleados_Modulo.GUI
             // 
             // dt_Empleados
             // 
+            this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_Empleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Empleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Empleados.Location = new System.Drawing.Point(3, 28);
@@ -175,6 +177,7 @@ namespace Empleados_Modulo.GUI
             this.tb_Filtrar_Empleado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_Filtrar_Empleado.Name = "tb_Filtrar_Empleado";
             this.tb_Filtrar_Empleado.Size = new System.Drawing.Size(100, 25);
+            this.tb_Filtrar_Empleado.Click += new System.EventHandler(this.tb_Filtrar_Empleado_Click);
             this.tb_Filtrar_Empleado.TextChanged += new System.EventHandler(this.tb_Filtrar_Empleado_TextChanged);
             // 
             // lb_Filtrar_Empleado
@@ -198,6 +201,8 @@ namespace Empleados_Modulo.GUI
             // 
             // dt_Puestos
             // 
+            this.dt_Puestos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_Puestos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_Puestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Puestos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Puestos.Location = new System.Drawing.Point(3, 28);
