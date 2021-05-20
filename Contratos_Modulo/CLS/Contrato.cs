@@ -42,7 +42,7 @@ namespace Contratos_Modulo.CLS
         public Boolean Guardar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"INSERT INTO contratos (extendido,tipoDeContrato,idservicios,formaspago,fecha,vendedor,contratista,Estado,Saldo,Beneficiario1,Beneficiario2,observaciones)
+            String Sentencia = @"INSERT INTO contratos (extendido,tipoDeContrato,idservicios,formaspago,fecha,vendedor,contratista,Estado,monto,Beneficiario1,Beneficiario2,observaciones)
             VALUES ('"+this._extendido+"',"+this.idTipoDeContrato+","+this._idServicio+", '"+this.FormaDePago+"', '"+this.Fecha.ToString("yyyy/MM/dd")+"',"+this.idvendedor+","+this.idcliente+",'"+this.Estado+"',"+this.saldo+","+this.beneficiario1+","+this.beneficiario2+", '"+this.observaciones+"'); ";
             Console.WriteLine(Sentencia);
             try

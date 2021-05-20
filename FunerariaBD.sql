@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
 --
--- Host: localhost    Database: funerariabd
+-- Host: 127.0.0.1    Database: funerariabd
 -- ------------------------------------------------------
 -- Server version	5.7.30-log
 
@@ -61,7 +61,7 @@ CREATE TABLE `clientes` (
   `telefono` varchar(45) NOT NULL,
   `oficio` varchar(45) NOT NULL,
   PRIMARY KEY (`idclientes`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (5,' AAAAAA ',' BBBBBB ',' 44444 ',' CCCCCC ','1989-06-06',' 6666666 ',' DDDDDD '),(6,' Prueba ',' Prueba ',' 555555 ',' aaaaaa ','1997-05-19',' 66666 ',' bbbbb '),(7,' Prueba2 ',' Prueba2 ',' 777777 ',' aaaaaa ','1997-05-19',' 99999 ',' bbbbb ');
+INSERT INTO `clientes` VALUES (5,' AAAAAA ',' BBBBBB ',' 44444 ',' CCCCCC ','1989-06-06',' 6666666 ',' DDDDDD '),(6,' Prueba ',' Prueba ',' 555555 ',' aaaaaa ','1997-05-19',' 66666 ',' bbbbb '),(9,' Pedro Antonio ',' Lara ',' 1245677-6 ',' Sonsacate ','1998-04-03',' 76459878 ',' Mesero, en el Pizza Hut '),(10,' Carlos Alfredo  ',' Perez ',' 1244567-6 ',' San Antonio, Sonsonate ','1997-03-07',' 76894523 ',' Chofer de Autobus '),(11,' Alberto ',' Guerra ',' 1222367-6 ',' Sensunapan,Sonsonate ','1991-11-17',' 67561242 ',' Cobrador de la 259 '),(12,' Jose Carlos ',' Aguilar ',' 333333333 ',' ffffffffffff ','1980-05-20',' 33333333 ',' Ass breaker ');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -91,7 +91,7 @@ CREATE TABLE `contratos` (
   `vendedor` int(11) DEFAULT NULL,
   `contratista` int(11) DEFAULT NULL,
   `Estado` enum('Activo','Cancelado','Entregado','Nulo','Moroso') NOT NULL,
-  `Saldo` decimal(8,2) NOT NULL,
+  `Monto` decimal(8,2) NOT NULL,
   `Beneficiario1` int(11) DEFAULT NULL,
   `Beneficiario2` int(11) DEFAULT NULL,
   `observaciones` varchar(100) DEFAULT NULL,
@@ -102,13 +102,13 @@ CREATE TABLE `contratos` (
   KEY `fk_contratista_idx` (`contratista`),
   KEY `fk_beneficiario_idx` (`Beneficiario1`),
   KEY `fk_beneficiario2_idx` (`Beneficiario2`),
-  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_contratista` FOREIGN KEY (`contratista`) REFERENCES `clientes` (`idclientes`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_beneficiario1` FOREIGN KEY (`Beneficiario1`) REFERENCES `clientes` (`idclientes`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `fk_beneficiario2` FOREIGN KEY (`Beneficiario2`) REFERENCES `clientes` (`idclientes`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `fk_contratista` FOREIGN KEY (`contratista`) REFERENCES `clientes` (`idclientes`) ON DELETE NO ACTION ON UPDATE CASCADE,
   CONSTRAINT `fk_contrato` FOREIGN KEY (`tipoDeContrato`) REFERENCES `tipodecontrato` (`idTipoDeContrato`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_serv` FOREIGN KEY (`idservicios`) REFERENCES `servicios` (`idservicios`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+  CONSTRAINT `fk_vendedor` FOREIGN KEY (`vendedor`) REFERENCES `usuarios` (`idusuarios`) ON DELETE NO ACTION ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,7 +117,7 @@ CREATE TABLE `contratos` (
 
 LOCK TABLES `contratos` WRITE;
 /*!40000 ALTER TABLE `contratos` DISABLE KEYS */;
-INSERT INTO `contratos` VALUES (9,'ssss',3,1,'Contado','2021-05-19 00:00:00',13,5,'Activo',262.50,7,6,'rrrr');
+INSERT INTO `contratos` VALUES (10,'aaaa',3,1,'Contado','2021-05-19 00:00:00',13,6,'Activo',262.50,6,5,'ssssss'),(11,'La Hachadura',2,1,'Cuotas','2021-05-20 00:00:00',13,11,'Activo',400.00,10,9,'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),(12,'bbbbbbbbbbbbbb',4,1,'Cuotas','2021-05-20 00:00:00',13,10,'Activo',1200.00,11,5,'sssssssssssssssssss'),(13,'sssssss',4,1,'Cuotas','2021-05-20 00:00:00',13,9,'Cancelado',1200.00,11,5,NULL),(14,'fffffffff',4,1,'Cuotas','2021-05-19 00:00:00',13,11,'Moroso',1200.00,9,5,NULL),(15,'gggggggg',4,1,'Cuotas','2021-05-20 00:00:00',14,12,'Activo',1200.00,6,5,'ddddddddd'),(16,'sssss',3,1,'Cuotas','2021-05-20 00:00:00',14,6,'Activo',300.00,10,9,'zzzz');
 /*!40000 ALTER TABLE `contratos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -193,17 +193,16 @@ CREATE TABLE `movimientos` (
   `idMovimientos` int(11) NOT NULL AUTO_INCREMENT,
   `Fecha` date NOT NULL,
   `idContrato` int(11) NOT NULL,
-  `Concepto` enum('Abono','PagoCuota') NOT NULL,
-  `Abono` varchar(45) NOT NULL,
+  `Concepto` varchar(50) NOT NULL,
+  `Abono` decimal(9,2) NOT NULL,
   `idEmpleado` int(11) NOT NULL,
   PRIMARY KEY (`idMovimientos`),
   KEY `fk_movimiento_idx` (`idContrato`),
-  KEY `fk_empleado_idx` (`idEmpleado`),
   KEY `fk_mov_idx` (`idContrato`),
   KEY `fk_cobrador_idx` (`idEmpleado`),
-  CONSTRAINT `fk_cobrador` FOREIGN KEY (`idEmpleado`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_cobrador` FOREIGN KEY (`idEmpleado`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_mov` FOREIGN KEY (`idContrato`) REFERENCES `contratos` (`idcontratos`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -212,6 +211,7 @@ CREATE TABLE `movimientos` (
 
 LOCK TABLES `movimientos` WRITE;
 /*!40000 ALTER TABLE `movimientos` DISABLE KEYS */;
+INSERT INTO `movimientos` VALUES (2,'2021-05-20',11,'Abono corriente',20.50,13),(3,'2021-05-20',11,'Abono corriente',20.50,13),(4,'2021-05-20',12,'Abono corriente',10.00,13),(7,'2021-05-20',14,'Abono Comun',15.00,14);
 /*!40000 ALTER TABLE `movimientos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -365,7 +365,7 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`idusuarios`),
   KEY `fk_empleado_idx` (`idempleados`),
   CONSTRAINT `fk_empleado` FOREIGN KEY (`idempleados`) REFERENCES `empleados` (`idempleados`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,7 +374,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (13,'CARLHOSF','1234','Administrador',17);
+INSERT INTO `usuarios` VALUES (13,'CARLHOSF','1234','Administrador',17),(14,'SS','SS','Administrador',18);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -387,4 +387,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-19 16:08:44
+-- Dump completed on 2021-05-20 16:20:01

@@ -107,6 +107,7 @@ namespace Exequie.GUI
             this.btnMovimientos.Text = "Movimientos";
             this.btnMovimientos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMovimientos.UseVisualStyleBackColor = true;
+            this.btnMovimientos.Click += new System.EventHandler(this.btnMovimientos_Click);
             // 
             // btnDifuntos
             // 
