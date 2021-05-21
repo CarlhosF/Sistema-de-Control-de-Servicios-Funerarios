@@ -9,7 +9,7 @@ namespace DataManager.CLS
 {
     public class ConexionBD
     {
-        String _CadenaConexion = "Server=localhost;Database=funerariabd;Uid=usuario;Pwd=contra;";
+        String _CadenaConexion = "Server=127.0.0.1;Database=funerariabd;Uid=usuario;Pwd=contra;";
         protected MySqlConnection _Conexion;
 
         public ConexionBD()

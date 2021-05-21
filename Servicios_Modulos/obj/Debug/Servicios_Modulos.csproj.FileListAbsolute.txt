@@ -53,3 +53,4 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modul
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csproj.CopyComplete
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csprojAssemblyReference.cache

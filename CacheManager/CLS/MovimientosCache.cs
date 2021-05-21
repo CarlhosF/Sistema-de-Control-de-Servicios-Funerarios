@@ -60,7 +60,7 @@ namespace CacheManager.CLS
             return Resultados;
         }
 
-        public static DataTable Traer_Clientes(int id)
+        public static DataTable Traer_movimiento(int id)
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();

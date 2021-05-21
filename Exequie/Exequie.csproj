@@ -136,6 +136,10 @@
       <Project>{88b3fbb4-03ee-47de-beb3-1124e805c0a7}</Project>
       <Name>Empleados_Modulo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EntregasModulo\EntregasModulo.csproj">
+      <Project>{0f545fc1-a89c-4aad-8d64-159a6326ca77}</Project>
+      <Name>EntregasModulo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MovimientosModulo\MovimientosModulo.csproj">
       <Project>{9d6dbfe8-5919-4658-a08c-02aef70c2405}</Project>
       <Name>MovimientosModulo</Name>

@@ -15,17 +15,17 @@ namespace Servicios_Modulos.CLS
         String _nombre;
         String _Descripcion;
         float _factor;
-
+        int _tratamientos;
         public int IdTipoDeContrato { get => _idTipoDeContrato; set => _idTipoDeContrato = value; }
         public float factor { get => _factor; set => _factor = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
         public string Descripcion { get => _Descripcion; set => _Descripcion = value; }
-
+        public int tratamientos { get => _tratamientos; set => _tratamientos = value; }
         public Boolean Guardar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"INSERT INTO tipodecontrato(nombre,Descripcion,factor) 
-            VALUES('" + this._nombre + "','" + this._Descripcion + "', " + this.factor + " ); ";
+            String Sentencia = @"INSERT INTO tipodecontrato(nombre,Descripcion,factor,tratamiento) 
+            VALUES('" + this._nombre + "','" + this._Descripcion + "', " + this.factor + ","+this.tratamientos+" ); ";
             Console.WriteLine(Sentencia);
             try
             {

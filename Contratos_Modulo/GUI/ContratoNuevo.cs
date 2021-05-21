@@ -104,7 +104,7 @@ namespace Contratos_Modulo.GUI
                 contrato.beneficiario1 = int.Parse(txbIDBeneficiario1.Text);
                 contrato.beneficiario2 = int.Parse(txbIDBeneficiario2.Text);
                 contrato.observaciones = txbObservaciones.Text;
-
+                if (contrato.FormaDePago == "Contado") { contrato.Estado = "Cancelado"; }
                 if (contrato.Guardar())
                 {
                     MessageBox.Show("Registro añadido");

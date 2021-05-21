@@ -28,6 +28,7 @@ namespace Servicios_Modulos.GUI.Servicios
             tc.Nombre = txb_Nombre.Text;
             tc.Descripcion = txb_Descripcion.Text;
             tc.factor = float.Parse(txb_factor.Text);
+            tc.tratamientos = int.Parse(txbTratamiento.Text);
 
             try
             {

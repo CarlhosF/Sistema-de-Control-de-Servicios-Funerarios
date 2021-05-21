@@ -43,6 +43,7 @@
     <Compile Include="CLS\Cache.cs" />
     <Compile Include="CLS\ClientesCache.cs" />
     <Compile Include="CLS\ContratosCache.cs" />
+    <Compile Include="CLS\DifuntosCache.cs" />
     <Compile Include="CLS\EmpleadosCache.cs" />
     <Compile Include="CLS\MovimientosCache.cs" />
     <Compile Include="CLS\PuestoCache.cs" />

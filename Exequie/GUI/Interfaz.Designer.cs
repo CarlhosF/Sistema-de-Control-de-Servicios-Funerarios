@@ -104,7 +104,7 @@ namespace Exequie.GUI
             this.btnMovimientos.Name = "btnMovimientos";
             this.btnMovimientos.Size = new System.Drawing.Size(79, 62);
             this.btnMovimientos.TabIndex = 6;
-            this.btnMovimientos.Text = "Movimientos";
+            this.btnMovimientos.Text = "Abonos";
             this.btnMovimientos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMovimientos.UseVisualStyleBackColor = true;
             this.btnMovimientos.Click += new System.EventHandler(this.btnMovimientos_Click);
@@ -117,9 +117,10 @@ namespace Exequie.GUI
             this.btnDifuntos.Name = "btnDifuntos";
             this.btnDifuntos.Size = new System.Drawing.Size(79, 62);
             this.btnDifuntos.TabIndex = 5;
-            this.btnDifuntos.Text = "Difuntos";
+            this.btnDifuntos.Text = "Entregas";
             this.btnDifuntos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDifuntos.UseVisualStyleBackColor = true;
+            this.btnDifuntos.Click += new System.EventHandler(this.btnDifuntos_Click);
             // 
             // btnContratos
             // 

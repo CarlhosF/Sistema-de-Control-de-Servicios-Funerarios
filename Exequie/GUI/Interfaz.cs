@@ -152,5 +152,18 @@ namespace Exequie.GUI
 
             f.Show();
         }
+
+        private void btnDifuntos_Click(object sender, EventArgs e)
+        {
+            pn_contenedor.Controls.Clear();
+            EntregasModulo.GUI.EntregasGestor f = new EntregasModulo.GUI.EntregasGestor();
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            pn_contenedor.Controls.Add(f);
+            pn_contenedor.Tag = f;
+
+            f.Show();
+        }
     }
 }
