@@ -16,3 +16,9 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bi
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bin\Debug\DataManager.dll.config
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\obj\Debug\EntregasModulo.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\obj\Debug\EntregasModulo.GUI.EntregaEditor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\obj\Debug\EntregasModulo.GUI.EntregasDetalles.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\obj\Debug\EntregasModulo.Properties.Resources.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bin\Debug\Contratos_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bin\Debug\SesionManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bin\Debug\Contratos_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\EntregasModulo\bin\Debug\SesionManager.pdb

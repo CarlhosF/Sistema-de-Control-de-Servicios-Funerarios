@@ -33,8 +33,6 @@ namespace Contratos_Modulo.GUI
             this.dt_contratos = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lb_Registros = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnEliminar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAgregar = new System.Windows.Forms.ToolStripButton();
@@ -80,26 +78,13 @@ namespace Contratos_Modulo.GUI
             this.lb_Registros.Size = new System.Drawing.Size(58, 17);
             this.lb_Registros.Text = "Registros:";
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(70, 22);
-            this.btnEliminar.Text = "Eliminar";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
             // btnEditar
             // 
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(57, 22);
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.Size = new System.Drawing.Size(70, 22);
+            this.btnEditar.Text = "Corregir";
             // 
             // toolStripSeparator2
             // 
@@ -127,12 +112,12 @@ namespace Contratos_Modulo.GUI
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(79, 22);
             this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // txb_Filtro
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             // 
@@ -159,8 +144,6 @@ namespace Contratos_Modulo.GUI
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnEliminar,
-            this.toolStripSeparator1,
             this.btnEditar,
             this.toolStripSeparator2,
             this.btnAgregar,
@@ -202,8 +185,6 @@ namespace Contratos_Modulo.GUI
         private System.Windows.Forms.DataGridView dt_contratos;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lb_Registros;
-        private System.Windows.Forms.ToolStripButton btnEliminar;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btnEditar;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btnAgregar;

@@ -49,8 +49,14 @@ namespace Contratos_Modulo.GUI
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             GUI.ContratoNuevo f = new ContratoNuevo();
-            f.Show();
+            f.ShowDialog();
+            Cargar();
 
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Cargar();
         }
     }
 }

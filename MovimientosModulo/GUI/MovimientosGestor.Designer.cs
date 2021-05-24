@@ -104,8 +104,8 @@ namespace MovimientosModulo.GUI
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(66, 22);
-            this.btnAgregar.Text = "Abonar";
+            this.btnAgregar.Size = new System.Drawing.Size(121, 22);
+            this.btnAgregar.Text = "Gestionar Abonos";
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // toolStripSeparator2
@@ -125,7 +125,6 @@ namespace MovimientosModulo.GUI
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             this.txb_Filtro.Click += new System.EventHandler(this.txb_Filtro_Click);

@@ -56,6 +56,12 @@
     <Compile Include="GUI\EntregaNueva.Designer.cs">
       <DependentUpon>EntregaNueva.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\EntregasDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EntregasDetalles.Designer.cs">
+      <DependentUpon>EntregasDetalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\EntregasGestor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,11 @@
       <DependentUpon>SeleccionarContrato.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GUI\EntregaEditor.resx">
@@ -77,11 +88,18 @@
     <EmbeddedResource Include="GUI\EntregaNueva.resx">
       <DependentUpon>EntregaNueva.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EntregasDetalles.resx">
+      <DependentUpon>EntregasDetalles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\EntregasGestor.resx">
       <DependentUpon>EntregasGestor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SeleccionarContrato.resx">
       <DependentUpon>SeleccionarContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
@@ -89,6 +107,10 @@
     <ProjectReference Include="..\CacheManager\CacheManager.csproj">
       <Project>{35b3b17a-2d1d-442d-b570-61c0f02a945d}</Project>
       <Name>CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contratos_Modulo\Contratos_Modulo.csproj">
+      <Project>{d8737ac7-65f0-41c3-ae70-620652586169}</Project>
+      <Name>Contratos_Modulo</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataManager\DataManager.csproj">
       <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>

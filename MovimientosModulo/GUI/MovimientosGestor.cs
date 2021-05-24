@@ -63,7 +63,8 @@ namespace MovimientosModulo.GUI
             {
                 DataGridViewRow DR = dt_movimientos.SelectedRows[0];
                 GUI.Abonos f = new Abonos(DR);
-                f.Show();
+                f.ShowDialog();
+                Cargar();
             }
             else
             {

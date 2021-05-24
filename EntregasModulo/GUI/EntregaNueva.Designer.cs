@@ -45,9 +45,6 @@ namespace EntregasModulo.GUI
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dtp_muerte = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.txbIDContrato = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dp_fechanacimiento
@@ -184,41 +181,11 @@ namespace EntregasModulo.GUI
             this.label8.TabIndex = 34;
             this.label8.Text = "Fecha de Fallecimiento";
             // 
-            // txbIDContrato
-            // 
-            this.txbIDContrato.Location = new System.Drawing.Point(325, 207);
-            this.txbIDContrato.Name = "txbIDContrato";
-            this.txbIDContrato.ReadOnly = true;
-            this.txbIDContrato.Size = new System.Drawing.Size(50, 20);
-            this.txbIDContrato.TabIndex = 37;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(272, 207);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Contrato";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(381, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 26);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Seleccionar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // EntregaNueva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 251);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txbIDContrato);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(800, 192);
             this.Controls.Add(this.dtp_muerte);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dp_fechanacimiento);
@@ -261,8 +228,5 @@ namespace EntregasModulo.GUI
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DateTimePicker dtp_muerte;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txbIDContrato;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -13,10 +13,12 @@ namespace EntregasModulo.GUI
     public partial class EntregaEditor : Form
     {
         DataTable DT = new DataTable();
+        int idcontrato;
         public EntregaEditor(int id)
         {
             InitializeComponent();
             DT = CacheManager.CLS.DifuntosCache.Traer_Difuntos(id);
+            
         }
 
         private void EntregaEditor_Load(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace EntregasModulo.GUI
             txb_Causa.Text= DT.Rows[0][5].ToString();
             dtp_muerte.Value = DateTime.Parse(DT.Rows[0][6].ToString());
             dp_fechanacimiento.Value= DateTime.Parse(DT.Rows[0][7].ToString());
-            txbIDContrato.Text= DT.Rows[0][8].ToString();
+            idcontrato= int.Parse(DT.Rows[0][8].ToString());
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -37,18 +39,7 @@ namespace EntregasModulo.GUI
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (var form = new SeleccionarContrato())
-            {
-                var result = form.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    txbIDContrato.Text = form.id.ToString();
-                }
-                
-            }
-        }
+     
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -58,7 +49,7 @@ namespace EntregasModulo.GUI
             {
                 CLS.difunto difunto = new CLS.difunto();
                 difunto.iddifunto = int.Parse(txbID.Text);
-                difunto.idcontrato = int.Parse(txbIDContrato.Text);
+                difunto.idcontrato = idcontrato;
                 difunto.nombres = txb_nombres.Text;
                 difunto.apellidos = txb_apellidos.Text;
                 difunto.CausaMuerte = txb_Causa.Text;

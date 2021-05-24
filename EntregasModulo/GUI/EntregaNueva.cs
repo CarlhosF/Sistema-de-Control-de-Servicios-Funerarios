@@ -12,9 +12,11 @@ namespace EntregasModulo.GUI
 {
     public partial class EntregaNueva : Form
     {
-        public EntregaNueva()
+        int idcontrato;
+        public EntregaNueva(int id)
         {
             InitializeComponent();
+            idcontrato = id;
         }
 
         private void EntregaNueva_Load(object sender, EventArgs e)
@@ -27,17 +29,7 @@ namespace EntregasModulo.GUI
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (var form = new SeleccionarContrato())
-            {
-                var result = form.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    txbIDContrato.Text = form.id.ToString();
-                }
-            }
-        }
+        
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -46,7 +38,7 @@ namespace EntregasModulo.GUI
             try
             {
                 CLS.difunto difunto = new CLS.difunto();
-                difunto.idcontrato = int.Parse(txbIDContrato.Text);
+                difunto.idcontrato = idcontrato;
                 difunto.nombres = txb_nombres.Text;
                 difunto.apellidos = txb_apellidos.Text;
                 difunto.CausaMuerte = txb_Causa.Text;

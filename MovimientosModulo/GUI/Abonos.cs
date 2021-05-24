@@ -72,7 +72,14 @@ namespace MovimientosModulo.GUI
             catch { }
 
             txbSaldoPendiente.Text = (monto-Abonado).ToString();
-
+            if (float.Parse(txbSaldoPendiente.Text) == 0)
+            {
+                btnCancelar.Enabled = true;
+            }
+            else 
+            {
+                btnCancelar.Enabled = false;
+            }
             dt_movimientos.DataSource = CacheManager.CLS.MovimientosCache.Listar_Movimienttos_Para_Credito(idContrato);
         }
 
@@ -100,6 +107,14 @@ namespace MovimientosModulo.GUI
             {
                 MessageBox.Show("Seleccione un abono");   
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Contratos_Modulo.CLS.Contrato c = new Contratos_Modulo.CLS.Contrato();
+            c.ActualizarEstado(idContrato,"Cancelado");
+            MessageBox.Show("Contrato cancelado");
+            this.Close();
         }
     }
 }

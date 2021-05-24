@@ -16,7 +16,7 @@ namespace EntregasModulo.GUI
 
         private void Cargar()
         {
-            _DATOS.DataSource = CacheManager.CLS.DifuntosCache.Listar_Difuntos();
+            _DATOS.DataSource = CacheManager.CLS.ContratosCache.Listar_Contratos_Cancelados();
             dt_movimientos.DataSource = _DATOS.DataSource;
             this.UseWaitCursor = false;
             FiltrarLocalmente();
@@ -26,7 +26,7 @@ namespace EntregasModulo.GUI
         {
             if (txb_Filtro.TextLength > 0)
             {
-                _DATOS.Filter = "nombres LIKE '%" + txb_Filtro.Text + "%' or apellidos LIKE '%" + txb_Filtro.Text + "%'";
+                _DATOS.Filter = "ID LIKE '%" + txb_Filtro.Text + "%' or extendido LIKE '%" + txb_Filtro.Text + "%'";
             }
             else
             {
@@ -44,9 +44,16 @@ namespace EntregasModulo.GUI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            GUI.EntregaNueva f = new EntregaNueva();
-            f.Show();
-            Cargar();
+            if (dt_movimientos.SelectedRows.Count>0) 
+            {
+                GUI.EntregasDetalles f = new EntregasDetalles(dt_movimientos.SelectedRows[0]);
+                f.ShowDialog();
+                Cargar();
+            }
+            else 
+            {
+                MessageBox.Show("Seleccione un contrato");
+            }
         }
 
         private void EntregasGestor_Load(object sender, EventArgs e)
@@ -66,17 +73,7 @@ namespace EntregasModulo.GUI
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (dt_movimientos.SelectedRows.Count>0) 
-            {
-                int id = int.Parse(dt_movimientos.SelectedRows[0].Cells[0].Value.ToString());
-                GUI.EntregaEditor f = new EntregaEditor(id);
-                f.Show();
-                Cargar();
-            }
-            else
-            {
-                MessageBox.Show("Seleccione una entrega");
-            }
+            
         }
     }
 }
