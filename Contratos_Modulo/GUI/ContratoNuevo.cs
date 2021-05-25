@@ -73,52 +73,79 @@ namespace Contratos_Modulo.GUI
 
         private void button5_Click(object sender, EventArgs e)
         {
-            using (var form = new EstablecerBeneficiarios())
+            using (var form = new EstablecerContratista())
             {
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    txbIDBeneficiario1.Text = form.id1.ToString();
-                    DataTable DT1 = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id1);
+                    txbIDBeneficiario1.Text = form.id.ToString();
+                    DataTable DT1 = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id);
                     txbBene1.Text = DT1.Rows[0]["nombres"].ToString() + " " + DT1.Rows[0]["apellidos"].ToString();
-                    txbIDBeneficiario2.Text = form.id2.ToString();
-                    DataTable DT2 = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id2);
-                    txbBene2.Text = DT2.Rows[0]["nombres"].ToString() + " " + DT2.Rows[0]["apellidos"].ToString();
+                    
                 }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            try
-            {
-                contrato.extendido = txbExtendido.Text;
-                contrato.idServicio = int.Parse(txbIDServicios.Text);
-                contrato.idTipoDeContrato = int.Parse(txbIDTipoContrato.Text);
-                contrato.FormaDePago = listBox1.SelectedItem.ToString();
-                contrato.Fecha = dtp_fecha.Value;
-                contrato.idvendedor = int.Parse(txbIDVendedor.Text);
-                contrato.idcliente = int.Parse(txbIDContratista.Text);
-                contrato.saldo = float.Parse(txbSaldo.Text);
-                contrato.beneficiario1 = int.Parse(txbIDBeneficiario1.Text);
-                contrato.beneficiario2 = int.Parse(txbIDBeneficiario2.Text);
-                contrato.observaciones = txbObservaciones.Text;
-                if (contrato.FormaDePago == "Contado") { contrato.Estado = "Cancelado"; }
-                if (contrato.Guardar())
-                {
-                    MessageBox.Show("Registro añadido");
-                    this.Close();
-                }
-                else 
-                {
-                    MessageBox.Show("No se puede añadir este registro");
-                }
 
-            }
-            catch 
+            if (txbIDContratista.Text != txbIDBeneficiario1.Text && txbIDBeneficiario1.Text != txbIDBeneficiario2.Text && txbIDBeneficiario2.Text != txbIDContratista.Text)
             {
-                MessageBox.Show("Error al añadir, pruebe rellenar todos los campos");
+                if (txbSaldo.Text.Length > 0 && txbContratista.Text.Length > 0 && txbExtendido.Text.Length > 0)
+                {
+                    try
+                    {
+                        contrato.extendido = txbExtendido.Text;
+                        contrato.idServicio = int.Parse(txbIDServicios.Text);
+                        contrato.idTipoDeContrato = int.Parse(txbIDTipoContrato.Text);
+                        contrato.FormaDePago = listBox1.SelectedItem.ToString();
+                        contrato.Fecha = dtp_fecha.Value;
+                        contrato.idvendedor = int.Parse(txbIDVendedor.Text);
+                        contrato.idcliente = int.Parse(txbIDContratista.Text);
+                        contrato.saldo = float.Parse(txbSaldo.Text);
+                        contrato.beneficiario1 = int.Parse(txbIDBeneficiario1.Text);
+                        contrato.beneficiario2 = int.Parse(txbIDBeneficiario2.Text);
+                        contrato.observaciones = txbObservaciones.Text;
+                        if (contrato.FormaDePago == "Contado") { contrato.Estado = "Cancelado"; }
+                        if (contrato.Guardar())
+                        {
+                            MessageBox.Show("Registro añadido");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se puede añadir este registro");
+                        }
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error al añadir, pruebe rellenar todos los campos");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Rellene los campos antes de aceptar");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("El contratista como los dos beneficiarios de");
+            }
+        }
+
+        private void bntBene2_Click(object sender, EventArgs e)
+        {
+            using (var form = new EstablecerContratista())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txbIDBeneficiario2.Text = form.id.ToString();
+                    DataTable DT1 = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id);
+                    txbBene2.Text = DT1.Rows[0]["nombres"].ToString() + " " + DT1.Rows[0]["apellidos"].ToString();
+
+                }
             }
         }
     }

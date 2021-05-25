@@ -4,18 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.IO;
+using System.Reflection;
+using System.Xml;
 
 namespace DataManager.CLS
 {
     public class ConexionBD
     {
-        String _CadenaConexion = "Server=127.0.0.1;Database=funerariabd;Uid=usuario;Pwd=contra;";
+        XmlDocument xml = new XmlDocument();
+        String Server = "Server=127.0.0.1;";
+        String BD = "Database=funerariabd;";
+        String User = "Uid=usuario;";
+        String Password = "Pwd=contra;";
+
+        public String Cargar() 
+        {
+            xml.Load("Conexion.xml");
+           return xml.InnerText;
+            
+        }
+
         protected MySqlConnection _Conexion;
 
         public ConexionBD()
         {
             _Conexion = new MySqlConnection();
-            _Conexion.ConnectionString = _CadenaConexion;
+            Cargar();
+            _Conexion.ConnectionString = Cargar();
         }
 
         protected Boolean Conectar()

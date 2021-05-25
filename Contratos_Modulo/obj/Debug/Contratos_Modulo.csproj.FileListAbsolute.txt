@@ -19,4 +19,4 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\obj\Debug\Contratos_Modulo.GUI.EstablecerSaldo.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\obj\Debug\Contratos_Modulo.GUI.EstablecerContratista.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\obj\Debug\Contratos_Modulo.Properties.Resources.resources
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\obj\Debug\Contratos_Modulo.GUI.EstablecerBeneficiarios.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Contratos_Modulo\obj\Debug\Contratos_Modulo.GUI.ContratoDetalle.resources

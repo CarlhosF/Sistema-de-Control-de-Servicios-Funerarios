@@ -118,6 +118,7 @@ namespace Contratos_Modulo.GUI
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             // 
@@ -140,6 +141,7 @@ namespace Contratos_Modulo.GUI
             this.btnDetallar.Name = "btnDetallar";
             this.btnDetallar.Size = new System.Drawing.Size(67, 22);
             this.btnDetallar.Text = "Detallar";
+            this.btnDetallar.Click += new System.EventHandler(this.btnDetallar_Click);
             // 
             // toolStrip1
             // 

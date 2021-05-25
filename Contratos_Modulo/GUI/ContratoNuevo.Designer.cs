@@ -59,9 +59,10 @@ namespace Contratos_Modulo.GUI
             this.button2 = new System.Windows.Forms.Button();
             this.btnEstablecerSaldo = new System.Windows.Forms.Button();
             this.btnEstablecerContratista = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.bntBene1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.bntBene2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -200,7 +201,7 @@ namespace Contratos_Modulo.GUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 505);
+            this.label6.Location = new System.Drawing.Point(39, 530);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 16;
@@ -208,7 +209,7 @@ namespace Contratos_Modulo.GUI
             // 
             // txbIDBeneficiario2
             // 
-            this.txbIDBeneficiario2.Location = new System.Drawing.Point(369, 498);
+            this.txbIDBeneficiario2.Location = new System.Drawing.Point(367, 523);
             this.txbIDBeneficiario2.Name = "txbIDBeneficiario2";
             this.txbIDBeneficiario2.ReadOnly = true;
             this.txbIDBeneficiario2.Size = new System.Drawing.Size(36, 20);
@@ -216,7 +217,7 @@ namespace Contratos_Modulo.GUI
             // 
             // txbBene2
             // 
-            this.txbBene2.Location = new System.Drawing.Point(118, 498);
+            this.txbBene2.Location = new System.Drawing.Point(116, 523);
             this.txbBene2.Name = "txbBene2";
             this.txbBene2.ReadOnly = true;
             this.txbBene2.Size = new System.Drawing.Size(245, 20);
@@ -283,7 +284,7 @@ namespace Contratos_Modulo.GUI
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(526, 483);
+            this.button1.Location = new System.Drawing.Point(624, 488);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 30);
             this.button1.TabIndex = 28;
@@ -293,7 +294,7 @@ namespace Contratos_Modulo.GUI
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(639, 483);
+            this.button2.Location = new System.Drawing.Point(737, 488);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 30);
             this.button2.TabIndex = 29;
@@ -321,15 +322,15 @@ namespace Contratos_Modulo.GUI
             this.btnEstablecerContratista.UseVisualStyleBackColor = true;
             this.btnEstablecerContratista.Click += new System.EventHandler(this.btnEstablecerContratista_Click);
             // 
-            // button5
+            // bntBene1
             // 
-            this.button5.Location = new System.Drawing.Point(175, 419);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 37);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "Establecer Beneficirios";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.bntBene1.Location = new System.Drawing.Point(411, 453);
+            this.bntBene1.Name = "bntBene1";
+            this.bntBene1.Size = new System.Drawing.Size(116, 38);
+            this.bntBene1.TabIndex = 32;
+            this.bntBene1.Text = "Establecer Beneficirio 1";
+            this.bntBene1.UseVisualStyleBackColor = true;
+            this.bntBene1.Click += new System.EventHandler(this.button5_Click);
             // 
             // label11
             // 
@@ -352,14 +353,25 @@ namespace Contratos_Modulo.GUI
             this.listBox1.Size = new System.Drawing.Size(136, 30);
             this.listBox1.TabIndex = 34;
             // 
+            // bntBene2
+            // 
+            this.bntBene2.Location = new System.Drawing.Point(409, 514);
+            this.bntBene2.Name = "bntBene2";
+            this.bntBene2.Size = new System.Drawing.Size(116, 37);
+            this.bntBene2.TabIndex = 35;
+            this.bntBene2.Text = "Establecer Beneficirio 2";
+            this.bntBene2.UseVisualStyleBackColor = true;
+            this.bntBene2.Click += new System.EventHandler(this.bntBene2_Click);
+            // 
             // ContratoNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 525);
+            this.ClientSize = new System.Drawing.Size(831, 555);
+            this.Controls.Add(this.bntBene2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.bntBene1);
             this.Controls.Add(this.btnEstablecerContratista);
             this.Controls.Add(this.btnEstablecerSaldo);
             this.Controls.Add(this.button2);
@@ -430,8 +442,9 @@ namespace Contratos_Modulo.GUI
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEstablecerSaldo;
         private System.Windows.Forms.Button btnEstablecerContratista;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bntBene1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button bntBene2;
     }
 }

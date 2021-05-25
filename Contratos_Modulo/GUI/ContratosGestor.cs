@@ -58,5 +58,15 @@ namespace Contratos_Modulo.GUI
         {
             Cargar();
         }
+
+        private void btnDetallar_Click(object sender, EventArgs e)
+        {
+            if (dt_contratos.SelectedRows.Count > 0)
+            {
+                GUI.ContratoDetalle cd = new ContratoDetalle(dt_contratos.SelectedRows[0]);
+                cd.ShowDialog();
+            }
+
+        }
     }
 }

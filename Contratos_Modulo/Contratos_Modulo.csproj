@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLS\Contrato.cs" />
+    <Compile Include="GUI\ContratoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ContratoDetalle.Designer.cs">
+      <DependentUpon>ContratoDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ContratoNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,12 +61,6 @@
     </Compile>
     <Compile Include="GUI\ContratosGestor.Designer.cs">
       <DependentUpon>ContratosGestor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\EstablecerBeneficiarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\EstablecerBeneficiarios.Designer.cs">
-      <DependentUpon>EstablecerBeneficiarios.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\EstablecerContratista.cs">
       <SubType>Form</SubType>
@@ -95,16 +95,15 @@
       <Name>SesionManager</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="GUI\ContratoDetalle.resx">
+      <DependentUpon>ContratoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ContratoNuevo.resx">
       <DependentUpon>ContratoNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ContratosGestor.resx">
       <DependentUpon>ContratosGestor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\EstablecerBeneficiarios.resx">
-      <DependentUpon>EstablecerBeneficiarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\EstablecerContratista.resx">
       <DependentUpon>EstablecerContratista.cs</DependentUpon>
