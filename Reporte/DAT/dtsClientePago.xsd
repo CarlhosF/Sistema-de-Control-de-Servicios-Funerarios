@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsClientePago" targetNamespace="http://tempuri.org/dtsClientePago.xsd" xmlns:mstns="http://tempuri.org/dtsClientePago.xsd" xmlns="http://tempuri.org/dtsClientePago.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsClientePago" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtsClientePago" msprop:Generator_UserDSName="dtsClientePago">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClientePago" msprop:Generator_TableClassName="ClientePagoDataTable" msprop:Generator_TableVarName="tableClientePago" msprop:Generator_TablePropName="ClientePago" msprop:Generator_RowDeletingName="ClientePagoRowDeleting" msprop:Generator_RowChangingName="ClientePagoRowChanging" msprop:Generator_RowEvHandlerName="ClientePagoRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientePagoRowDeleted" msprop:Generator_UserTableName="ClientePago" msprop:Generator_RowChangedName="ClientePagoRowChanged" msprop:Generator_RowEvArgName="ClientePagoRowChangeEvent" msprop:Generator_RowClassName="ClientePagoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:Caption="idclientes" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Contrato" msdata:Caption="Idcontratos" msprop:Generator_ColumnVarNameInTable="columnContrato" msprop:Generator_ColumnPropNameInRow="Contrato" msprop:Generator_ColumnPropNameInTable="ContratoColumn" msprop:Generator_UserColumnName="Contrato" type="xs:int" minOccurs="0" />
+              <xs:element name="Cliente" msdata:Caption="Idcontratos" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_UserColumnName="Cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="direccion" msdata:Caption="Idcontratos" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn" msprop:Generator_UserColumnName="direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="telefono" msdata:Caption="Idcontratos" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono" type="xs:int" minOccurs="0" />
+              <xs:element name="dui" msprop:Generator_ColumnVarNameInTable="columndui" msprop:Generator_ColumnPropNameInRow="dui" msprop:Generator_ColumnPropNameInTable="duiColumn" msprop:Generator_UserColumnName="dui" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

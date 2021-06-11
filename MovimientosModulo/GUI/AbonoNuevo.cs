@@ -27,11 +27,11 @@ namespace MovimientosModulo.GUI
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CLS.Movimiento mov = new CLS.Movimiento();
-            mov.fecha = DateTime.Now;
-            mov.idVendedor = int.Parse(SesionManager.CLS.Sesion.Instancia.IDUsuario);
+            mov.Fecha = DateTime.Now;
+            mov.IdVendedor = int.Parse(SesionManager.CLS.Sesion.Instancia.IDUsuario);
             mov.Concepto = txbConcepto.Text;
             mov.Abono = float.Parse(txbAbono.Text);
-            mov.idContrato = idC;
+            mov.IdContrato = idC;
 
             try
             {

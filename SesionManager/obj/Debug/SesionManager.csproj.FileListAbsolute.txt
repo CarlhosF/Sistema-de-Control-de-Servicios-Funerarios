@@ -57,3 +57,23 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\o
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.csproj.CopyComplete
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\SesionManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\SesionManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\SesionManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\SesionManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\CacheManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\MySql.Data.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\CacheManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Debug\SesionManager.pdb

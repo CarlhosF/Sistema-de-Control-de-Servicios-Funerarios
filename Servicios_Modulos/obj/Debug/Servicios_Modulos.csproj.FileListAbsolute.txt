@@ -54,3 +54,37 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modul
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csprojAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Editar_Servicio.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Nuevo_Servicio.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Contratos.Editar_Contrato.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Contratos.Nuevo_Contrato.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios_Gestor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.Properties.Resources.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csproj.GenerateResource.Cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\Servicios_Modulos.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\Servicios_Modulos.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\Servicios_Modulos.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\Servicios_Modulos.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\CacheManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\MySql.Data.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\CacheManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Editar_Servicio.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios.Nuevo_Servicio.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Contratos.Editar_Contrato.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Contratos.Nuevo_Contrato.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.GUI.Servicios_Gestor.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.Properties.Resources.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.csproj.GenerateResource.Cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Servicios_Modulos\obj\Debug\Servicios_Modulos.pdb

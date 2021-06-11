@@ -95,17 +95,17 @@ namespace Contratos_Modulo.GUI
                 {
                     try
                     {
-                        contrato.extendido = txbExtendido.Text;
-                        contrato.idServicio = int.Parse(txbIDServicios.Text);
-                        contrato.idTipoDeContrato = int.Parse(txbIDTipoContrato.Text);
+                        contrato.Extendido = txbExtendido.Text;
+                        contrato.IdServicio = int.Parse(txbIDServicios.Text);
+                        contrato.IdTipoDeContrato = int.Parse(txbIDTipoContrato.Text);
                         contrato.FormaDePago = listBox1.SelectedItem.ToString();
                         contrato.Fecha = dtp_fecha.Value;
-                        contrato.idvendedor = int.Parse(txbIDVendedor.Text);
-                        contrato.idcliente = int.Parse(txbIDContratista.Text);
-                        contrato.saldo = float.Parse(txbSaldo.Text);
-                        contrato.beneficiario1 = int.Parse(txbIDBeneficiario1.Text);
-                        contrato.beneficiario2 = int.Parse(txbIDBeneficiario2.Text);
-                        contrato.observaciones = txbObservaciones.Text;
+                        contrato.Idvendedor = int.Parse(txbIDVendedor.Text);
+                        contrato.Contratista = int.Parse(txbIDContratista.Text);
+                        contrato.Saldo = float.Parse(txbSaldo.Text);
+                        contrato.Beneficiario1 = int.Parse(txbIDBeneficiario1.Text);
+                        contrato.Beneficiario2 = int.Parse(txbIDBeneficiario2.Text);
+                        contrato.Observaciones = txbObservaciones.Text;
                         if (contrato.FormaDePago == "Contado") { contrato.Estado = "Cancelado"; }
                         if (contrato.Guardar())
                         {

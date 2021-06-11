@@ -38,3 +38,37 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modul
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.csproj.CopyComplete
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\Empleados_Modulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\Empleados_Modulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleados_Gestor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleado.Editar_Empleado.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleado.Nuevo_Empleado.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Puesto.PuestoEditor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Puesto.PuestoNuevo.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.Properties.Resources.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.csproj.GenerateResource.Cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\Empleados_Modulo.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\Empleados_Modulo.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\CacheManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\MySql.Data.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\CacheManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleados_Gestor.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleado.Editar_Empleado.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Empleado.Nuevo_Empleado.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Puesto.PuestoEditor.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.GUI.Puesto.PuestoNuevo.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.Properties.Resources.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.csproj.GenerateResource.Cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Debug\Empleados_Modulo.pdb

@@ -68,5 +68,31 @@ namespace Contratos_Modulo.GUI
             }
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (dt_contratos.SelectedRows.Count > 0)
+            {
+                GUI.ContratoDetalle cd = new ContratoDetalle(dt_contratos.SelectedRows[0]);
+                cd.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un contrato");
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dt_contratos.SelectedRows.Count > 0)
+            {
+                GUI.btnSelecBene1 f = new btnSelecBene1((int)dt_contratos.SelectedRows[0].Cells[0].Value);
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un contrato");
+            }
+        }
     }
 }

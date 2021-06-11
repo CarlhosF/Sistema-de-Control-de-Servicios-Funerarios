@@ -144,6 +144,10 @@
       <Project>{9d6dbfe8-5919-4658-a08c-02aef70c2405}</Project>
       <Name>MovimientosModulo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Reporte\Reporte.csproj">
+      <Project>{e5f4cf03-c73d-494c-8f55-4a823f313bae}</Project>
+      <Name>Reporte</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Servicios_Modulos\Servicios_Modulos.csproj">
       <Project>{3e7db230-4f6a-42e2-b8a9-2e93f91d3a4e}</Project>
       <Name>Servicios_Modulos</Name>

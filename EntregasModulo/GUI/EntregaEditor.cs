@@ -48,15 +48,15 @@ namespace EntregasModulo.GUI
             try
             {
                 CLS.difunto difunto = new CLS.difunto();
-                difunto.iddifunto = int.Parse(txbID.Text);
-                difunto.idcontrato = idcontrato;
-                difunto.nombres = txb_nombres.Text;
-                difunto.apellidos = txb_apellidos.Text;
+                difunto.Iddifunto = int.Parse(txbID.Text);
+                difunto.Idcontrato = idcontrato;
+                difunto.Nombres = txb_nombres.Text;
+                difunto.Apellidos = txb_apellidos.Text;
                 difunto.CausaMuerte = txb_Causa.Text;
-                difunto.direccionDeEntrega = txbdireccionEntrega.Text;
-                difunto.direccionDeToma = txbdireccionToma.Text;
-                difunto.fechanacimiento = dp_fechanacimiento.Value;
-                difunto.fechanMuerte = dtp_muerte.Value;
+                difunto.DireccionDeEntrega = txbdireccionEntrega.Text;
+                difunto.DireccionDeToma = txbdireccionToma.Text;
+                difunto.Fechanacimiento = dp_fechanacimiento.Value;
+                difunto.FechanMuerte = dtp_muerte.Value;
                 if (difunto.Editar())
                 {
                     MessageBox.Show("Registro actualizado");

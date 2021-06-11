@@ -18,18 +18,97 @@ namespace Servicios_Modulos.CLS
         String _descripcion;
         float _prima;
 
-        public int Idservicios { get => _idservicios; set => _idservicios = value; }
-        public string Nombre { get => _nombre; set => _nombre = value; }
-        public float Valorcontado { get => _valorcontado; set => _valorcontado = value; }
-        public float Valorcuota { get => _valorcuota; set => _valorcuota = value; }
-        public string Descripcion { get => _descripcion; set => _descripcion = value; }
-        public float Prima { get => _prima; set => _prima = value; }
+        public int Idservicios
+        {
+            get
+            {
+                return _idservicios;
+            }
 
+            set
+            {
+                _idservicios = value;
+            }
+        }
+
+        public string Nombre
+        {
+            get
+            {
+                return _nombre;
+            }
+
+            set
+            {
+                _nombre = value;
+            }
+        }
+
+        public float Valorcontado
+        {
+            get
+            {
+                return _valorcontado;
+            }
+
+            set
+            {
+                _valorcontado = value;
+            }
+        }
+
+        public float Valorcuota
+        {
+            get
+            {
+                return _valorcuota;
+            }
+
+            set
+            {
+                _valorcuota = value;
+            }
+        }
+
+        public string Descripcion
+        {
+            get
+            {
+                return _descripcion;
+            }
+
+            set
+            {
+                _descripcion = value;
+            }
+        }
+
+        public float Prima
+        {
+            get
+            {
+                return _prima;
+            }
+
+            set
+            {
+                _prima = value;
+            }
+        }
+
+        /*
+public int Idservicios { get => _idservicios; set => _idservicios = value; }
+public string Nombre { get => _nombre; set => _nombre = value; }
+public float Valorcontado { get => _valorcontado; set => _valorcontado = value; }
+public float Valorcuota { get => _valorcuota; set => _valorcuota = value; }
+public string Descripcion { get => _descripcion; set => _descripcion = value; }
+public float Prima { get => _prima; set => _prima = value; }
+*/
         public Boolean Guardar()
         {
             Boolean Resultado = false;
             String Sentencia = @"INSERT INTO servicios(nombre,valorcontado,valorcuota,descripcion,prima) 
-            VALUES(' " + this._nombre + " '," + this._valorcontado + ", " + this._valorcuota + " ,' " + this._descripcion + " '," + this._prima + " ); ";
+            VALUES(' " + this.Nombre + " '," + this.Valorcontado + ", " + this.Valorcuota + " ,' " + this.Descripcion + " '," + this.Prima + " ); ";
             Console.WriteLine(Sentencia);
             try
             {
@@ -55,8 +134,8 @@ namespace Servicios_Modulos.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE servicios SET nombre=' " + this._nombre + " ' , valorcontado=" + this._valorcontado + ", valorcuota=" + this._valorcuota +", descripcion=' " + this._descripcion + " ' , prima=" + this._prima +"" +
-                               "WHERE idservicios = "+ this._idservicios +";";
+            String Sentencia = @"UPDATE servicios SET nombre=' " + this.Nombre + " ' , valorcontado=" + this.Valorcontado + ", valorcuota=" + this.Valorcuota +", descripcion=' " + this.Descripcion + " ' , prima=" + this.Prima +"" +
+                               "WHERE idservicios = "+ this.Idservicios +";";
             Console.WriteLine(Sentencia);
             try
             {

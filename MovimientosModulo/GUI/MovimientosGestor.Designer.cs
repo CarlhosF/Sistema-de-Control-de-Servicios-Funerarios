@@ -41,6 +41,8 @@ namespace MovimientosModulo.GUI
             this.txb_Filtro = new System.Windows.Forms.ToolStripTextBox();
             this.lb_Filtro = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnPagoDia = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dt_movimientos)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -87,6 +89,8 @@ namespace MovimientosModulo.GUI
             this.txb_Filtro,
             this.lb_Filtro,
             this.toolStripSeparator5,
+            this.btnPagoDia,
+            this.toolStripSeparator1,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -142,13 +146,28 @@ namespace MovimientosModulo.GUI
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
             // 
+            // btnPagoDia
+            // 
+            this.btnPagoDia.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoDia.Image")));
+            this.btnPagoDia.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPagoDia.Name = "btnPagoDia";
+            this.btnPagoDia.Size = new System.Drawing.Size(145, 22);
+            this.btnPagoDia.Text = "Reportar pagos del dia";
+            this.btnPagoDia.Click += new System.EventHandler(this.btnPagoDia_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // toolStripButton1
             // 
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(134, 22);
-            this.toolStripButton1.Text = "Historial de Ingresos";
+            this.toolStripButton1.Size = new System.Drawing.Size(141, 22);
+            this.toolStripButton1.Text = "Reporte Movimientos";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // MovimientosGestor
             // 
@@ -185,5 +204,7 @@ namespace MovimientosModulo.GUI
         private System.Windows.Forms.ToolStripLabel lb_Filtro;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnPagoDia;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

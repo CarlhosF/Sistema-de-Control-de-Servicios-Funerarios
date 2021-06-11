@@ -71,5 +71,33 @@ namespace MovimientosModulo.GUI
                 MessageBox.Show("Seleccione una cuenta");
             }
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            //reporte de movimientos
+            try
+            {
+                Reporte.GUI.ReporteMovimientos f = new Reporte.GUI.ReporteMovimientos();
+                //f.MdiParent = this;
+                f.Show();
+            }
+            catch
+            {
+            }
+        }
+
+        private void btnPagoDia_Click(object sender, EventArgs e)
+        {
+
+            //reporte de cliente pago
+            try
+            {
+                Reporte.GUI.ReporteClientePago f = new Reporte.GUI.ReporteClientePago();
+                f.Show();
+            }
+            catch
+            {
+            }
+        }
     }
 }

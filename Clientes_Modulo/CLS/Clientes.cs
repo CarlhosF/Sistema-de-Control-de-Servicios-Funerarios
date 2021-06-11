@@ -151,7 +151,7 @@ namespace Clientes_Modulo.CLS
         public Boolean Editar()
         {
             Boolean Resultado = false;
-            String Sentencia = @"UPDATE clientes SET nombres=' " + this._nombres + " ' , apellidos=' " + this._apellidos + " ' , dui=' " + this._dui + " ' , direccion=' " + this._direccion + " ' , fechanacimiento=' " + this._fechanacimiento.ToString("yyyy/MM/dd") + " ' , telefono=' " + this._telefono + " ' , oficio=' " + this._oficio + " ' " +
+            String Sentencia = @"UPDATE clientes SET nombres='" + this._nombres + "' , apellidos='" + this._apellidos + "' , dui='" + this._dui + "' , direccion='" + this._direccion + "' , fechanacimiento='" + this._fechanacimiento.ToString("yyyy/MM/dd") + "' , telefono='" + this._telefono + "' , oficio='" + this._oficio + "' " +
                                "WHERE idclientes = " + this._idclientes + ";";
             Console.WriteLine(Sentencia);
             try

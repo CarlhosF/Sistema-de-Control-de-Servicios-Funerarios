@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLS\Contrato.cs" />
+    <Compile Include="GUI\ContratoCorrector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ContratoCorrector.Designer.cs">
+      <DependentUpon>ContratoCorrector.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ContratoDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +96,19 @@
       <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>
       <Name>DataManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Reporte\Reporte.csproj">
+      <Project>{e5f4cf03-c73d-494c-8f55-4a823f313bae}</Project>
+      <Name>Reporte</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SesionManager\SesionManager.csproj">
       <Project>{b5c2f8f3-5ed0-4aee-8410-6d33ea75e10d}</Project>
       <Name>SesionManager</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GUI\ContratoCorrector.resx">
+      <DependentUpon>ContratoCorrector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ContratoDetalle.resx">
       <DependentUpon>ContratoDetalle.cs</DependentUpon>
     </EmbeddedResource>

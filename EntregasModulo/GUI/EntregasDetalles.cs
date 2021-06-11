@@ -65,7 +65,7 @@ namespace EntregasModulo.GUI
             }
             else
             {
-                btnAgregar.Enabled = false;
+                btnEntregar.Enabled = false;
             }
             dt_difuntos.DataSource = CacheManager.CLS.DifuntosCache.Listar_Difuntos(idContrato);
         }

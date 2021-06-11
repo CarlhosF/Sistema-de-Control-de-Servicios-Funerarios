@@ -27,8 +27,8 @@ namespace Servicios_Modulos.GUI.Servicios
             CLS.TipoContrato tc = new CLS.TipoContrato();
             tc.Nombre = txb_Nombre.Text;
             tc.Descripcion = txb_Descripcion.Text;
-            tc.factor = float.Parse(txb_factor.Text);
-            tc.tratamientos = int.Parse(txbTratamiento.Text);
+            tc.Factor = float.Parse(txb_factor.Text);
+            tc.Tratamientos = int.Parse(txbTratamiento.Text);
 
             try
             {

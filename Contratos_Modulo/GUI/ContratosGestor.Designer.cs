@@ -41,8 +41,9 @@ namespace Contratos_Modulo.GUI
             this.txb_Filtro = new System.Windows.Forms.ToolStripTextBox();
             this.lb_Filtro = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnDetallar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.dt_contratos)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -85,6 +86,7 @@ namespace Contratos_Modulo.GUI
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(70, 22);
             this.btnEditar.Text = "Corregir";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // toolStripSeparator2
             // 
@@ -118,7 +120,6 @@ namespace Contratos_Modulo.GUI
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             // 
@@ -134,15 +135,6 @@ namespace Contratos_Modulo.GUI
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
-            // btnDetallar
-            // 
-            this.btnDetallar.Image = ((System.Drawing.Image)(resources.GetObject("btnDetallar.Image")));
-            this.btnDetallar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDetallar.Name = "btnDetallar";
-            this.btnDetallar.Size = new System.Drawing.Size(67, 22);
-            this.btnDetallar.Text = "Detallar";
-            this.btnDetallar.Click += new System.EventHandler(this.btnDetallar_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -154,12 +146,27 @@ namespace Contratos_Modulo.GUI
             this.txb_Filtro,
             this.lb_Filtro,
             this.toolStripSeparator4,
-            this.btnDetallar});
+            this.toolStripButton1,
+            this.toolStripSeparator1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(606, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(67, 22);
+            this.toolStripButton1.Text = "Detallar";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // ContratosGestor
             // 
@@ -195,7 +202,8 @@ namespace Contratos_Modulo.GUI
         private System.Windows.Forms.ToolStripTextBox txb_Filtro;
         private System.Windows.Forms.ToolStripLabel lb_Filtro;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton btnDetallar;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

@@ -9,6 +9,7 @@ namespace CacheManager.CLS
 {
     public static class Cache
     {
+
         public static DataTable PERMISOS_DE_UN_ROL(String pIDRol)
         {
             DataTable Resultados = new DataTable();

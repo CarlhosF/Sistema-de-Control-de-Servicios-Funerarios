@@ -49,3 +49,21 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.CopyComplete
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll.config
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.GUI.Prueba.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.GenerateResource.Cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll.config
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\MySql.Data.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.GUI.Prueba.resources
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.GenerateResource.Cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.pdb

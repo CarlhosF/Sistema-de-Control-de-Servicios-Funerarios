@@ -47,3 +47,19 @@ C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\ob
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csproj.CopyComplete
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.dll
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 05 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\CacheManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\CacheManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\MySql.Data.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.pdb
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.dll
+C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.pdb
