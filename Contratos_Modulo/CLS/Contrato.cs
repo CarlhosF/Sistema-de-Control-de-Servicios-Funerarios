@@ -272,10 +272,11 @@ public int beneficiario2{ get => _beneficiario2; set => _beneficiario2 = value; 
             }
             return Resultado;
         }
-        public Boolean Actualizar()
+        public Boolean Corregir()
         {
             Boolean Resultado = false;
             String Sentencia = @"update contratos SET Estado = '" + this.Estado + "',Extendido='"+this.Extendido+"', Observaciones='"+this.Observaciones+ "', fecha='"+ this.Fecha.ToString("yyyy/MM/dd") + "',contratista="+this.Contratista+ ",Beneficiario1="+this.Beneficiario1+ ",Beneficiario2=" + this.Beneficiario2 + " WHERE idcontratos =" + this.Idcontratos + ";";
+            Console.WriteLine(Sentencia);
             try
             {
                 DataManager.CLS.OperacionBD Operacion = new DataManager.CLS.OperacionBD();

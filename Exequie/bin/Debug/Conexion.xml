@@ -2,9 +2,9 @@
 
 <DocumentElement>
 	<Conexion>
-		<Server>Server=bs2vkycio293yyx8k5ho-mysql.services.clever-cloud.com;</Server>
-		<BD>Database=bs2vkycio293yyx8k5ho;</BD>
-		<User>Uid=ulpsvvxkuul8err8;</User>
-		<Password>Pwd=Woij0iK5icvCY0WxEoQr;</Password>
+		<Server>Server=127.0.0.1;</Server>
+		<BD>Database=funerariabd;</BD>
+		<User>Uid=root;</User>
+		<Password>Pwd=admin;</Password>
 	</Conexion>
 </DocumentElement>

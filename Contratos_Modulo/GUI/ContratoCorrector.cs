@@ -60,5 +60,76 @@ namespace Contratos_Modulo.GUI
         {
             this.Close();
         }
+
+        private void btnEstablecerContra_Click(object sender, EventArgs e)
+        {
+            using (var form = new EstablecerContratista())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txbIDContratista.Text = form.id.ToString();
+                    DataTable DT = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id);
+                    txbContratista.Text = DT.Rows[0]["nombres"].ToString() + " " + DT.Rows[0]["apellidos"].ToString();
+                }
+            }
+        }
+
+        private void btnEstableceBene1_Click(object sender, EventArgs e)
+        {
+            using (var form = new EstablecerContratista())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txbIDBene1.Text = form.id.ToString();
+                    DataTable DT = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id);
+                    txbBene1.Text = DT.Rows[0]["nombres"].ToString() + " " + DT.Rows[0]["apellidos"].ToString();
+                }
+            }
+        }
+
+        private void btnEstableceBene2_Click(object sender, EventArgs e)
+        {
+            using (var form = new EstablecerContratista())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    txbIDBene2.Text = form.id.ToString();
+                    DataTable DT = CacheManager.CLS.ClientesCache.Traer_Clientes(form.id);
+                    txbBene2.Text = DT.Rows[0]["nombres"].ToString() + " " + DT.Rows[0]["apellidos"].ToString();
+                }
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            CLS.Contrato co = new CLS.Contrato();
+            co.Idcontratos = int.Parse(txbIDcontrato.Text);
+            co.Fecha = dtpFecha.Value;
+            co.Observaciones = txbObservaciones.Text;
+            co.Extendido = txbExtendido.Text;
+            co.Estado = lstbEstado.SelectedItem.ToString();
+            co.Contratista= int.Parse(txbIDContratista.Text);
+            co.Beneficiario1= int.Parse(txbIDBene1.Text);
+            co.Beneficiario2= int.Parse(txbIDBene2.Text);
+            try
+            {
+                if (co.Corregir())
+                {
+                    MessageBox.Show("Registro actualizado");
+                }
+                else
+                {
+                    MessageBox.Show("NO se pudo actualizar el contrato");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error al actualizar el registro");
+            }
+
+        }
     }
 }

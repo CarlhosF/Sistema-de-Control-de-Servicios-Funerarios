@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Empleados_Modulo.CLS
 {
-    class Puesto
+    public class Puesto
     {
         int _idpuesto;
         string _Nombre;

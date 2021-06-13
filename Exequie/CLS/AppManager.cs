@@ -40,6 +40,7 @@ namespace Exequie.CLS
                     f.ShowDialog();
                     Environment.Exit(0);
                 }
+                Environment.Exit(0);
             }
         }
 

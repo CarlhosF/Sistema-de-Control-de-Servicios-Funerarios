@@ -4,13 +4,9 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\MySql.Data.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\CacheManager.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\DataManager.pdb
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\DataManager.dll.config
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.SucursalGestor.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.Properties.Resources.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.Sucursal_Editor.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.SucursalNueva.resources
@@ -79,3 +75,4 @@ C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.GenerateResource.Cache
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.dll
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csprojResolveAssemblyReference.cache

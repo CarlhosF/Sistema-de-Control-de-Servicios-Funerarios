@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Exequie.GUI
 {
@@ -95,7 +96,9 @@ namespace Exequie.GUI
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            XmlDocument xml = new XmlDocument();
+            xml.Load("Conexion.xml");
+            lbServer.Text = xml.DocumentElement.FirstChild.FirstChild.InnerText;
         }
     }
 }

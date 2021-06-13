@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.lbServer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -134,6 +135,16 @@
             this.lblMensaje.Text = "INGRESE SUS CREDENCIALES";
             this.lblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbServer
+            // 
+            this.lbServer.AutoSize = true;
+            this.lbServer.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbServer.Location = new System.Drawing.Point(12, 289);
+            this.lbServer.Name = "lbServer";
+            this.lbServer.Size = new System.Drawing.Size(67, 13);
+            this.lbServer.TabIndex = 9;
+            this.lbServer.Text = "Servidor: ";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +152,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(534, 311);
             this.ControlBox = false;
+            this.Controls.Add(this.lbServer);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -174,5 +186,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Label lbServer;
     }
 }

@@ -31,11 +31,8 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\D
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.pdb
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\MySql.Data.dll
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.GUI.Prueba.resources
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.pdb
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Debug\DataManager.dll.config
@@ -76,3 +73,4 @@ C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csproj.GenerateResource.Cache
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.dll
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Debug\DataManager.csprojResolveAssemblyReference.cache

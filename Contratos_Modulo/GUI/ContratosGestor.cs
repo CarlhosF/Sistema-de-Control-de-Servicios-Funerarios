@@ -65,6 +65,7 @@ namespace Contratos_Modulo.GUI
             {
                 GUI.ContratoDetalle cd = new ContratoDetalle(dt_contratos.SelectedRows[0]);
                 cd.ShowDialog();
+                Cargar();
             }
 
         }
@@ -75,6 +76,7 @@ namespace Contratos_Modulo.GUI
             {
                 GUI.ContratoDetalle cd = new ContratoDetalle(dt_contratos.SelectedRows[0]);
                 cd.ShowDialog();
+                Cargar();
             }
             else
             {
@@ -88,6 +90,36 @@ namespace Contratos_Modulo.GUI
             {
                 GUI.btnSelecBene1 f = new btnSelecBene1((int)dt_contratos.SelectedRows[0].Cells[0].Value);
                 f.ShowDialog();
+                Cargar();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un contrato");
+            }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if (dt_contratos.SelectedRows.Count > 0)
+            {
+                int id =(int)dt_contratos.SelectedRows[0].Cells[0].Value;
+                CLS.Contrato co = new CLS.Contrato();
+                try {
+                    if (co.Eliminar(id))
+                    {
+                        MessageBox.Show("Contrato eliminado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este contrato no puede eliminarse");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Error al eliminar");
+                }
+                
+                
             }
             else
             {

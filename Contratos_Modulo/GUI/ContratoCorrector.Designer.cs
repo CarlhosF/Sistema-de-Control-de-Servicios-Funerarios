@@ -62,6 +62,7 @@
             this.btnActualizar.TabIndex = 0;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCancelar
             // 
@@ -242,6 +243,7 @@
             this.btnEstableceBene1.TabIndex = 21;
             this.btnEstableceBene1.Text = "...";
             this.btnEstableceBene1.UseVisualStyleBackColor = true;
+            this.btnEstableceBene1.Click += new System.EventHandler(this.btnEstableceBene1_Click);
             // 
             // btnEstableceBene2
             // 
@@ -251,6 +253,7 @@
             this.btnEstableceBene2.TabIndex = 22;
             this.btnEstableceBene2.Text = "...";
             this.btnEstableceBene2.UseVisualStyleBackColor = true;
+            this.btnEstableceBene2.Click += new System.EventHandler(this.btnEstableceBene2_Click);
             // 
             // btnEstablecerContra
             // 
@@ -260,6 +263,7 @@
             this.btnEstablecerContra.TabIndex = 23;
             this.btnEstablecerContra.Text = "...";
             this.btnEstablecerContra.UseVisualStyleBackColor = true;
+            this.btnEstablecerContra.Click += new System.EventHandler(this.btnEstablecerContra_Click);
             // 
             // btnSelecBene1
             // 

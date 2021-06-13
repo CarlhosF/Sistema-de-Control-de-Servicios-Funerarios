@@ -30,10 +30,6 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\MySql.Data.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.pdb
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\DataManager.dll.config
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csprojAssemblyReference.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csproj.CopyComplete
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.pdb
 C:\Users\HP\Documents\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Debug\CacheManager.dll
@@ -71,3 +67,4 @@ C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.dll
 C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Debug\CacheManager.csprojResolveAssemblyReference.cache

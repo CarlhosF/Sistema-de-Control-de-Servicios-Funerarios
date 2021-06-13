@@ -7,7 +7,7 @@ using CacheManager;
 using DataManager;
 namespace Empleados_Modulo.CLS
 {
-    class Empleados
+    public class Empleados
     {
         int _idEmpleado;
         string _Nombre;
