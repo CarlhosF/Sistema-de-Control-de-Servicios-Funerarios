@@ -64,3 +64,18 @@ C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.GenerateResource.Cache
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.dll
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\Sucursales_Modulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.SucursalGestor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.SucursalNueva.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.GUI.Sucursal_Editor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.Properties.Resources.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.csproj.GenerateResource.Cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Debug\Sucursales_Modulo.pdb

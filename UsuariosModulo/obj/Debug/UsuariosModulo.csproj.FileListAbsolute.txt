@@ -68,3 +68,19 @@ C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.csproj.GenerateResource.Cache
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.dll
 C:\Users\HP\Downloads\Sistema-de-Control-de-Servicios-Funerarios (2)\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\UsuariosModulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\UsuariosModulo.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\CacheManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\DataManager.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\MySql.Data.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\CacheManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Debug\DataManager.pdb
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.csprojResolveAssemblyReference.cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.SeleccionarEmpleado.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.UsuarioEditar.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.UsuarioNuevo.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.GUI.UsuariosGestor.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.Properties.Resources.resources
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.csproj.GenerateResource.Cache
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.dll
+C:\CICLO 01 2021\DESARROLLO DE SOFTWARE II\SISTEMA FUNERARIO 11 JUNIO\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Debug\UsuariosModulo.pdb

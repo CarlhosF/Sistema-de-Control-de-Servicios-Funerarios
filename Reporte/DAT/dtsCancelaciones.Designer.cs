@@ -281,7 +281,7 @@ namespace Reporte.DAT {
             
             private global::System.Data.DataColumn columnidcontratos;
             
-            private global::System.Data.DataColumn columnidclientes;
+            private global::System.Data.DataColumn columnID;
             
             private global::System.Data.DataColumn columnCliente;
             
@@ -342,9 +342,9 @@ namespace Reporte.DAT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn idclientesColumn {
+            public global::System.Data.DataColumn IDColumn {
                 get {
-                    return this.columnidclientes;
+                    return this.columnID;
                 }
             }
             
@@ -449,11 +449,11 @@ namespace Reporte.DAT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CancelacionesRow AddCancelacionesRow(int idcontratos, int idclientes, string Cliente, int idTipoDeContrato, string TipoContrato, int idservicios, string Servicio, System.DateTime fecha, string extendido, decimal Precio) {
+            public CancelacionesRow AddCancelacionesRow(int idcontratos, int ID, string Cliente, int idTipoDeContrato, string TipoContrato, int idservicios, string Servicio, System.DateTime fecha, string extendido, decimal Precio) {
                 CancelacionesRow rowCancelacionesRow = ((CancelacionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         idcontratos,
-                        idclientes,
+                        ID,
                         Cliente,
                         idTipoDeContrato,
                         TipoContrato,
@@ -485,7 +485,7 @@ namespace Reporte.DAT {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnidcontratos = base.Columns["idcontratos"];
-                this.columnidclientes = base.Columns["idclientes"];
+                this.columnID = base.Columns["ID"];
                 this.columnCliente = base.Columns["Cliente"];
                 this.columnidTipoDeContrato = base.Columns["idTipoDeContrato"];
                 this.columnTipoContrato = base.Columns["TipoContrato"];
@@ -501,8 +501,8 @@ namespace Reporte.DAT {
             private void InitClass() {
                 this.columnidcontratos = new global::System.Data.DataColumn("idcontratos", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnidcontratos);
-                this.columnidclientes = new global::System.Data.DataColumn("idclientes", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnidclientes);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.columnCliente = new global::System.Data.DataColumn("Cliente", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCliente);
                 this.columnidTipoDeContrato = new global::System.Data.DataColumn("idTipoDeContrato", typeof(int), null, global::System.Data.MappingType.Element);
@@ -520,7 +520,7 @@ namespace Reporte.DAT {
                 this.columnPrecio = new global::System.Data.DataColumn("Precio", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrecio);
                 this.columnidcontratos.Caption = "DataColumn1";
-                this.columnidclientes.Caption = "DataColumn1";
+                this.columnID.Caption = "DataColumn1";
                 this.columnCliente.Caption = "DataColumn1";
                 this.columnidTipoDeContrato.Caption = "DataColumn1";
                 this.columnTipoContrato.Caption = "DataColumn1";
@@ -687,17 +687,17 @@ namespace Reporte.DAT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int idclientes {
+            public int ID {
                 get {
                     try {
-                        return ((int)(this[this.tableCancelaciones.idclientesColumn]));
+                        return ((int)(this[this.tableCancelaciones.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'idclientes\' in table \'Cancelaciones\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'Cancelaciones\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCancelaciones.idclientesColumn] = value;
+                    this[this.tableCancelaciones.IDColumn] = value;
                 }
             }
             
@@ -843,14 +843,14 @@ namespace Reporte.DAT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsidclientesNull() {
-                return this.IsNull(this.tableCancelaciones.idclientesColumn);
+            public bool IsIDNull() {
+                return this.IsNull(this.tableCancelaciones.IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetidclientesNull() {
-                this[this.tableCancelaciones.idclientesColumn] = global::System.Convert.DBNull;
+            public void SetIDNull() {
+                this[this.tableCancelaciones.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
