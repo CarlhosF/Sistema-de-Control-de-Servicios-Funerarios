@@ -84,14 +84,14 @@ namespace MovimientosModulo.GUI
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator3,
             this.btnAgregar,
-            this.toolStripSeparator2,
-            this.btnActualizar,
             this.txb_Filtro,
             this.lb_Filtro,
             this.toolStripSeparator5,
             this.btnPagoDia,
             this.toolStripSeparator1,
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.toolStripSeparator2,
+            this.btnActualizar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(745, 25);

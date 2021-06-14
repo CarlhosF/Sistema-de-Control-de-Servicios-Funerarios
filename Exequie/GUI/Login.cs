@@ -100,5 +100,10 @@ namespace Exequie.GUI
             xml.Load("Conexion.xml");
             lbServer.Text = xml.DocumentElement.FirstChild.FirstChild.InnerText;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

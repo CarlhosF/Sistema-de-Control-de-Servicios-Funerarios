@@ -40,8 +40,6 @@ namespace EntregasModulo.GUI
             this.btnActualizar = new System.Windows.Forms.ToolStripButton();
             this.txb_Filtro = new System.Windows.Forms.ToolStripTextBox();
             this.lb_Filtro = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnHistorial = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_movimientos)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -85,9 +83,7 @@ namespace EntregasModulo.GUI
             this.toolStripSeparator3,
             this.btnActualizar,
             this.txb_Filtro,
-            this.lb_Filtro,
-            this.toolStripSeparator1,
-            this.btnHistorial});
+            this.lb_Filtro});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(780, 25);
@@ -137,19 +133,6 @@ namespace EntregasModulo.GUI
             this.lb_Filtro.Size = new System.Drawing.Size(37, 22);
             this.lb_Filtro.Text = "Filtrar";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // btnHistorial
-            // 
-            this.btnHistorial.Image = ((System.Drawing.Image)(resources.GetObject("btnHistorial.Image")));
-            this.btnHistorial.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(135, 22);
-            this.btnHistorial.Text = "Historial de Entregas";
-            // 
             // EntregasGestor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,7 +166,5 @@ namespace EntregasModulo.GUI
         private System.Windows.Forms.ToolStripButton btnActualizar;
         private System.Windows.Forms.ToolStripTextBox txb_Filtro;
         private System.Windows.Forms.ToolStripLabel lb_Filtro;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnHistorial;
     }
 }

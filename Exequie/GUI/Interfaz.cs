@@ -22,11 +22,28 @@ namespace Exequie.GUI
 
         private void Interfaz_Load(object sender, EventArgs e)
         {
-           
-            lb_session_rol.Text = Sesion.Rol;
-            lb_session_nombre.Text = Sesion.Empleado;
+            if (Sesion.Rol == "Vendedor")
+            {
+                btnPoliticas.Visible = false;
+                btn_Usuarios.Visible = false;
+                btn_Personal.Visible = false;
+                btn_Sucursales.Visible = false;
 
-           
+            }
+            else
+            {
+                if (Sesion.Rol == "Gerente")
+                {
+                    btnPoliticas.Visible = false;
+                    btn_Usuarios.Visible = false;
+
+                }
+            }
+            lbrol.Text = Sesion.Rol;
+            lbUsuario.Text = Sesion.Empleado;
+            this.button8_Click(sender,e);
+
+
         }
       
 
@@ -164,6 +181,51 @@ namespace Exequie.GUI
             pn_contenedor.Tag = f;
 
             f.Show();
+        }
+
+        private void pn_botones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pn_contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbrol_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

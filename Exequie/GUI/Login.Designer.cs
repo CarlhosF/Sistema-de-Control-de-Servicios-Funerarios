@@ -47,7 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(103, 61);
+            this.label1.Location = new System.Drawing.Point(91, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 16);
             this.label1.TabIndex = 4;
@@ -57,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(103, 128);
+            this.label2.Location = new System.Drawing.Point(91, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 5;
@@ -65,7 +65,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(190, 210);
+            this.btnEntrar.Location = new System.Drawing.Point(178, 184);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
             this.btnEntrar.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(287, 210);
+            this.btnCancelar.Location = new System.Drawing.Point(275, 184);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             this.txbUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txbUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUsuario.Location = new System.Drawing.Point(190, 57);
+            this.txbUsuario.Location = new System.Drawing.Point(178, 31);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(172, 27);
             this.txbUsuario.TabIndex = 0;
@@ -96,7 +96,7 @@
             // txbClave
             // 
             this.txbClave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbClave.Location = new System.Drawing.Point(190, 128);
+            this.txbClave.Location = new System.Drawing.Point(178, 102);
             this.txbClave.Name = "txbClave";
             this.txbClave.PasswordChar = '●';
             this.txbClave.Size = new System.Drawing.Size(172, 27);
@@ -106,7 +106,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 112);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 53);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(15, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +128,7 @@
             this.lblMensaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblMensaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensaje.Location = new System.Drawing.Point(187, 167);
+            this.lblMensaje.Location = new System.Drawing.Point(175, 141);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(269, 25);
             this.lblMensaje.TabIndex = 6;
@@ -139,7 +139,7 @@
             // 
             this.lbServer.AutoSize = true;
             this.lbServer.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbServer.Location = new System.Drawing.Point(12, 289);
+            this.lbServer.Location = new System.Drawing.Point(12, 234);
             this.lbServer.Name = "lbServer";
             this.lbServer.Size = new System.Drawing.Size(67, 13);
             this.lbServer.TabIndex = 9;
@@ -149,8 +149,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(534, 311);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(484, 256);
             this.ControlBox = false;
             this.Controls.Add(this.lbServer);
             this.Controls.Add(this.lblMensaje);
