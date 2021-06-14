@@ -29,6 +29,7 @@ namespace Empleados_Modulo.GUI.Puesto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PuestoEditor));
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
             this.txb_Descripcion = new System.Windows.Forms.TextBox();
@@ -112,6 +113,7 @@ namespace Empleados_Modulo.GUI.Puesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(636, 273);
             this.Controls.Add(this.txb_ID);
             this.Controls.Add(this.label3);

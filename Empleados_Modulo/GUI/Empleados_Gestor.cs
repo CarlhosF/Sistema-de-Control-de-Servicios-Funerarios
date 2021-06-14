@@ -75,10 +75,24 @@ namespace Empleados_Modulo.GUI
         {
             if (dt_Empleados.SelectedRows.Count > 0)
             {
-                CLS.Empleados empleado = new CLS.Empleados();
-                int id = 0;
-                id = (int)dt_Empleados.SelectedRows[0].Cells[0].Value;
-                empleado.Eliminar(id);
+                DialogResult dr = MessageBox.Show("¿Desea Eliminar el Empleado " + dt_Empleados.SelectedRows[0].Cells[1].Value + " " + dt_Empleados.SelectedRows[0].Cells[2].Value + " ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                if (dr == DialogResult.Yes)
+                {
+                    CLS.Empleados empleado = new CLS.Empleados();
+                    int id = 0;
+                    id = (int)dt_Empleados.SelectedRows[0].Cells[0].Value;
+                    if (empleado.Eliminar(id))
+                    {
+                        MessageBox.Show("Empleado eliminado exitosamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este empleado no puede eliminarse por que posee ventas o pagos");
+                    }
+                }
+
+
             }
             else
             {
@@ -133,12 +147,35 @@ namespace Empleados_Modulo.GUI
 
         private void btn_Eliminar_puesto_Click(object sender, EventArgs e)
         {
-            if (dt_Puestos.SelectedRows.Count > 0)
+            try
             {
-                CLS.Puesto p = new CLS.Puesto();
-                int id = 0;
-                id = (int)dt_Puestos.SelectedRows[0].Cells[0].Value;
-                p.Eliminar(id);
+                if (dt_Puestos.SelectedRows.Count > 0)
+                {
+                    DialogResult dr = MessageBox.Show("¿Desea Eliminar el Puesto " + dt_Puestos.SelectedRows[0].Cells[1].Value +" ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                    if (dr == DialogResult.Yes)
+                    {
+                        CLS.Puesto p = new CLS.Puesto();
+                        int id = 0;
+                        id = (int)dt_Puestos.SelectedRows[0].Cells[0].Value;
+                        if (p.Eliminar(id))
+                        {
+                            MessageBox.Show("Puesto Eliminado");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Este puesto no puede eliminarse por que hay empleados usandolo");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un Puesto");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error al eliminar Puesto");
             }
             Cargar();
         }

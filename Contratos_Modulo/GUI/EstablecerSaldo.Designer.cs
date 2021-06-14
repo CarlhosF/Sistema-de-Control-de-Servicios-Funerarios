@@ -29,7 +29,12 @@ namespace Contratos_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EstablecerSaldo));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dt_Servicios = new System.Windows.Forms.DataGridView();
@@ -43,8 +48,7 @@ namespace Contratos_Modulo.GUI
             this.txbFiltroTipoContr = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Servicios)).BeginInit();
@@ -57,6 +61,8 @@ namespace Contratos_Modulo.GUI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btnAceptar);
@@ -67,13 +73,34 @@ namespace Contratos_Modulo.GUI
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "Cuotas",
+            "Contado"});
+            this.listBox1.Location = new System.Drawing.Point(487, 17);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(136, 30);
+            this.listBox1.TabIndex = 36;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(398, 30);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 13);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Forma de Pago";
+            // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(706, 3);
+            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
+            this.btnAceptar.Location = new System.Drawing.Point(676, 8);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(76, 50);
+            this.btnAceptar.Size = new System.Drawing.Size(102, 39);
             this.btnAceptar.TabIndex = 0;
-            this.btnAceptar.Text = "aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
@@ -92,12 +119,19 @@ namespace Contratos_Modulo.GUI
             // 
             this.dt_Servicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Servicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Servicios.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Servicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Servicios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Servicios.Location = new System.Drawing.Point(0, 25);
             this.dt_Servicios.MultiSelect = false;
             this.dt_Servicios.Name = "dt_Servicios";
             this.dt_Servicios.ReadOnly = true;
+            this.dt_Servicios.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Servicios.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_Servicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Servicios.Size = new System.Drawing.Size(842, 462);
             this.dt_Servicios.TabIndex = 1;
             // 
@@ -150,12 +184,19 @@ namespace Contratos_Modulo.GUI
             // 
             this.dt_TipoContrato.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_TipoContrato.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_TipoContrato.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_TipoContrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_TipoContrato.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_TipoContrato.Location = new System.Drawing.Point(0, 25);
             this.dt_TipoContrato.MultiSelect = false;
             this.dt_TipoContrato.Name = "dt_TipoContrato";
             this.dt_TipoContrato.ReadOnly = true;
+            this.dt_TipoContrato.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_TipoContrato.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_TipoContrato.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_TipoContrato.Size = new System.Drawing.Size(842, 240);
             this.dt_TipoContrato.TabIndex = 1;
             // 
@@ -194,25 +235,15 @@ namespace Contratos_Modulo.GUI
             this.toolStripLabel4.Text = "Establezca Contrato";
             this.toolStripLabel4.Click += new System.EventHandler(this.toolStripLabel4_Click);
             // 
-            // listBox1
+            // label1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "Cuotas",
-            "Contado"});
-            this.listBox1.Location = new System.Drawing.Point(282, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(136, 30);
-            this.listBox1.TabIndex = 36;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(193, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 13);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Forma de Pago";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Establexca Servicio,Tipo de Contrato y Forma de Pago";
             // 
             // EstablecerSaldo
             // 
@@ -260,5 +291,6 @@ namespace Contratos_Modulo.GUI
         private System.Windows.Forms.DataGridView dt_TipoContrato;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -13,10 +13,12 @@ namespace MovimientosModulo.GUI
     public partial class AbonoNuevo : Form
     {
         int idC;
-        public AbonoNuevo(int id)
+        float SA;
+        public AbonoNuevo(int id,float sp)
         {
             InitializeComponent();
             idC = id;
+            SA = sp;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -34,22 +36,28 @@ namespace MovimientosModulo.GUI
                 mov.Concepto = txbConcepto.Text;
                 mov.Abono = float.Parse(txbAbono.Text);
                 mov.IdContrato = idC;
-
-                try
+                if (mov.Abono > SA)
                 {
-                    if (mov.Guardar())
-                    {
-                        MessageBox.Show("Abono Guardado con exito");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Este registro no se puede añadir");
-                    }
+                    MessageBox.Show("El abono supera el saldo pendiente");
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Error al ingresar el abono, intente rellenar los campos");
+                    try
+                    {
+                        if (mov.Guardar())
+                        {
+                            MessageBox.Show("Abono Guardado con exito");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Este registro no se puede añadir");
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error al ingresar el abono, intente rellenar los campos");
+                    }
                 }
             }
             else

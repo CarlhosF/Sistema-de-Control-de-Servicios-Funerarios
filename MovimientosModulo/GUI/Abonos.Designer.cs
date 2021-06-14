@@ -29,7 +29,7 @@ namespace MovimientosModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Abonos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dt_movimientos = new System.Windows.Forms.DataGridView();
@@ -81,6 +81,7 @@ namespace MovimientosModulo.GUI
             // 
             // dt_movimientos
             // 
+            this.dt_movimientos.AllowUserToAddRows = false;
             this.dt_movimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_movimientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_movimientos.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -91,10 +92,10 @@ namespace MovimientosModulo.GUI
             this.dt_movimientos.Name = "dt_movimientos";
             this.dt_movimientos.ReadOnly = true;
             this.dt_movimientos.RowHeadersVisible = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dt_movimientos.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_movimientos.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dt_movimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_movimientos.Size = new System.Drawing.Size(762, 275);
             this.dt_movimientos.TabIndex = 1;

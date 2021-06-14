@@ -29,6 +29,9 @@ namespace Empleados_Modulo.GUI.Empleado
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nuevo_Empleado));
             this.lb_nombre_empleado = new System.Windows.Forms.Label();
             this.txb_Nombre_Empleado = new System.Windows.Forms.TextBox();
             this.txb_Apellido_Empleado = new System.Windows.Forms.TextBox();
@@ -182,14 +185,22 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             // dt_puesto
             // 
+            this.dt_puesto.AllowUserToAddRows = false;
             this.dt_puesto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_puesto.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_puesto.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_puesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_puesto.Location = new System.Drawing.Point(22, 222);
             this.dt_puesto.MultiSelect = false;
             this.dt_puesto.Name = "dt_puesto";
             this.dt_puesto.ReadOnly = true;
-            this.dt_puesto.Size = new System.Drawing.Size(552, 281);
+            this.dt_puesto.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_puesto.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_puesto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dt_puesto.Size = new System.Drawing.Size(572, 281);
             this.dt_puesto.TabIndex = 17;
             // 
             // lb_FechaCntrat
@@ -211,11 +222,19 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             // dt_Sucursal_Empleado
             // 
+            this.dt_Sucursal_Empleado.AllowUserToAddRows = false;
             this.dt_Sucursal_Empleado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Sucursal_Empleado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Sucursal_Empleado.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Sucursal_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Sucursal_Empleado.Location = new System.Drawing.Point(600, 25);
             this.dt_Sucursal_Empleado.Name = "dt_Sucursal_Empleado";
+            this.dt_Sucursal_Empleado.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Sucursal_Empleado.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_Sucursal_Empleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Sucursal_Empleado.Size = new System.Drawing.Size(415, 478);
             this.dt_Sucursal_Empleado.TabIndex = 21;
             // 
@@ -232,6 +251,7 @@ namespace Empleados_Modulo.GUI.Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1027, 582);
             this.Controls.Add(this.dt_Sucursal_Empleado);
             this.Controls.Add(this.lb_sucursal_Empleado);

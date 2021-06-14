@@ -160,6 +160,7 @@ namespace Sucursales_Modulo.GUI
             // 
             // dt_sucursales
             // 
+            this.dt_sucursales.AllowUserToAddRows = false;
             this.dt_sucursales.AllowUserToOrderColumns = true;
             this.dt_sucursales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_sucursales.BackgroundColor = System.Drawing.SystemColors.Control;

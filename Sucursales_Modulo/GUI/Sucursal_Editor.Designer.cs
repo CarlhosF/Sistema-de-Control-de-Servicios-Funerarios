@@ -29,6 +29,7 @@ namespace Sucursales_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sucursal_Editor));
             this.lb_direccion = new System.Windows.Forms.Label();
             this.lb_idsucursal = new System.Windows.Forms.Label();
@@ -128,19 +129,28 @@ namespace Sucursales_Modulo.GUI
             // 
             // dt_encargado
             // 
+            this.dt_encargado.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_encargado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_encargado.Location = new System.Drawing.Point(7, 153);
+            this.dt_encargado.MultiSelect = false;
             this.dt_encargado.Name = "dt_encargado";
             this.dt_encargado.ReadOnly = true;
-            this.dt_encargado.Size = new System.Drawing.Size(318, 197);
+            this.dt_encargado.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_encargado.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_encargado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dt_encargado.Size = new System.Drawing.Size(387, 197);
             this.dt_encargado.TabIndex = 9;
             // 
             // pic_direccion
             // 
+            this.pic_direccion.BackColor = System.Drawing.Color.Transparent;
             this.pic_direccion.Image = ((System.Drawing.Image)(resources.GetObject("pic_direccion.Image")));
             this.pic_direccion.Location = new System.Drawing.Point(62, 36);
             this.pic_direccion.Name = "pic_direccion";
-            this.pic_direccion.Size = new System.Drawing.Size(57, 44);
+            this.pic_direccion.Size = new System.Drawing.Size(48, 44);
             this.pic_direccion.TabIndex = 10;
             this.pic_direccion.TabStop = false;
             // 
@@ -149,10 +159,11 @@ namespace Sucursales_Modulo.GUI
             this.pic_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_telefono.BackColor = System.Drawing.Color.Transparent;
             this.pic_telefono.Image = ((System.Drawing.Image)(resources.GetObject("pic_telefono.Image")));
             this.pic_telefono.Location = new System.Drawing.Point(62, 86);
             this.pic_telefono.Name = "pic_telefono";
-            this.pic_telefono.Size = new System.Drawing.Size(57, 43);
+            this.pic_telefono.Size = new System.Drawing.Size(48, 36);
             this.pic_telefono.TabIndex = 11;
             this.pic_telefono.TabStop = false;
             // 
@@ -160,7 +171,8 @@ namespace Sucursales_Modulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 404);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(406, 416);
             this.Controls.Add(this.pic_telefono);
             this.Controls.Add(this.pic_direccion);
             this.Controls.Add(this.dt_encargado);

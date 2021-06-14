@@ -62,10 +62,22 @@ namespace UsuariosModulo.GUI
 
             if (dt_usuarios.SelectedRows.Count > 0)
             {
-                int id = (int)dt_usuarios.SelectedRows[0].Cells[0].Value;
-                CLS.Usuario c = new CLS.Usuario();
-                c.Eliminar(id);
-                Cargar();
+                DialogResult dr = MessageBox.Show("¿Desea Eliminar el Usuario " + dt_usuarios.SelectedRows[0].Cells[1].Value + " ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                if (dr == DialogResult.Yes)
+                {
+                    int id = (int)dt_usuarios.SelectedRows[0].Cells[0].Value;
+                    CLS.Usuario c = new CLS.Usuario();
+                    if (c.Eliminar(id))
+                    {
+                        MessageBox.Show("Usuario Eliminado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este Usuario no puede eliminarse");
+                    }
+                    Cargar();
+                }
             }
             else 
             {

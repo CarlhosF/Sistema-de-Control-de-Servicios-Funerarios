@@ -160,6 +160,7 @@
             this.dt_clientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_clientes.GridColor = System.Drawing.SystemColors.GrayText;
             this.dt_clientes.Location = new System.Drawing.Point(0, 30);
+            this.dt_clientes.MultiSelect = false;
             this.dt_clientes.Name = "dt_clientes";
             this.dt_clientes.ReadOnly = true;
             this.dt_clientes.RowHeadersVisible = false;

@@ -29,7 +29,11 @@ namespace Contratos_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContratoDetalle));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnInfbasica = new System.Windows.Forms.Panel();
+            this.txbIDContratista = new System.Windows.Forms.TextBox();
+            this.dt_Elementos = new System.Windows.Forms.DataGridView();
             this.bntImprimir = new System.Windows.Forms.Button();
             this.bntVerEntrg = new System.Windows.Forms.Button();
             this.btnVerPagos = new System.Windows.Forms.Button();
@@ -64,8 +68,6 @@ namespace Contratos_Modulo.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.txbIDContrato = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dt_Elementos = new System.Windows.Forms.DataGridView();
-            this.txbIDContratista = new System.Windows.Forms.TextBox();
             this.pnInfbasica.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_Elementos)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +75,7 @@ namespace Contratos_Modulo.GUI
             // pnInfbasica
             // 
             this.pnInfbasica.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnInfbasica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnInfbasica.BackgroundImage")));
             this.pnInfbasica.Controls.Add(this.txbIDContratista);
             this.pnInfbasica.Controls.Add(this.dt_Elementos);
             this.pnInfbasica.Controls.Add(this.bntImprimir);
@@ -114,6 +117,32 @@ namespace Contratos_Modulo.GUI
             this.pnInfbasica.Name = "pnInfbasica";
             this.pnInfbasica.Size = new System.Drawing.Size(939, 604);
             this.pnInfbasica.TabIndex = 0;
+            // 
+            // txbIDContratista
+            // 
+            this.txbIDContratista.Location = new System.Drawing.Point(481, 85);
+            this.txbIDContratista.Name = "txbIDContratista";
+            this.txbIDContratista.ReadOnly = true;
+            this.txbIDContratista.Size = new System.Drawing.Size(42, 20);
+            this.txbIDContratista.TabIndex = 69;
+            // 
+            // dt_Elementos
+            // 
+            this.dt_Elementos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_Elementos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Elementos.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dt_Elementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_Elementos.Location = new System.Drawing.Point(0, 339);
+            this.dt_Elementos.MultiSelect = false;
+            this.dt_Elementos.Name = "dt_Elementos";
+            this.dt_Elementos.ReadOnly = true;
+            this.dt_Elementos.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Elementos.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_Elementos.Size = new System.Drawing.Size(936, 263);
+            this.dt_Elementos.TabIndex = 68;
             // 
             // bntImprimir
             // 
@@ -407,26 +436,6 @@ namespace Contratos_Modulo.GUI
             this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 29;
             this.label1.Text = "Contrato";
-            // 
-            // dt_Elementos
-            // 
-            this.dt_Elementos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dt_Elementos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dt_Elementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dt_Elementos.Location = new System.Drawing.Point(0, 339);
-            this.dt_Elementos.MultiSelect = false;
-            this.dt_Elementos.Name = "dt_Elementos";
-            this.dt_Elementos.ReadOnly = true;
-            this.dt_Elementos.Size = new System.Drawing.Size(936, 263);
-            this.dt_Elementos.TabIndex = 68;
-            // 
-            // txbIDContratista
-            // 
-            this.txbIDContratista.Location = new System.Drawing.Point(481, 85);
-            this.txbIDContratista.Name = "txbIDContratista";
-            this.txbIDContratista.ReadOnly = true;
-            this.txbIDContratista.Size = new System.Drawing.Size(42, 20);
-            this.txbIDContratista.TabIndex = 69;
             // 
             // ContratoDetalle
             // 

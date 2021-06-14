@@ -29,6 +29,7 @@ namespace UsuariosModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioNuevo));
             this.label1 = new System.Windows.Forms.Label();
             this.lst_Rol = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -156,6 +157,7 @@ namespace UsuariosModulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(390, 322);
             this.Controls.Add(this.btn_TraerEmpleado);
             this.Controls.Add(this.btn_cancelar);

@@ -29,6 +29,7 @@ namespace Contratos_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContratoNuevo));
             this.label1 = new System.Windows.Forms.Label();
             this.txbServicio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -367,6 +368,7 @@ namespace Contratos_Modulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(831, 555);
             this.Controls.Add(this.bntBene2);
             this.Controls.Add(this.listBox1);

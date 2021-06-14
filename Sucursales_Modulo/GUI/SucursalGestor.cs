@@ -97,20 +97,35 @@ namespace Sucursales_Modulo.GUI
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            if (dt_sucursales.SelectedRows.Count > 0) 
+            try
             {
-                int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
-                
-                    CLS.Sucursales s = new CLS.Sucursales();
-                if (s.Eliminar(id))
+                if (dt_sucursales.SelectedRows.Count > 0)
                 {
-                    MessageBox.Show("Empleado eliminado");
+                    DialogResult dr = MessageBox.Show("¿Desea Eliminar la Sucursal ID: " + dt_sucursales.SelectedRows[0].Cells[0].Value + " ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                    if (dr == DialogResult.Yes)
+                    {
+                        int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
+
+                        CLS.Sucursales s = new CLS.Sucursales();
+                        if (s.Eliminar(id))
+                        {
+                            MessageBox.Show("Empleado eliminado");
+                        }
+                        else
+                        {
+                            MessageBox.Show("NO se puede eliminar este empleado por que se encuentra en un contrato");
+                        }
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("NO se puede eliminar este empleado por que se encuentra en un contrato");
+                    MessageBox.Show("Seleccione una Sucursal");
                 }
-                
+            }
+            catch
+            {
+                MessageBox.Show("Error al eliminar Sucursal");
             }
             Cargar();
         }

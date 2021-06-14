@@ -116,6 +116,10 @@
       <Project>{f92a6d2d-801b-4714-9ac1-14818f09efac}</Project>
       <Name>DataManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SesionManager\SesionManager.csproj">
+      <Project>{b5c2f8f3-5ed0-4aee-8410-6d33ea75e10d}</Project>
+      <Name>SesionManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

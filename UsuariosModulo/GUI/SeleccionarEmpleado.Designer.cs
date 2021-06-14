@@ -29,6 +29,8 @@ namespace UsuariosModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeleccionarEmpleado));
             this.dt_Empleados = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Aceptar = new System.Windows.Forms.Button();
@@ -39,15 +41,27 @@ namespace UsuariosModulo.GUI
             // 
             // dt_Empleados
             // 
+            this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dt_Empleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Empleados.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Empleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Empleados.Location = new System.Drawing.Point(0, 0);
+            this.dt_Empleados.MultiSelect = false;
             this.dt_Empleados.Name = "dt_Empleados";
+            this.dt_Empleados.ReadOnly = true;
+            this.dt_Empleados.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Empleados.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_Empleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Empleados.Size = new System.Drawing.Size(603, 450);
             this.dt_Empleados.TabIndex = 0;
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btn_Aceptar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -58,11 +72,14 @@ namespace UsuariosModulo.GUI
             // 
             // btn_Aceptar
             // 
+            this.btn_Aceptar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Aceptar.Image")));
+            this.btn_Aceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Aceptar.Location = new System.Drawing.Point(511, 7);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(80, 38);
             this.btn_Aceptar.TabIndex = 1;
             this.btn_Aceptar.Text = "Aceptar";
+            this.btn_Aceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
             // 

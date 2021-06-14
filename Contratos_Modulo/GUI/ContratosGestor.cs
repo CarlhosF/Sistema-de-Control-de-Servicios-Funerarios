@@ -29,7 +29,7 @@ namespace Contratos_Modulo.GUI
         {
             if (txb_Filtro.TextLength > 0)
             {
-                _DATOS.Filter = "extendido LIKE '%" + txb_Filtro.Text + "%'";
+                _DATOS.Filter = "Vendedor LIKE '%" + txb_Filtro.Text+ "%' or contratista LIKE '%" + txb_Filtro.Text + "%'"; 
             }
             else
             {
@@ -115,24 +115,28 @@ namespace Contratos_Modulo.GUI
             {
                 if (dt_contratos.SelectedRows.Count > 0)
                 {
-                    int id = (int)dt_contratos.SelectedRows[0].Cells[0].Value;
-                    CLS.Contrato co = new CLS.Contrato();
-                    try
-                    {
-                        if (co.Eliminar(id))
-                        {
-                            MessageBox.Show("Contrato eliminado");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Este contrato no puede eliminarse");
-                        }
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Error al eliminar");
-                    }
+                    DialogResult dr = MessageBox.Show("¿Desea Eliminar el Contrato ID: " + dt_contratos.SelectedRows[0].Cells[0].Value + " ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
+                    if (dr == DialogResult.Yes)
+                    {
+                        int id = (int)dt_contratos.SelectedRows[0].Cells[0].Value;
+                        CLS.Contrato co = new CLS.Contrato();
+                        try
+                        {
+                            if (co.Eliminar(id))
+                            {
+                                MessageBox.Show("Contrato eliminado");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Este contrato no puede eliminarse");
+                            }
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Error al eliminar");
+                        }
+                    }
 
                 }
                 else
@@ -144,6 +148,16 @@ namespace Contratos_Modulo.GUI
             {
                 MessageBox.Show("Acceso Denegado");
             }
+        }
+
+        private void txb_Filtro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txb_Filtro_TextChanged(object sender, EventArgs e)
+        {
+            FiltrarLocalmente();
         }
     }
 }

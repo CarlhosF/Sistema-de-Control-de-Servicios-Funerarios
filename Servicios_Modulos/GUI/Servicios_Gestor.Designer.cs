@@ -92,6 +92,7 @@
             // 
             // dt_Servicios
             // 
+            this.dt_Servicios.AllowUserToAddRows = false;
             this.dt_Servicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Servicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_Servicios.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -187,6 +188,7 @@
             // 
             // dt_TipoDeContrato
             // 
+            this.dt_TipoDeContrato.AllowUserToAddRows = false;
             this.dt_TipoDeContrato.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_TipoDeContrato.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_TipoDeContrato.BackgroundColor = System.Drawing.SystemColors.Control;

@@ -28,7 +28,7 @@ namespace MovimientosModulo.GUI
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            GUI.AbonoNuevo f = new AbonoNuevo(idContrato);
+            GUI.AbonoNuevo f = new AbonoNuevo(idContrato,float.Parse(txbSaldoPendiente.Text));
             f.ShowDialog();
             Abonos_Load(sender,e);
         }
@@ -81,31 +81,45 @@ namespace MovimientosModulo.GUI
                 btnCancelar.Enabled = false;
             }
             dt_movimientos.DataSource = CacheManager.CLS.MovimientosCache.Listar_Movimienttos_Para_Credito(idContrato);
+            dt_movimientos.Columns[2].Visible = false;
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            if (dt_movimientos.SelectedRows.Count>0)
+            if (SesionManager.CLS.Sesion.Instancia.Rol != "Vendedor")
             {
-                CLS.Movimiento m = new CLS.Movimiento();
-                int ide = int.Parse(dt_movimientos.SelectedRows[0].Cells[0].Value.ToString());
-                try 
+                if (dt_movimientos.SelectedRows.Count > 0)
                 {
-                    if (m.Eliminar(ide)) 
-                    {
-                        MessageBox.Show("Abono Eliminado");
-                        this.Abonos_Load(sender,e);
-                    }
+                    DialogResult dr = MessageBox.Show("¿Desea Eliminar el Abono ID "+ dt_movimientos.SelectedRows[0].Cells[0].Value+ "?", "Confirmacion", MessageBoxButtons.YesNoCancel,MessageBoxIcon.Information);
 
+                    if (dr == DialogResult.Yes)
+                    {
+                        CLS.Movimiento m = new CLS.Movimiento();
+                        int ide = int.Parse(dt_movimientos.SelectedRows[0].Cells[0].Value.ToString());
+                        try
+                        {
+                            if (m.Eliminar(ide))
+                            {
+                                MessageBox.Show("Abono Eliminado");
+                                this.Abonos_Load(sender, e);
+                            }
+
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Error al eliminar el registro");
+                        }
+                    }
+                    
                 }
-                catch 
+                else
                 {
-                    MessageBox.Show("Error al eliminar el registro");
-                } 
-            } 
+                    MessageBox.Show("Seleccione un abono");
+                }
+            }
             else
             {
-                MessageBox.Show("Seleccione un abono");   
+                MessageBox.Show("Accesod denegado");
             }
         }
 

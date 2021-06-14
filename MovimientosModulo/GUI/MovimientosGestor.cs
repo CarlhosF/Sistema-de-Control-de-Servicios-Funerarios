@@ -76,15 +76,22 @@ namespace MovimientosModulo.GUI
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            //reporte de movimientos
-            try
+            if (SesionManager.CLS.Sesion.Instancia.Rol != "Vendedor")
             {
-                Reporte.GUI.ReporteMovimientos f = new Reporte.GUI.ReporteMovimientos();
-                //f.MdiParent = this;
-                f.Show();
+                //reporte de movimientos
+                try
+                {
+                    Reporte.GUI.ReporteMovimientos f = new Reporte.GUI.ReporteMovimientos();
+                    //f.MdiParent = this;
+                    f.Show();
+                }
+                catch
+                {
+                }
             }
-            catch
+            else
             {
+                MessageBox.Show("Acceso denegado");
             }
         }
 

@@ -92,6 +92,7 @@ namespace Empleados_Modulo.GUI
             // 
             // dt_Empleados
             // 
+            this.dt_Empleados.AllowUserToAddRows = false;
             this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Empleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_Empleados.BackgroundColor = System.Drawing.SystemColors.Control;

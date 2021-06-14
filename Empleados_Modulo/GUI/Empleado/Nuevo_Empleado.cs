@@ -23,7 +23,9 @@ namespace Empleados_Modulo.GUI.Empleado
             dt_puesto.DataSource = CacheManager.CLS.PuestoCache.Listar_Puestos();
             dt_Sucursal_Empleado.DataSource = CacheManager.CLS.SucursalCache.Listar_Sucursales();
             dt_puesto.Columns[0].Visible = false;
-           
+            dt_Sucursal_Empleado.Columns[0].Visible = false;
+            dt_Sucursal_Empleado.Columns[2].Visible = false;
+
         }
 
         private void btn_Agregar_Empleado_Click(object sender, EventArgs e)

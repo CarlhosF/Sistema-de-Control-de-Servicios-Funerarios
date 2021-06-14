@@ -29,6 +29,7 @@ namespace Sucursales_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SucursalNueva));
             this.lb_Direccion = new System.Windows.Forms.Label();
             this.lb_Telefono = new System.Windows.Forms.Label();
@@ -91,10 +92,18 @@ namespace Sucursales_Modulo.GUI
             // 
             this.dt_empleado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_empleado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_empleado.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_empleado.Location = new System.Drawing.Point(2, 138);
             this.dt_empleado.MultiSelect = false;
             this.dt_empleado.Name = "dt_empleado";
+            this.dt_empleado.ReadOnly = true;
+            this.dt_empleado.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_empleado.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_empleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_empleado.Size = new System.Drawing.Size(447, 301);
             this.dt_empleado.TabIndex = 5;
             this.dt_empleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_empleado_CellContentClick);
@@ -141,6 +150,7 @@ namespace Sucursales_Modulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(452, 500);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

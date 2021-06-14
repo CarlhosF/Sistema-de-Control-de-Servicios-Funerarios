@@ -71,6 +71,7 @@ namespace EntregasModulo.GUI
             // 
             // dt_difuntos
             // 
+            this.dt_difuntos.AllowUserToAddRows = false;
             this.dt_difuntos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_difuntos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_difuntos.BackgroundColor = System.Drawing.SystemColors.Control;

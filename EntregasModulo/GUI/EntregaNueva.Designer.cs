@@ -29,6 +29,7 @@ namespace EntregasModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntregaNueva));
             this.dp_fechanacimiento = new System.Windows.Forms.DateTimePicker();
             this.txbdireccionEntrega = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -185,6 +186,7 @@ namespace EntregasModulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 192);
             this.Controls.Add(this.dtp_muerte);
             this.Controls.Add(this.label8);

@@ -60,6 +60,7 @@ namespace MovimientosModulo.GUI
             this.dt_movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_movimientos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_movimientos.Location = new System.Drawing.Point(0, 25);
+            this.dt_movimientos.MultiSelect = false;
             this.dt_movimientos.Name = "dt_movimientos";
             this.dt_movimientos.ReadOnly = true;
             this.dt_movimientos.RowHeadersVisible = false;

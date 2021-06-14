@@ -97,25 +97,39 @@ namespace EntregasModulo.GUI
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dt_difuntos.SelectedRows.Count > 0)
-            {
-                int i = (int)dt_difuntos.SelectedRows[0].Cells[0].Value;
-                CLS.difunto d = new CLS.difunto();
-                if (d.Eliminar(i)) 
+                if (SesionManager.CLS.Sesion.Instancia.Rol != "Vendedor")
                 {
-                    MessageBox.Show("Registro eliminado");
-                    this.EntregasDetalles_Load(sender,e);
+                    if (dt_difuntos.SelectedRows.Count > 0)
+                    {
+                        DialogResult dr = MessageBox.Show("¿Desea Eliminar la Entrega ID: " + dt_difuntos.SelectedRows[0].Cells[0].Value + " ?", "Confirmacion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                        if (dr == DialogResult.Yes)
+                        {
+                            int i = (int)dt_difuntos.SelectedRows[0].Cells[0].Value;
+                            CLS.difunto d = new CLS.difunto();
+                            if (d.Eliminar(i))
+                            {
+                                MessageBox.Show("Registro eliminado");
+                                this.EntregasDetalles_Load(sender, e);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Este registro no pudo eliminarse");
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seleccione una entrega");
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("Este registro no pudo eliminarse");
+                    MessageBox.Show("Acceso Denegado");
                 }
             }
-            else
-            {
-                MessageBox.Show("Seleccione una entrega");
-            }
-        }
 
         private void btnEntregar_Click(object sender, EventArgs e)
         {

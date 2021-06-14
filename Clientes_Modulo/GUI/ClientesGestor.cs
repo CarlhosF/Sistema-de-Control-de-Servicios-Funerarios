@@ -47,24 +47,34 @@ namespace Clientes_Modulo.GUI
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dt_clientes.SelectedRows.Count > 0)
-            {
-                int id = (int)dt_clientes.SelectedRows[0].Cells[0].Value;
-                CLS.Clientes c = new CLS.Clientes();
-                if (c.Eliminar(id))
+         
+                // Do something
+
+                if (dt_clientes.SelectedRows.Count > 0)
                 {
-                    MessageBox.Show("Cliente eliminado");
-                }
-                else
+                DialogResult dr = MessageBox.Show("¿Desea Eliminar el Cliente"+dt_clientes.SelectedRows[0].Cells[1].Value+" "+ dt_clientes.SelectedRows[0].Cells[2].Value+" ?", "Confirmacion", MessageBoxButtons.YesNoCancel,MessageBoxIcon.Information);
+
+                if (dr == DialogResult.Yes)
                 {
-                    MessageBox.Show("Este cliente no puede eliminarse por que poseé contratos");
+                    int id = (int)dt_clientes.SelectedRows[0].Cells[0].Value;
+                    CLS.Clientes c = new CLS.Clientes();
+                    if (c.Eliminar(id))
+                    {
+                        MessageBox.Show("Cliente eliminado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este cliente no puede eliminarse por que poseé contratos");
+                    }
+                    Cargar();
                 }
-                Cargar();
+                
             }
-            else 
+            else
             {
-                MessageBox.Show("Seleccione el Cliente a eliminar");      
+                MessageBox.Show("Seleccione el Cliente a eliminar");
             }
+
         }
 
         private void ClientesGestor_Load(object sender, EventArgs e)

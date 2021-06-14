@@ -29,6 +29,7 @@ namespace UsuariosModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioEditar));
             this.btn_TraerEmpleado = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_Agregar = new System.Windows.Forms.Button();
@@ -175,7 +176,8 @@ namespace UsuariosModulo.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 418);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(456, 385);
             this.Controls.Add(this.txbID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_TraerEmpleado);
