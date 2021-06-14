@@ -29,6 +29,7 @@ namespace UsuariosModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuariosGestor));
             this.dt_usuarios = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -54,11 +55,19 @@ namespace UsuariosModulo.GUI
             this.dt_usuarios.AllowUserToDeleteRows = false;
             this.dt_usuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_usuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_usuarios.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_usuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_usuarios.Location = new System.Drawing.Point(0, 25);
+            this.dt_usuarios.MultiSelect = false;
             this.dt_usuarios.Name = "dt_usuarios";
             this.dt_usuarios.ReadOnly = true;
+            this.dt_usuarios.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_usuarios.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_usuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_usuarios.Size = new System.Drawing.Size(730, 421);
             this.dt_usuarios.TabIndex = 5;
             // 
@@ -151,7 +160,6 @@ namespace UsuariosModulo.GUI
             // 
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_Filtro.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtro.Name = "txb_Filtro";
             this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
             // 

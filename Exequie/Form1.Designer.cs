@@ -52,6 +52,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -67,7 +72,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(81, 314);
+            this.pictureBox9.Location = new System.Drawing.Point(499, 428);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(39, 37);
             this.pictureBox9.TabIndex = 51;
@@ -77,7 +82,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(454, 314);
+            this.pictureBox7.Location = new System.Drawing.Point(872, 391);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(39, 37);
             this.pictureBox7.TabIndex = 50;
@@ -86,7 +91,8 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(393, 204);
+            this.label7.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(811, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 100);
             this.label7.TabIndex = 49;
@@ -95,7 +101,8 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(206, 204);
+            this.label6.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(624, 318);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 100);
             this.label6.TabIndex = 48;
@@ -105,7 +112,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(267, 314);
+            this.pictureBox8.Location = new System.Drawing.Point(685, 428);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(39, 37);
             this.pictureBox8.TabIndex = 47;
@@ -115,7 +122,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Location = new System.Drawing.Point(393, 328);
+            this.label12.Location = new System.Drawing.Point(811, 442);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(30, 13);
             this.label12.TabIndex = 46;
@@ -125,7 +132,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(206, 328);
+            this.label13.Location = new System.Drawing.Point(624, 442);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 13);
             this.label13.TabIndex = 45;
@@ -135,7 +142,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(20, 328);
+            this.label14.Location = new System.Drawing.Point(451, 442);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(30, 13);
             this.label14.TabIndex = 44;
@@ -145,7 +152,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(454, 357);
+            this.pictureBox6.Location = new System.Drawing.Point(872, 434);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(39, 37);
             this.pictureBox6.TabIndex = 43;
@@ -155,7 +162,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(267, 357);
+            this.pictureBox5.Location = new System.Drawing.Point(685, 471);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(39, 37);
             this.pictureBox5.TabIndex = 42;
@@ -165,7 +172,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(81, 357);
+            this.pictureBox4.Location = new System.Drawing.Point(499, 471);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(39, 37);
             this.pictureBox4.TabIndex = 41;
@@ -174,7 +181,8 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(393, 148);
+            this.label4.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(811, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 56);
             this.label4.TabIndex = 40;
@@ -183,7 +191,8 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(20, 148);
+            this.label3.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(438, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 56);
             this.label3.TabIndex = 39;
@@ -203,7 +212,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(393, 369);
+            this.label10.Location = new System.Drawing.Point(811, 483);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 13);
             this.label10.TabIndex = 37;
@@ -213,7 +222,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(206, 369);
+            this.label9.Location = new System.Drawing.Point(624, 483);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
             this.label9.TabIndex = 36;
@@ -223,7 +232,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(20, 369);
+            this.label8.Location = new System.Drawing.Point(438, 483);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 13);
             this.label8.TabIndex = 35;
@@ -232,7 +241,8 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(20, 204);
+            this.label5.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(438, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 100);
             this.label5.TabIndex = 34;
@@ -241,7 +251,8 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(206, 148);
+            this.label2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(624, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 56);
             this.label2.TabIndex = 33;
@@ -251,7 +262,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(405, 77);
+            this.pictureBox3.Location = new System.Drawing.Point(814, 154);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 68);
             this.pictureBox3.TabIndex = 32;
@@ -260,7 +271,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(222, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(631, 154);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 68);
             this.pictureBox2.TabIndex = 31;
@@ -270,7 +281,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(36, 77);
+            this.pictureBox1.Location = new System.Drawing.Point(445, 154);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 68);
             this.pictureBox1.TabIndex = 30;
@@ -280,11 +291,63 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 9);
+            this.label1.Location = new System.Drawing.Point(589, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 24);
             this.label1.TabIndex = 29;
             this.label1.Text = "CREADORES";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(36, 57);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(120, 24);
+            this.label15.TabIndex = 52;
+            this.label15.Text = "DETALLES:";
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(37, 154);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(274, 93);
+            this.label16.TabIndex = 53;
+            this.label16.Text = "-Proyecto desarrollado como examen final de Desarrollo de Software II En la Unive" +
+    "rsidad de Sonsonate ";
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(37, 225);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(274, 93);
+            this.label17.TabIndex = 54;
+            this.label17.Text = "-Desarrollado en el lenguaje de C# .net con la version del Framework 4.5";
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(37, 352);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(274, 93);
+            this.label18.TabIndex = 55;
+            this.label18.Text = "-Version 1.07";
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(37, 275);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(274, 54);
+            this.label19.TabIndex = 56;
+            this.label19.Text = "-Basado en las politicas y Procesos de Negocios de la Funeraria \"El Consolador\", " +
+    "Sonsonate El Salvador";
             // 
             // Informacion
             // 
@@ -292,6 +355,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1104, 651);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label7);
@@ -358,6 +426,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
     }
 }
 

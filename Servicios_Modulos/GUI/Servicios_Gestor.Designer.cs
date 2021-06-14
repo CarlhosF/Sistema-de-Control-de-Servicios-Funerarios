@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Servicios_Gestor));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_EliminarContrato = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dt_Servicios = new System.Windows.Forms.DataGridView();
@@ -92,10 +94,19 @@
             // 
             this.dt_Servicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Servicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Servicios.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Servicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Servicios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Servicios.Location = new System.Drawing.Point(3, 28);
+            this.dt_Servicios.MultiSelect = false;
             this.dt_Servicios.Name = "dt_Servicios";
+            this.dt_Servicios.ReadOnly = true;
+            this.dt_Servicios.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Servicios.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_Servicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Servicios.Size = new System.Drawing.Size(726, 305);
             this.dt_Servicios.TabIndex = 3;
             this.dt_Servicios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_Servicios_CellContentClick);
@@ -178,10 +189,19 @@
             // 
             this.dt_TipoDeContrato.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_TipoDeContrato.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_TipoDeContrato.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_TipoDeContrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_TipoDeContrato.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_TipoDeContrato.Location = new System.Drawing.Point(3, 28);
+            this.dt_TipoDeContrato.MultiSelect = false;
             this.dt_TipoDeContrato.Name = "dt_TipoDeContrato";
+            this.dt_TipoDeContrato.ReadOnly = true;
+            this.dt_TipoDeContrato.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_TipoDeContrato.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_TipoDeContrato.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_TipoDeContrato.Size = new System.Drawing.Size(726, 305);
             this.dt_TipoDeContrato.TabIndex = 3;
             // 

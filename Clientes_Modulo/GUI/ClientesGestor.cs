@@ -51,7 +51,14 @@ namespace Clientes_Modulo.GUI
             {
                 int id = (int)dt_clientes.SelectedRows[0].Cells[0].Value;
                 CLS.Clientes c = new CLS.Clientes();
-                c.Eliminar(id);
+                if (c.Eliminar(id))
+                {
+                    MessageBox.Show("Cliente eliminado");
+                }
+                else
+                {
+                    MessageBox.Show("Este cliente no puede eliminarse por que poseé contratos");
+                }
                 Cargar();
             }
             else 

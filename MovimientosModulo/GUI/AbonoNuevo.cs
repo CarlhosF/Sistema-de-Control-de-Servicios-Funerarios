@@ -26,28 +26,35 @@ namespace MovimientosModulo.GUI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            CLS.Movimiento mov = new CLS.Movimiento();
-            mov.Fecha = DateTime.Now;
-            mov.IdVendedor = int.Parse(SesionManager.CLS.Sesion.Instancia.IDUsuario);
-            mov.Concepto = txbConcepto.Text;
-            mov.Abono = float.Parse(txbAbono.Text);
-            mov.IdContrato = idC;
-
-            try
+            if (txbAbono.Text.Length > 0)
             {
-                if (mov.Guardar()) 
+                CLS.Movimiento mov = new CLS.Movimiento();
+                mov.Fecha = DateTime.Now;
+                mov.IdVendedor = int.Parse(SesionManager.CLS.Sesion.Instancia.IDUsuario);
+                mov.Concepto = txbConcepto.Text;
+                mov.Abono = float.Parse(txbAbono.Text);
+                mov.IdContrato = idC;
+
+                try
                 {
-                    MessageBox.Show("Abono Guardado con exito");
-                    this.Close();
+                    if (mov.Guardar())
+                    {
+                        MessageBox.Show("Abono Guardado con exito");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Este registro no se puede añadir");
+                    }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("Este registro no se puede añadir");
+                    MessageBox.Show("Error al ingresar el abono, intente rellenar los campos");
                 }
             }
-            catch
+            else
             {
-                MessageBox.Show("Error al ingresar el abono, intente rellenar los campos");
+                MessageBox.Show("Escriba el abono");
             }
         }
     }

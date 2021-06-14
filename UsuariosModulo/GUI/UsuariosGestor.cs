@@ -38,7 +38,7 @@ namespace UsuariosModulo.GUI
             dt_usuarios.AutoGenerateColumns = false;
             dt_usuarios.DataSource = _DATOS;
             lb_Registros.Text = (dt_usuarios.Rows.Count).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-            //dt_usuarios.Columns[4].Width = 875; 
+            dt_usuarios.Columns[0].Width = 20; 
         }
         private void UsuariosGestor_Load(object sender, EventArgs e)
         {

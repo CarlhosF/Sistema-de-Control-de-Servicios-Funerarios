@@ -22,7 +22,9 @@ namespace Empleados_Modulo.GUI
 
         private void Empleados_Gestor_Load(object sender, EventArgs e)
         {
+
             Cargar();
+        
         }
 
         private void Empleados_Click(object sender, EventArgs e)
@@ -42,7 +44,9 @@ namespace Empleados_Modulo.GUI
             dt_Empleados.AutoGenerateColumns = false;
             dt_Empleados.DataSource = _DATOS;
             dt_Empleados.Text = (dt_Empleados.Rows.Count - 1).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-            //dt_Puestos.Columns[2].Width = 800;
+            
+            dt_Empleados.Columns[0].Width = 20;
+            ;
         }
         private void Cargar()
         {
@@ -51,6 +55,7 @@ namespace Empleados_Modulo.GUI
             _Roles.DataSource = CacheManager.CLS.RolesCache.Listar_Roles();
             dt_Empleados.DataSource = _DATOS.DataSource;
             dt_Puestos.DataSource = _Usuario.DataSource;
+            
             FiltrarEmpleadoLocalmente();
         }
 

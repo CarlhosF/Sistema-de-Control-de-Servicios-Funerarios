@@ -29,7 +29,9 @@ namespace Empleados_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleados_Gestor));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Control_modulo = new System.Windows.Forms.TabControl();
             this.Empleados = new System.Windows.Forms.TabPage();
             this.dt_Empleados = new System.Windows.Forms.DataGridView();
@@ -92,12 +94,19 @@ namespace Empleados_Modulo.GUI
             // 
             this.dt_Empleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Empleados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Empleados.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Empleados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Empleados.Location = new System.Drawing.Point(3, 28);
             this.dt_Empleados.MultiSelect = false;
             this.dt_Empleados.Name = "dt_Empleados";
             this.dt_Empleados.ReadOnly = true;
+            this.dt_Empleados.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Empleados.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_Empleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Empleados.Size = new System.Drawing.Size(807, 451);
             this.dt_Empleados.TabIndex = 1;
             // 
@@ -174,7 +183,6 @@ namespace Empleados_Modulo.GUI
             // 
             this.tb_Filtrar_Empleado.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.tb_Filtrar_Empleado.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.tb_Filtrar_Empleado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_Filtrar_Empleado.Name = "tb_Filtrar_Empleado";
             this.tb_Filtrar_Empleado.Size = new System.Drawing.Size(100, 25);
             this.tb_Filtrar_Empleado.Click += new System.EventHandler(this.tb_Filtrar_Empleado_Click);
@@ -203,12 +211,19 @@ namespace Empleados_Modulo.GUI
             // 
             this.dt_Puestos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Puestos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_Puestos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_Puestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Puestos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_Puestos.Location = new System.Drawing.Point(3, 28);
             this.dt_Puestos.MultiSelect = false;
             this.dt_Puestos.Name = "dt_Puestos";
             this.dt_Puestos.ReadOnly = true;
+            this.dt_Puestos.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_Puestos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_Puestos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_Puestos.Size = new System.Drawing.Size(807, 451);
             this.dt_Puestos.TabIndex = 3;
             this.dt_Puestos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_usuarios_CellContentClick);
@@ -287,7 +302,6 @@ namespace Empleados_Modulo.GUI
             this.txb_Filtrar_puesto.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtrar_puesto.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txb_Filtrar_puesto.Enabled = false;
-            this.txb_Filtrar_puesto.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txb_Filtrar_puesto.Name = "txb_Filtrar_puesto";
             this.txb_Filtrar_puesto.Size = new System.Drawing.Size(100, 25);
             // 

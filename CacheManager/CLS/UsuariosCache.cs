@@ -12,7 +12,7 @@ namespace CacheManager.CLS
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"select a.idusuarios, a.usuario,a.clave, a.rol,concat(c.nombres,c.apellidos) as empleado, c.DUI from usuarios a,empleados c where  a.idempleados=c.idempleados;";
+            String Consulta = @"select a.idusuarios as ID, a.usuario,a.clave, a.rol,concat(c.nombres,c.apellidos) as empleado, c.DUI from usuarios a,empleados c where  a.idempleados=c.idempleados;";
             try
             {
                 Resultados = Consultor.Consultar(Consulta);

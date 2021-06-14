@@ -90,44 +90,59 @@ namespace Contratos_Modulo.GUI
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (dt_contratos.SelectedRows.Count > 0)
+            if (SesionManager.CLS.Sesion.Instancia.Rol != "Vendedor")
             {
-                GUI.btnSelecBene1 f = new btnSelecBene1((int)dt_contratos.SelectedRows[0].Cells[0].Value);
-                f.ShowDialog();
-                Cargar();
+                if (dt_contratos.SelectedRows.Count > 0)
+                {
+                    GUI.btnSelecBene1 f = new btnSelecBene1((int)dt_contratos.SelectedRows[0].Cells[0].Value);
+                    f.ShowDialog();
+                    Cargar();
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un contrato");
+                }
             }
             else
             {
-                MessageBox.Show("Seleccione un contrato");
+                MessageBox.Show("Acceso Denegado");
             }
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            if (dt_contratos.SelectedRows.Count > 0)
+            if (SesionManager.CLS.Sesion.Instancia.Rol != "Vendedor")
             {
-                int id =(int)dt_contratos.SelectedRows[0].Cells[0].Value;
-                CLS.Contrato co = new CLS.Contrato();
-                try {
-                    if (co.Eliminar(id))
-                    {
-                        MessageBox.Show("Contrato eliminado");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Este contrato no puede eliminarse");
-                    }
-                }
-                catch
+                if (dt_contratos.SelectedRows.Count > 0)
                 {
-                    MessageBox.Show("Error al eliminar");
+                    int id = (int)dt_contratos.SelectedRows[0].Cells[0].Value;
+                    CLS.Contrato co = new CLS.Contrato();
+                    try
+                    {
+                        if (co.Eliminar(id))
+                        {
+                            MessageBox.Show("Contrato eliminado");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Este contrato no puede eliminarse");
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error al eliminar");
+                    }
+
+
                 }
-                
-                
+                else
+                {
+                    MessageBox.Show("Seleccione un contrato");
+                }
             }
             else
             {
-                MessageBox.Show("Seleccione un contrato");
+                MessageBox.Show("Acceso Denegado");
             }
         }
     }

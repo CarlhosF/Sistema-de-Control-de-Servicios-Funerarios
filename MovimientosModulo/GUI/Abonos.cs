@@ -111,10 +111,22 @@ namespace MovimientosModulo.GUI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Contratos_Modulo.CLS.Contrato c = new Contratos_Modulo.CLS.Contrato();
-            c.ActualizarEstado(idContrato,"Cancelado");
-            MessageBox.Show("Contrato cancelado");
-            this.Close();
+            if (SesionManager.CLS.Sesion.Instancia.Rol!="Vendedor")
+            {
+                Contratos_Modulo.CLS.Contrato c = new Contratos_Modulo.CLS.Contrato();
+                c.ActualizarEstado(idContrato, "Cancelado");
+                MessageBox.Show("Contrato cancelado");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Acceso Denegado");
+            }
+        }
+
+        private void dt_movimientos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -29,6 +29,8 @@ namespace EntregasModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntregasDetalles));
             this.dt_difuntos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,12 +73,28 @@ namespace EntregasModulo.GUI
             // 
             this.dt_difuntos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_difuntos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_difuntos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_difuntos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_difuntos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_difuntos.Location = new System.Drawing.Point(0, 25);
             this.dt_difuntos.MultiSelect = false;
             this.dt_difuntos.Name = "dt_difuntos";
             this.dt_difuntos.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_difuntos.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_difuntos.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_difuntos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_difuntos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_difuntos.Size = new System.Drawing.Size(902, 426);
             this.dt_difuntos.TabIndex = 3;
             // 
@@ -151,6 +169,7 @@ namespace EntregasModulo.GUI
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.txbTratamiento);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.btnEntregar);
@@ -367,6 +386,7 @@ namespace EntregasModulo.GUI
             this.ClientSize = new System.Drawing.Size(902, 646);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntregasDetalles";
             this.Text = "EntregasDetalles";

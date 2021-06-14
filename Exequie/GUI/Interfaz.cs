@@ -41,7 +41,7 @@ namespace Exequie.GUI
             }
             lbrol.Text = Sesion.Rol;
             lbUsuario.Text = Sesion.Empleado;
-            this.button8_Click(sender,e);
+            this.btn_Clientes_Click_1(sender,e);
 
 
         }
@@ -62,6 +62,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "USUARIOS";
 
             f.Show();
         }
@@ -76,6 +77,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "EMPLEADOS";
 
             f.Show();
         }
@@ -90,6 +92,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "SUCURSALES";
 
             f.Show();
         }
@@ -103,6 +106,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "CLIENTES";
 
             f.Show();
         }
@@ -127,6 +131,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "POLITICAS DE NEGOCIOS";
 
             f.Show();
         }
@@ -140,6 +145,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "INFORMACIÓN";
 
             f.Show();
         }
@@ -153,6 +159,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "CONTRATOS";
 
             f.Show();
         }
@@ -166,6 +173,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "ABONOS";
 
             f.Show();
         }
@@ -179,6 +187,7 @@ namespace Exequie.GUI
             f.Dock = DockStyle.Fill;
             pn_contenedor.Controls.Add(f);
             pn_contenedor.Tag = f;
+            lbTitulo.Text = "ENTREGAS";
 
             f.Show();
         }

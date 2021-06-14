@@ -34,6 +34,10 @@ namespace Sucursales_Modulo.GUI
             dt_sucursales.AutoGenerateColumns = false;
             dt_sucursales.DataSource = _DATOS;
             lb_Registros.Text = (dt_sucursales.Rows.Count-1).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
+            dt_sucursales.Columns[1].Width = 475;
+            dt_sucursales.Columns[0].Width = 20;
+            
+
 
         }
         public SucursalGestor()
@@ -98,7 +102,14 @@ namespace Sucursales_Modulo.GUI
                 int id = (int)dt_sucursales.SelectedRows[0].Cells[0].Value;
                 
                     CLS.Sucursales s = new CLS.Sucursales();
-                    s.Eliminar(id);
+                if (s.Eliminar(id))
+                {
+                    MessageBox.Show("Empleado eliminado");
+                }
+                else
+                {
+                    MessageBox.Show("NO se puede eliminar este empleado por que se encuentra en un contrato");
+                }
                 
             }
             Cargar();

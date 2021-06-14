@@ -32,7 +32,7 @@ namespace Exequie.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interfaz));
             this.pn_contenedor = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbTitulo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbrol = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -69,7 +69,7 @@ namespace Exequie.GUI
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lbTitulo);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lbrol);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -82,16 +82,16 @@ namespace Exequie.GUI
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label3
+            // lbTitulo
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Old English Text MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 26);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "TITULO";
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitulo.Font = new System.Drawing.Font("Californian FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.Location = new System.Drawing.Point(195, 69);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(117, 33);
+            this.lbTitulo.TabIndex = 5;
+            this.lbTitulo.Text = "TITULO";
             // 
             // label2
             // 
@@ -358,6 +358,6 @@ namespace Exequie.GUI
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbrol;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbTitulo;
     }
 }
