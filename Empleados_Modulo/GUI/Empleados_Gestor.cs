@@ -88,7 +88,7 @@ namespace Empleados_Modulo.GUI
                     }
                     else
                     {
-                        MessageBox.Show("Este empleado no puede eliminarse por que posee ventas o pagos");
+                        MessageBox.Show("Este empleado no puede eliminarse por que es Encargado ó posee ventas o pagos");
                     }
                 }
 
