@@ -38,7 +38,11 @@ namespace Contratos_Modulo.GUI
             dt_contratos.AutoGenerateColumns = false;
             dt_contratos.DataSource = _DATOS;
             lb_Registros.Text = (dt_contratos.Rows.Count).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-
+            dt_contratos.Columns[0].Width = 20;
+            dt_contratos.Columns[4].Width = 40;
+            dt_contratos.Columns[5].Width = 40;
+            dt_contratos.Columns[8].Width = 50;
+            dt_contratos.Columns[9].Width = 50;
         }
 
         private void ContratosGestor_Load(object sender, EventArgs e)

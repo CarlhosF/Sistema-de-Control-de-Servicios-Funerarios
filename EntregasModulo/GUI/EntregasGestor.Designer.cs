@@ -29,6 +29,7 @@ namespace EntregasModulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntregasGestor));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lb_Registros = new System.Windows.Forms.ToolStripStatusLabel();
@@ -67,11 +68,19 @@ namespace EntregasModulo.GUI
             this.dt_movimientos.AllowUserToDeleteRows = false;
             this.dt_movimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_movimientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_movimientos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_movimientos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dt_movimientos.Location = new System.Drawing.Point(0, 25);
+            this.dt_movimientos.MultiSelect = false;
             this.dt_movimientos.Name = "dt_movimientos";
             this.dt_movimientos.ReadOnly = true;
+            this.dt_movimientos.RowHeadersVisible = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_movimientos.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_movimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dt_movimientos.Size = new System.Drawing.Size(780, 400);
             this.dt_movimientos.TabIndex = 8;
             // 

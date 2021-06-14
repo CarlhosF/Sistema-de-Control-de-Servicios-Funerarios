@@ -35,7 +35,9 @@ namespace MovimientosModulo.GUI
             dt_movimientos.AutoGenerateColumns = false;
             dt_movimientos.DataSource = _DATOS;
             lb_Registros.Text = (dt_movimientos.Rows.Count).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-
+            dt_movimientos.Columns[0].Width = 20;
+            dt_movimientos.Columns[2].Width = 50;
+            dt_movimientos.Columns[4].Width = 150;
         }
         public MovimientosGestor()
         {

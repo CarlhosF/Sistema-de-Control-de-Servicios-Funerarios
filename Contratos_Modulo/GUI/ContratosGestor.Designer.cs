@@ -29,6 +29,7 @@ namespace Contratos_Modulo.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContratosGestor));
             this.dt_contratos = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -56,12 +57,19 @@ namespace Contratos_Modulo.GUI
             this.dt_contratos.AllowUserToDeleteRows = false;
             this.dt_contratos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_contratos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dt_contratos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_contratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_contratos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dt_contratos.Location = new System.Drawing.Point(0, 25);
+            this.dt_contratos.Location = new System.Drawing.Point(0, 30);
             this.dt_contratos.Name = "dt_contratos";
             this.dt_contratos.ReadOnly = true;
-            this.dt_contratos.Size = new System.Drawing.Size(606, 399);
+            this.dt_contratos.RowHeadersVisible = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dt_contratos.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_contratos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dt_contratos.Size = new System.Drawing.Size(606, 394);
             this.dt_contratos.TabIndex = 5;
             // 
             // statusStrip1
@@ -85,35 +93,35 @@ namespace Contratos_Modulo.GUI
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(70, 22);
+            this.btnEditar.Size = new System.Drawing.Size(70, 27);
             this.btnEditar.Text = "Corregir";
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
             // 
             // btnAgregar
             // 
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(69, 22);
+            this.btnAgregar.Size = new System.Drawing.Size(69, 27);
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 30);
             // 
             // btnActualizar
             // 
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(79, 22);
+            this.btnActualizar.Size = new System.Drawing.Size(79, 27);
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
@@ -122,22 +130,23 @@ namespace Contratos_Modulo.GUI
             this.txb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txb_Filtro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txb_Filtro.Name = "txb_Filtro";
-            this.txb_Filtro.Size = new System.Drawing.Size(150, 25);
+            this.txb_Filtro.Size = new System.Drawing.Size(150, 30);
             // 
             // lb_Filtro
             // 
             this.lb_Filtro.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.lb_Filtro.Name = "lb_Filtro";
-            this.lb_Filtro.Size = new System.Drawing.Size(37, 22);
+            this.lb_Filtro.Size = new System.Drawing.Size(37, 27);
             this.lb_Filtro.Text = "Filtrar";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStrip1
             // 
+            this.toolStrip1.AutoSize = false;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton2,
             this.toolStripSeparator1,
@@ -145,14 +154,14 @@ namespace Contratos_Modulo.GUI
             this.toolStripSeparator2,
             this.btnAgregar,
             this.toolStripSeparator3,
+            this.toolStripButton1,
+            this.toolStripSeparator4,
             this.btnActualizar,
             this.txb_Filtro,
-            this.lb_Filtro,
-            this.toolStripSeparator4,
-            this.toolStripButton1});
+            this.lb_Filtro});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(606, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(606, 30);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -161,21 +170,21 @@ namespace Contratos_Modulo.GUI
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(70, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(70, 27);
             this.toolStripButton2.Text = "Eliminar";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(67, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(67, 27);
             this.toolStripButton1.Text = "Detallar";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 

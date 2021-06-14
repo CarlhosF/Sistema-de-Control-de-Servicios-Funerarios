@@ -35,7 +35,9 @@ namespace Clientes_Modulo.GUI
             dt_clientes.AutoGenerateColumns = false;
             dt_clientes.DataSource = _DATOS;
             lb_Registros.Text = (dt_clientes.Rows.Count ).ToString() + " Registros Encontrados";//Alertar cuantos registros han sido encontrados
-
+            dt_clientes.Columns[0].Width = 20;
+            dt_clientes.Columns[6].Width = 50;
+            dt_clientes.Columns[5].Width = 50;
         }
 
         public ClientesGestor()

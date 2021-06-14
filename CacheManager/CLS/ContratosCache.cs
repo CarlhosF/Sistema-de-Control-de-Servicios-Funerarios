@@ -31,7 +31,7 @@ namespace CacheManager.CLS
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"select a.idcontratos,a.extendido,a.fecha,concat(b.nombres,' ',b.apellidos) as cliente,concat(e.nombres,' ',e.apellidos) as 'Vendido por:',a.estado,a.monto
+            String Consulta = @"select a.idcontratos as ID,a.extendido,a.fecha,concat(b.nombres,' ',b.apellidos) as cliente,concat(e.nombres,' ',e.apellidos) as 'Vendido por:',a.estado,a.monto
                         from contratos a,clientes b, usuarios c, empleados e
                         where  a.contratista=b.idclientes and c.idempleados=e.idempleados and a.vendedor=c.idusuarios and  (a.formaspago='Cuotas' and a.estado='Activo' or a.estado='Moroso')
                         order by a.idcontratos;";
@@ -50,7 +50,7 @@ namespace CacheManager.CLS
         {
             DataTable Resultados = new DataTable();
             DataManager.CLS.OperacionBD Consultor = new DataManager.CLS.OperacionBD();
-            String Consulta = @"select a.idcontratos,a.extendido,a.fecha,concat(b.nombres,' ',b.apellidos) as cliente,concat(e.nombres,' ',e.apellidos) as 'Vendido por:',d.nombre as Contrato,f.nombre as Servicio,d.tratamiento as 'Tratamientos disponible'
+            String Consulta = @"select a.idcontratos as ID,a.extendido,a.fecha,concat(b.nombres,' ',b.apellidos) as cliente,concat(e.nombres,' ',e.apellidos) as 'Vendido por:',d.nombre as Contrato,f.nombre as Servicio,d.tratamiento as 'Tratamientos disponible'
                         from contratos a,clientes b, usuarios c, empleados e,tipodecontrato d, servicios f
                         where a.idservicios=f.idservicios and d.idtipodecontrato=a.tipoDeContrato and a.contratista=b.idclientes and c.idempleados=e.idempleados and a.vendedor=c.idusuarios and  (a.estado='Cancelado')
                         order by a.idcontratos;";
