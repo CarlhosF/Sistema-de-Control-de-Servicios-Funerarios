@@ -36,8 +36,7 @@ namespace Sucursales_Modulo.GUI
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
             Sucursales_Modulo.CLS.Sucursales sucursal = new CLS.Sucursales();
-            sucursal.Direccion = txb_direccion.Text;
-            sucursal.Telefono = txb_telefono.Text;
+          
             
             Int32 selectedRowCount = dt_empleado.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
@@ -50,6 +49,8 @@ namespace Sucursales_Modulo.GUI
                 {
                     try
                     {
+                        sucursal.Direccion = txb_direccion.Text;
+                        sucursal.Telefono = txb_telefono.Text;
                         if (sucursal.Guardar())
                         {
                             MessageBox.Show("Registro guardado exitosamente");

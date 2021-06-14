@@ -90,6 +90,7 @@ namespace Sucursales_Modulo.GUI
             // 
             // dt_empleado
             // 
+            this.dt_empleado.AllowUserToAddRows = false;
             this.dt_empleado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_empleado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_empleado.BackgroundColor = System.Drawing.SystemColors.Control;

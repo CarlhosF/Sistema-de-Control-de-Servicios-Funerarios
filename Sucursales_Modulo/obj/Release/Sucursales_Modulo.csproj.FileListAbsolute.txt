@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\Sucursales_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\Sucursales_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\CacheManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\MySql.Data.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\CacheManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\bin\Release\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.GUI.SucursalGestor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.GUI.SucursalNueva.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.GUI.Sucursal_Editor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.Properties.Resources.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Sucursales_Modulo\obj\Release\Sucursales_Modulo.pdb

@@ -1,0 +1,9 @@
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.dll.config
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\MySql.Data.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.GUI.Prueba.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.pdb

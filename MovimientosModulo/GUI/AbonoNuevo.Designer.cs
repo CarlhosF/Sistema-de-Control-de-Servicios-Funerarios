@@ -80,6 +80,7 @@ namespace MovimientosModulo.GUI
             this.txbAbono.Name = "txbAbono";
             this.txbAbono.Size = new System.Drawing.Size(81, 20);
             this.txbAbono.TabIndex = 4;
+            this.txbAbono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbAbono_KeyPress);
             // 
             // AbonoNuevo
             // 

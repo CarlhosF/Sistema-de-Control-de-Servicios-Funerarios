@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<DocumentElement>
+	<Conexion>
+		<Server>Server=127.0.0.1;</Server>
+		<BD>Database=funerariabd;</BD>
+		<User>Uid=root;</User>
+		<Password>Pwd=admin;</Password>
+	</Conexion>
+</DocumentElement>

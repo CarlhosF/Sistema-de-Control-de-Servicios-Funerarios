@@ -110,7 +110,7 @@ namespace Sucursales_Modulo.GUI
                         CLS.Sucursales s = new CLS.Sucursales();
                         if (s.Eliminar(id))
                         {
-                            MessageBox.Show("Empleado eliminado");
+                            MessageBox.Show("Sucursal eliminado");
                         }
                         else
                         {

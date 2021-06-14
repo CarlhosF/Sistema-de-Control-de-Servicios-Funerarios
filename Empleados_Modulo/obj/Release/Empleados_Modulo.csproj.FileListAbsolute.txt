@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\Empleados_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\Empleados_Modulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\CacheManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\MySql.Data.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\CacheManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\bin\Release\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.GUI.Empleados_Gestor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.GUI.Empleado.Editar_Empleado.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.GUI.Empleado.Nuevo_Empleado.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.GUI.Puesto.PuestoEditor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.GUI.Puesto.PuestoNuevo.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.Properties.Resources.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\Empleados_Modulo\obj\Release\Empleados_Modulo.pdb

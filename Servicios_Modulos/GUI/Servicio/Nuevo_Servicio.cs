@@ -30,14 +30,15 @@ namespace Servicios_Modulos.GUI.Contratos
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             CLS.Servicio s = new CLS.Servicio();
-            s.Nombre = txbNombre.Text;
-            s.Valorcontado = float.Parse(txbValorContado.Text);
-            s.Valorcuota = float.Parse(txbValorCuota.Text);
-            s.Prima = float.Parse(txbPrima.Text);
-            s.Descripcion = txbDescripcion.Text;
+           
 
             try
             {
+                s.Nombre = txbNombre.Text;
+                s.Valorcontado = float.Parse(txbValorContado.Text);
+                s.Valorcuota = float.Parse(txbValorCuota.Text);
+                s.Prima = float.Parse(txbPrima.Text);
+                s.Descripcion = txbDescripcion.Text;
                 if (s.Guardar()) 
                 {
                     MessageBox.Show("Registro añadido exitosamente");
@@ -50,6 +51,21 @@ namespace Servicios_Modulos.GUI.Contratos
             }
 
 
+        }
+
+        private void txbValorContado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                 (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

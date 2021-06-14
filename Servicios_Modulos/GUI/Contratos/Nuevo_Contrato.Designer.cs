@@ -100,6 +100,7 @@
             this.txb_factor.Name = "txb_factor";
             this.txb_factor.Size = new System.Drawing.Size(194, 20);
             this.txb_factor.TabIndex = 9;
+            this.txb_factor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_factor_KeyPress);
             // 
             // label2
             // 
@@ -116,6 +117,8 @@
             this.txbTratamiento.Name = "txbTratamiento";
             this.txbTratamiento.Size = new System.Drawing.Size(76, 20);
             this.txbTratamiento.TabIndex = 11;
+            this.txbTratamiento.TextChanged += new System.EventHandler(this.txbTratamiento_TextChanged);
+            this.txbTratamiento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTratamiento_KeyPress);
             // 
             // label4
             // 

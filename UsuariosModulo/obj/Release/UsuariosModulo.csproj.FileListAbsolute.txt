@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\UsuariosModulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\UsuariosModulo.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\CacheManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\DataManager.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\MySql.Data.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\CacheManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\bin\Release\DataManager.pdb
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.GUI.SeleccionarEmpleado.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.GUI.UsuarioEditar.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.GUI.UsuarioNuevo.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.GUI.UsuariosGestor.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.Properties.Resources.resources
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.dll
+C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\UsuariosModulo\obj\Release\UsuariosModulo.pdb

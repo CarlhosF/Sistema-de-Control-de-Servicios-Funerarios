@@ -86,6 +86,7 @@
             this.txbPrima.Name = "txbPrima";
             this.txbPrima.Size = new System.Drawing.Size(176, 20);
             this.txbPrima.TabIndex = 21;
+            this.txbPrima.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPrima_KeyPress);
             // 
             // label5
             // 
@@ -102,6 +103,7 @@
             this.txbValorCuota.Name = "txbValorCuota";
             this.txbValorCuota.Size = new System.Drawing.Size(176, 20);
             this.txbValorCuota.TabIndex = 19;
+            this.txbValorCuota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPrima_KeyPress);
             // 
             // label4
             // 
@@ -118,6 +120,7 @@
             this.txbValorContado.Name = "txbValorContado";
             this.txbValorContado.Size = new System.Drawing.Size(176, 20);
             this.txbValorContado.TabIndex = 17;
+            this.txbValorContado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPrima_KeyPress);
             // 
             // txbDescripcion
             // 
@@ -182,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Editar_Contrato";
             this.Text = "Editar Servicio";
+            this.Load += new System.EventHandler(this.Editar_Contrato_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

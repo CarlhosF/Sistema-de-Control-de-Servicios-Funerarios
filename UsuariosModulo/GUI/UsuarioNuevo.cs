@@ -64,17 +64,18 @@ namespace UsuariosModulo.GUI
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
             CLS.Usuario usuario = new CLS.Usuario();
-            usuario.idrol = lst_Rol.SelectedItem.ToString().Replace(" ",""); 
-            usuario.usuario = txb_usuario.Text.Replace(" ","");
-            usuario.clave = txb_clave.Text.Replace(" ", "");
-            usuario.idempleado = int.Parse(txb_IdEmpleado.Text);
-            usuario.usuario.Replace(" ", "");
-            usuario.clave.Replace(" ", "");
-            usuario.idrol.Replace(" ","");
+           
 
 
             try
             {
+                usuario.idrol = lst_Rol.SelectedItem.ToString().Replace(" ", "");
+                usuario.usuario = txb_usuario.Text.Replace(" ", "");
+                usuario.clave = txb_clave.Text.Replace(" ", "");
+                usuario.idempleado = int.Parse(txb_IdEmpleado.Text);
+                usuario.usuario.Replace(" ", "");
+                usuario.clave.Replace(" ", "");
+                usuario.idrol.Replace(" ", "");
                 if (usuario.Guardar())
                 {
                     MessageBox.Show("Registro añadido");
@@ -87,7 +88,7 @@ namespace UsuariosModulo.GUI
             }
             catch 
             {
-                MessageBox.Show("Error,no se pudo añadir el usuario");
+                MessageBox.Show("Error,no se pudo añadir, prueber rellenar correctamente");
             }
 
         }

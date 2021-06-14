@@ -76,6 +76,7 @@ namespace UsuariosModulo.GUI
             // 
             // txb_usuario
             // 
+            this.txb_usuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txb_usuario.Location = new System.Drawing.Point(70, 38);
             this.txb_usuario.Name = "txb_usuario";
             this.txb_usuario.Size = new System.Drawing.Size(166, 20);

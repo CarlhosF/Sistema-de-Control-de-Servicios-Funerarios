@@ -129,6 +129,7 @@ namespace Sucursales_Modulo.GUI
             // 
             // dt_encargado
             // 
+            this.dt_encargado.AllowUserToAddRows = false;
             this.dt_encargado.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dt_encargado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_encargado.Location = new System.Drawing.Point(7, 153);

@@ -25,13 +25,14 @@ namespace Servicios_Modulos.GUI.Servicios
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CLS.TipoContrato tc = new CLS.TipoContrato();
-            tc.Nombre = txb_Nombre.Text;
-            tc.Descripcion = txb_Descripcion.Text;
-            tc.Factor = float.Parse(txb_factor.Text);
-            tc.Tratamientos = int.Parse(txbTratamiento.Text);
-
+            
             try
             {
+                tc.Nombre = txb_Nombre.Text;
+                tc.Descripcion = txb_Descripcion.Text;
+                tc.Factor = float.Parse(txb_factor.Text);
+                tc.Tratamientos = int.Parse(txbTratamiento.Text);
+
                 if (tc.Guardar())
                 {
                     MessageBox.Show("Registro Guardado exitosamente");
@@ -41,6 +42,35 @@ namespace Servicios_Modulos.GUI.Servicios
             catch
             {
                 MessageBox.Show("Error al ingersar, intente rellenar los campos debidamente");
+            }
+        }
+
+        private void txb_factor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txbTratamiento_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txbTratamiento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }
