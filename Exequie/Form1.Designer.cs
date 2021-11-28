@@ -57,6 +57,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.Actualizar = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -271,6 +273,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(631, 154);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 68);
@@ -334,9 +337,9 @@
             this.label18.Font = new System.Drawing.Font("Californian FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(37, 352);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(274, 93);
+            this.label18.Size = new System.Drawing.Size(226, 76);
             this.label18.TabIndex = 55;
-            this.label18.Text = "-Version 1.07";
+            this.label18.Text = "-Version 1.10";
             // 
             // label19
             // 
@@ -349,12 +352,34 @@
             this.label19.Text = "-Basado en las politicas y Procesos de Negocios de la Funeraria \"El Consolador\", " +
     "Sonsonate El Salvador";
             // 
+            // Actualizar
+            // 
+            this.Actualizar.Location = new System.Drawing.Point(40, 96);
+            this.Actualizar.Name = "Actualizar";
+            this.Actualizar.Size = new System.Drawing.Size(98, 37);
+            this.Actualizar.TabIndex = 57;
+            this.Actualizar.Text = "Buscar Actualizacion";
+            this.Actualizar.UseVisualStyleBackColor = true;
+            this.Actualizar.Click += new System.EventHandler(this.Actualizar_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(154, 100);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(387, 24);
+            this.label20.TabIndex = 58;
+            this.label20.Text = "VERSION LISTA PARA LA EXPOSICION";
+            // 
             // Informacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1104, 651);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.Actualizar);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -431,6 +456,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button Actualizar;
+        private System.Windows.Forms.Label label20;
     }
 }
 

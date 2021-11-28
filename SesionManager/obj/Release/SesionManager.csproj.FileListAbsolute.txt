@@ -8,3 +8,16 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.csprojResolveAssemblyReference.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\SesionManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\SesionManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\CacheManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\DataManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\MySql.Data.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\CacheManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\DataManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\bin\Release\DataManager.dll.config
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.csproj.AssemblyReference.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.csproj.CoreCompileInputs.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.csproj.CopyComplete
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\SesionManager\obj\Release\SesionManager.pdb

@@ -13,25 +13,20 @@ namespace DataManager.CLS
     public class ConexionBD
     {
         XmlDocument xml = new XmlDocument();
-        String Server = "Server=127.0.0.1;";
-        String BD = "Database=funerariabd;";
-        String User = "Uid=usuario;";
-        String Password = "Pwd=contra;";
+        String Server = "bs2vkycio293yyx8k5ho-mysql.services.clever-cloud.com";
+        String BD = "bs2vkycio293yyx8k5ho";
+        String User = "ulpsvvxkuul8err8";
+        String Password = "Woij0iK5icvCY0WxEoQr";
 
-        public String Cargar() 
-        {
-            xml.Load("Conexion.xml");
-           return xml.InnerText;
-            
-        }
+       
+        
 
         protected MySqlConnection _Conexion;
 
         public ConexionBD()
         {
             _Conexion = new MySqlConnection();
-            Cargar();
-            _Conexion.ConnectionString = Cargar();
+            _Conexion.ConnectionString = $"server={Server};uid={User};pwd={Password};database={BD}";
         }
 
         protected Boolean Conectar()

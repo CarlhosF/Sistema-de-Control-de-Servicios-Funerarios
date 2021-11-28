@@ -7,3 +7,14 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\R
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.GenerateResource.Cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.dll.config
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\DataManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\bin\Release\MySql.Data.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.AssemblyReference.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.GUI.Prueba.resources
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.GenerateResource.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.CoreCompileInputs.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.csproj.CopyComplete
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\DataManager\obj\Release\DataManager.pdb

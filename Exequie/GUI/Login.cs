@@ -96,9 +96,7 @@ namespace Exequie.GUI
 
         private void Login_Load(object sender, EventArgs e)
         {
-            XmlDocument xml = new XmlDocument();
-            xml.Load("Conexion.xml");
-            lbServer.Text = xml.DocumentElement.FirstChild.FirstChild.InnerText;
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

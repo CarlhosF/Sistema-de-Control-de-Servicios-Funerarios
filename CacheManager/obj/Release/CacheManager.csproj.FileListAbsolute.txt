@@ -6,3 +6,14 @@ C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.csprojResolveAssemblyReference.cache
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.dll
 C:\Users\HP\Desktop\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\CacheManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\CacheManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\DataManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\MySql.Data.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\DataManager.pdb
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\bin\Release\DataManager.dll.config
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.csproj.AssemblyReference.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.csproj.CoreCompileInputs.cache
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.csproj.CopyComplete
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.dll
+E:\Sistema-de-Control-de-Servicios-Funerarios\CacheManager\obj\Release\CacheManager.pdb
